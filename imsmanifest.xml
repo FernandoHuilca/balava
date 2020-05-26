@@ -1,0 +1,69 @@
+﻿<?xml version="1.0"?>
+<manifest identifier="LIM" version="1.1"
+ xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
+ xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2     imscp_rootv1p1p2.xsd 
+ http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">	
+ <metadata>
+ <schema>ADL SCORM</schema>
+ <schemaversion>1.2</schemaversion>
+  
+ </metadata>
+  <organizations default="TOC1">
+    <organization identifier="TOC1">
+      <title>LIM</title>
+      <item identifier="ITEM1" identifierref="RESOURCE1">
+        <title>FRACCIONES</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+       	<resource identifier="RESOURCE1" type="webcontent" adlcp:scormtype="sco" href="fracciones.html">
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+      </metadata>
+	 <file href="RECURSOS/automovil-png-6.png" />
+<file href="RECURSOS/Calculadora-de-fracciones-online-operaciones-con-fracciones.png" />
+<file href="RECURSOS/Casos-de-exito.png" />
+<file href="RECURSOS/cinema.png" />
+<file href="RECURSOS/comparacion.png" />
+<file href="RECURSOS/FRACC.png" />
+<file href="RECURSOS/fraccion.png" />
+<file href="RECURSOS/ganancias.png" />
+<file href="RECURSOS/ley_de_los_signos.jpg" />
+<file href="RECURSOS/MULTI.png" />
+<file href="RECURSOS/opcomb1.png" />
+<file href="RECURSOS/opcomb2.png" />
+<file href="RECURSOS/opcomb3.png" />
+<file href="RECURSOS/ROMPECABEZAS.png" />
+<file href="RECURSOS/seis.png" />
+<file href="RECURSOS/suma_fracciones.png" />
+<file href="RECURSOS/terminos_fraccion.png" />
+<file href="fracciones.html" />
+<file href="sclim/ad.png" />
+<file href="sclim/am.png" />
+<file href="sclim/at.png" />
+<file href="sclim/av.mp3" />
+<file href="sclim/av.ogg" />
+<file href="sclim/ben.mp3" />
+<file href="sclim/ben.ogg" />
+<file href="sclim/c.png" />
+<file href="sclim/in.png" />
+<file href="sclim/l.png" />
+<file href="sclim/lang.js" />
+<file href="sclim/lim.css" />
+<file href="sclim/limjs.js" />
+<file href="sclim/mal.mp3" />
+<file href="sclim/mal.ogg" />
+<file href="sclim/p.png" />
+<file href="sclim/pre.gif" />
+<file href="fraccionesf.html" />
+<file href="fracciones.lim" />
+<file href="lim.swf" />
+<file href="scormlim.js" />
+	
+    </resource>
+  </resources>
+</manifest>
