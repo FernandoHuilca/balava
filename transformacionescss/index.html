@@ -1,0 +1,422 @@
+<HTML>
+<HEAD>
+  <TITLE>transformaciones.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Carlos, Mapa Conceptual, cmap, CmapTools, IHMC, transformaciones,  scaleZ(),  translateY(),  translateX(),  eje y,  INCLINAR skew(grados),  scaleX(),  inherit,  ROTAR rotate(grados),  center,  ROTAR rotate3d(X,Y,Z),  center,  ESCALAR scale(grados),  eje x,  MOVER translate3d(X,Y,Z),  MOVER translate(),  %,  skewY(grados),  eje z,  length,  scaleY()">
+  <meta NAME = "DESCRIPTION"        CONTENT = "Este Cmap, tiene información relacionada con: transformaciones, 2D puede usar Cambio Posición transform-origin, ESCALAR scale(grados) por partes scaleX(grados), INCLINAR skew(grados) por partes skewX(grados), 3D puede usar Cambio Posición transform-origin, 3D son ROTAR rotate3d(X,Y,Z), eje z son length, eje x son right, 2D son ESCALAR scale(grados), ESCALAR scale2d()X,Y,Z) por partes scaleX(), ESCALAR scale(grados) por partes scaleY(grados), ESCALAR scale2d()X,Y,Z) por partes scaleY(), eje y son center, Cambio Posición transform-origin posibles valores initial, MOVER translate3d(X,Y,Z) por partes translateY(), eje x son center, 2D son ROTAR rotate(grados), 2D son INCLINAR skew(grados), MOVER translate3d(X,Y,Z) por partes translateX(), Cambio Posición transform-origin posibles valores eje z, TRANSFORMACIONES Todas las transformaciones usan la propiedad "transform" tipos 3D">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 4.11, http://cmap.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport@ihmc.us
+    //  Date: 12/14/2006
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.layerX;
+	    document.getElementById(popupName).style.top = event.layerY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+Este Cmap, tiene información relacionada con: transformaciones, 2D puede usar Cambio Posición transform-origin, ESCALAR scale(grados) por partes scaleX(grados), INCLINAR skew(grados) por partes skewX(grados), 3D puede usar Cambio Posición transform-origin, 3D son ROTAR rotate3d(X,Y,Z), eje z son length, eje x son right, 2D son ESCALAR scale(grados), ESCALAR scale2d()X,Y,Z) por partes scaleX(), ESCALAR scale(grados) por partes scaleY(grados), ESCALAR scale2d()X,Y,Z) por partes scaleY(), eje y son center, Cambio Posición transform-origin posibles valores initial, MOVER translate3d(X,Y,Z) por partes translateY(), eje x son center, 2D son ROTAR rotate(grados), 2D son INCLINAR skew(grados), MOVER translate3d(X,Y,Z) por partes translateX(), Cambio Posición transform-origin posibles valores eje z, TRANSFORMACIONES Todas las transformaciones usan la propiedad "transform" tipos 3D
+
+</noscript>
+
+<map name="transformaciones.html">
+  <area shape="rect"
+        href="1VYKW26SFIW9VDG2I1T9ItextIhtml"
+        onClick="popUpEvt(event,'1VYKW26SFIW9VDG2I1T9ItextIhtml'); return false;"
+        coords="503,444,521,462">
+  <area shape="rect"
+        href="1VYKW1F58I137W7W2I1R9ItextIhtml"
+        onClick="popUpEvt(event,'1VYKW1F58I137W7W2I1R9ItextIhtml'); return false;"
+        coords="217,446,235,464">
+  <area shape="rect"
+        href="1VYKW1WXKI1NYD9Y2I1SCItextIhtml"
+        onClick="popUpEvt(event,'1VYKW1WXKI1NYD9Y2I1SCItextIhtml'); return false;"
+        coords="348,444,366,462">
+  <area shape="rect"
+        href="1VYKW0R5XIWT1QCMI1PNItextIhtml"
+        onClick="popUpEvt(event,'1VYKW0R5XIWT1QCMI1PNItextIhtml'); return false;"
+        coords="32,449,50,467">
+  <area shape="rect"
+        href="1VYKXTSHNIFR0C7PI3XYItextIhtml"
+        onClick="popUpEvt(event,'1VYKXTSHNIFR0C7PI3XYItextIhtml'); return false;"
+        coords="642,572,660,590">
+  <area shape="rect"
+        href="1VYKXJR5RIQ15S4HI3GLItextIhtml"
+        onClick="popUpEvt(event,'1VYKXJR5RIQ15S4HI3GLItextIhtml'); return false;"
+        coords="211,574,229,592">
+  <area shape="rect"
+        href="1VYKXL38DIYGSG3RI3MHItextIhtml"
+        onClick="popUpEvt(event,'1VYKXL38DIYGSG3RI3MHItextIhtml'); return false;"
+        coords="331,574,349,592">
+  <area shape="rect"
+        href="1VYKYCZK5I14RPW71I4SCItextIhtml"
+        onClick="popUpEvt(event,'1VYKYCZK5I14RPW71I4SCItextIhtml'); return false;"
+        coords="1081,442,1099,460">
+  <area shape="rect"
+        href="1VYKY0D31IRW1PTWI4D4ItextIhtml"
+        onClick="popUpEvt(event,'1VYKY0D31IRW1PTWI4D4ItextIhtml'); return false;"
+        coords="656,445,674,463">
+  <area shape="rect"
+        href="1VYKZ9HLSI23YC404I80LItextIhtml"
+        onClick="popUpEvt(event,'1VYKZ9HLSI23YC404I80LItextIhtml'); return false;"
+        coords="2239,443,2257,461">
+  <area shape="rect"
+        href="1VYKXT8MLI53XDR5I3WDItextIhtml"
+        onClick="popUpEvt(event,'1VYKXT8MLI53XDR5I3WDItextIhtml'); return false;"
+        coords="457,573,475,591">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#transformaciones.html"
+             SRC="transformaciones.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1VYKW26SFIW9VDG2I1T9ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_skew "TITLE="">
+      skew
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKW1F58I137W7W2I1R9ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotate "TITLE="">
+      rotate
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKW1WXKI1NYD9Y2I1SCItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_scale "TITLE="">
+      scale
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKW0R5XIWT1QCMI1PNItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_translate "TITLE="">
+      translate
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKXTSHNIFR0C7PI3XYItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_skewy "TITLE="">
+      skewY
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKXJR5RIQ15S4HI3GLItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_scaleX "TITLE="">
+      escalarX
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKXL38DIYGSG3RI3MHItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_scaleY "TITLE="">
+      scaleY
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKYCZK5I14RPW71I4SCItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform-origin "TITLE="">
+      transform-origin
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKY0D31IRW1PTWI4D4ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_matrix1 "TITLE="">
+      matrix
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKZ9HLSI23YC404I80LItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_perspective1 "TITLE="">
+      perspective
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYKXT8MLI53XDR5I3WDItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_skewx "TITLE="">
+      skewX
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
