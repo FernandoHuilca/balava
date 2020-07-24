@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>EntityManger | Fundamentos de JAVA WEB </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Carlos Iniguez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-49"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Java Web</a></li>
+   <li><a href="introduccin.html" class="daddy">Introducción</a>
+   <ul class="other-section">
+      <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
+      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
+      <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
+   </ul>
+   </li>
+   <li><a href="instalacin_de_herramientas.html" class="daddy">Instalación de Herramientas</a>
+   <ul class="other-section">
+      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
+   </ul>
+   </li>
+   <li><a href="principios_tecnolgicos.html" class="daddy">Principios Tecnológicos</a>
+   <ul class="other-section">
+      <li><a href="servlets.html" class="daddy">Servlets</a>
+      <ul class="other-section">
+         <li><a href="ciclo_de_vida.html" class="no-ch">Ciclo de Vida</a></li>
+         <li><a href="servlet_hola_mundo.html" class="no-ch">Servlet: Hola Mundo</a></li>
+         <li><a href="recogiendo_parmetros.html" class="no-ch">Recogiendo parámetros</a></li>
+      </ul>
+      </li>
+      <li><a href="jsp.html" class="no-ch">JSP</a></li>
+      <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
+   <ul>
+      <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
+      <ul class="other-section">
+         <li><a href="singleton.html" class="no-ch">Singleton</a></li>
+      </ul>
+      </li>
+      <li><a href="patrones_de_acceso_a_datos.html" class="daddy">Patrones de Acceso a Datos</a>
+      <ul class="other-section">
+         <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
+         <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
+      </ul>
+      </li>
+      <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+      <li><a href="arquitectura.html" class="no-ch">Arquitectura</a></li>
+      <li id="active"><a href="entitymanger.html" class="active no-ch">EntityManger</a></li>
+      <li><a href="entidades.html" class="no-ch">Entidades</a></li>
+      <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
+      <li><a href="relaciones.html" class="daddy">Relaciones</a>
+      <ul class="other-section">
+         <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
+         <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
+         <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
+         <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
+         <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="daddy">Ejemplo Anotaciones: Clase Estudiante</a>
+      <ul class="other-section">
+         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+      </ul>
+      </li>
+      <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
+      <ul class="other-section">
+         <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
+      </ul>
+      </li>
+      <li><a href="jpql.html" class="no-ch">JPQL</a></li>
+   </ul>
+   </li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="arquitectura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="entidades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">EntityManger</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id101">
+<div class="iDevice emphasis0">
+<div id="ta101_1" class="block iDevice_content">
+
+<p>
+A continuación se muestran las operaciones fundamentales del EntityManager.
+</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1" width="600">
+	<tbody>
+		<tr>
+			<td> <b>OPERACIÓN</b></td>
+			<td align="center"><b>DESCRIPCIÓN</b> </td>
+		</tr>
+		<tr>
+			<td> Persist</td>
+			<td>
+			<ul>
+				<li>(<b>Create</b>) Persiste en la BD un objeto entidad(@Entity ). </li>
+			</ul>
+			<ul>
+				<li>Persiste, también, todos los objetos relacionados, cuya relación haya sido anotada con CascadeType.PERSIST o CascadeType.ALL. </li>
+			</ul>
+			<ul>
+				<li>Se traduce en un INSERT en SQL, normalmente en la ejecución del commit(). </li>
+			</ul>
+			<ul>
+				<li>El objeto pasa al estado Managed.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td> Find</td>
+			<td>
+			<ul>
+				<li>(<b>Read</b>) Busca un objeto en la BD. </li>
+			</ul>
+			<ul>
+				<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td> Remove</td>
+			<td>
+			<ul>
+				<li>(<b>Delete</b>) Se borra el objeto de la BD (debe estar en estado Managed). </li>
+				<li>Después de realizar esta operación, el objeto queda en estado Removed. </li>
+				<li>Al terminar la transacción, se ejecuta una sentencia DELETE de SQL. </li>
+				<li>Se borran los objetos relacionados con la anotación: CascadeType.REMOVE o CascadeType.ALL</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td> Merge</td>
+			<td>
+			<ul>
+				<li>(<b>Update</b>) Actualiza el objeto en la BD. </li>
+				<li>Al terminar la transacción, se ejecuta una sentencia UPDATE en SQL. </li>
+				<li>El objeto no debe estar en estado Removed. </li>
+				<li>Después de ejecutar esta operación, el objeto queda en estado Managed. </li>
+				<li>Se actualizan los objetos relacionados con la anotación: CascadeType.MERGE o CascadeType.ALL</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td> Refresh</td>
+			<td>
+			<ul>
+				<li>Actualiza el objeto obteniendo los valores de sus atributos y relaciones de la BD. </li>
+				<li>Se ejecuta una sentencia SELECT en SQL. </li>
+				<li>Después de ejecutar esta operación, el objeto queda en estado Managed. </li>
+				<li>Se actualizan los objetos relacionados con la anotación: CascadeType.REFRESH o CascadeType.ALL</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td> Flush</td>
+			<td>
+			<ul>
+				<li>Sincroniza BD con el contexto de persistencia, es decir, actualiza los cambios realizados en el contexto en la BD</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+&nbsp;
+</p>
+
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-nc">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="arquitectura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="entidades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
