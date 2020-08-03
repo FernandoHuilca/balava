@@ -72,7 +72,7 @@
          <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
          <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
-         <li><a href="ejercicio0.html" class="no-ch">Ejercicio</a></li>
+         <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
          <li id="active"><a href="arquitectura.html" class="active daddy">Arquitectura</a>
          <ul>
             <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
@@ -89,11 +89,8 @@
             <li><a href="herencia.html" class="no-ch">Herencia</a></li>
          </ul>
          </li>
-         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="daddy">Ejemplo Anotaciones: Clase Estudiante</a>
-         <ul class="other-section">
-            <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
-         </ul>
-         </li>
+         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="no-ch">Ejemplo Anotaciones: Clase Estudiante</a></li>
+         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
          <li><a href="jpql.html" class="no-ch">JPQL</a></li>
       </ul>
       </li>
@@ -101,11 +98,6 @@
       <ul class="other-section">
          <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
          <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
-         <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
-         <ul class="other-section">
-            <li><a href="singleton.html" class="no-ch">Singleton</a></li>
-         </ul>
-         </li>
          <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
          <ul class="other-section">
             <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
@@ -119,7 +111,7 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="ejercicio0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="entitymanger.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ejercicio_creando_proyecto_jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="entitymanger.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
@@ -128,35 +120,24 @@
 <div class="iDevice_wrapper FreeTextIdevice" id="id99">
 <div class="iDevice emphasis0">
 <div id="ta99_1" class="block iDevice_content">
-
 <ul>
-	<li>Para iniciar JPA, se requiere el paquete <b><font color="#ff0000">javax.persistence</font></b> y todos sus &quot;imports&quot; (javax.persistence.*)</li>
+<li>Para iniciar JPA, se requiere el paquete <b><span style="color: #ff0000;">javax.persistence</span></b> y todos sus "imports" (javax.persistence.*)</li>
 </ul>
-<div style="text-align: center">
-<img src="8.jpg" height="254" width="399" />
-</div>
+<div style="text-align: center;"><img src="8.jpg" height="254" width="399" /></div>
 <ul>
-	<li><b>Clase Persistence.</b> Contiene métodos estáticos para obtener una instancia de EntityManagerFactory de una forma independiente a la implementación de JPA.</li>
-	<li><b>EntityManager</b>. Esta clase es la encargada de gestionar las entidades.
-	<ul>
-		<li>Normalmente, una entidad es una tabla. </li>
-		<li>Cada instancia que creamos del gestor, se asocia a un contexto de persistencia diferente. </li>
-		<li>Funcionalidad :
-		<ul>
-			<li>Especificar el proveedor de persistencia a partir del fichero persistence.xml</li>
-			<li>Crear y eliminar instancias de las entidades persistentes</li>
-			<li>Buscar entidades a partir de su clave</li>
-			<li>Permitir consultas</li>
-			<li>Gestionar la caché...</li>
-		</ul>
-		</li>
-	</ul>
-	</li>
-	<li><b>EntityTransaction</b>. Gestiona las transacciones</li>
-	<li><b>Query</b>. Gestiona las consultas. Se estandariza mediante el lenguaje JPQL y SQL</li>
-	<li><b>Criteria API</b>. Es un metamodelo de Java para la creación de JPQL. Facilita lacomprobación y la generalización</li>
+<li><b>Persistence.</b> La clase Persistence contiene métodos estáticos para obtener una instancia de EntityManagerFactory.</li>
+<li><b>EntityManagerFactory.</b> Nos ayuda a crear objetos de EntityManager utilizando el patrón de diseño Factory.</li>
+<li><b>EntityManager</b>. Es la interfaz principal de JPA; utilizada para la persistencia de las aplicaciones. Esta clase es la encargada de gestionar las entidades, es decir los objetos persistentes, a través de operaciones CRUD (create, read, update y delete).
+<ul>
+<li>Normalmente, una entidad es una tabla.</li>
+<li>Cada instancia que creamos del gestor se asocia a un contexto de persistencia diferente.</li>
 </ul>
-
+</li>
+<li><b>Entity</b>. Es una anotación Java que se coloca a nivel de las clases Java serializables y que cada objeto (instancia) de una de estas clases anotadas representa un registro de una base de datos.</li>
+<li><b>EntityTransaction</b>. Permite operaciones sobre datos persistentes de manera que agrupados formen una unidad de trabajo transaccional, en el que todo el grupo sincroniza su estado de persistencia en la base de datos o todos fallan en el intento. En caso de fallo, la base quedará en su estado original.</li>
+<li><b>Query</b>. Gestiona las consultas. Estandariza las consultas mediante el lenguaje JPQL y SQL. Se puede obtener una instancia de Query a partir de un Entity Manager.</li>
+<li><b>Criteria API</b>. Es un metamodelo de Java para la creación de JPQL. Facilita la comprobación y la generalización</li>
+</ul>
 </div>
 </div>
 </div>
@@ -209,7 +190,7 @@ Dentro del paquete se encuentra:<br />
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="ejercicio0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="entitymanger.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ejercicio_creando_proyecto_jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="entitymanger.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

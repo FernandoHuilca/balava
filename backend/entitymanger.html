@@ -72,7 +72,7 @@
          <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
          <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
-         <li><a href="ejercicio0.html" class="no-ch">Ejercicio</a></li>
+         <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
          <li class="current-page-parent"><a href="arquitectura.html" class="current-page-parent daddy">Arquitectura</a>
          <ul>
             <li id="active"><a href="entitymanger.html" class="active no-ch">EntityManger</a></li>
@@ -89,11 +89,8 @@
             <li><a href="herencia.html" class="no-ch">Herencia</a></li>
          </ul>
          </li>
-         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="daddy">Ejemplo Anotaciones: Clase Estudiante</a>
-         <ul class="other-section">
-            <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
-         </ul>
-         </li>
+         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="no-ch">Ejemplo Anotaciones: Clase Estudiante</a></li>
+         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
          <li><a href="jpql.html" class="no-ch">JPQL</a></li>
       </ul>
       </li>
@@ -101,11 +98,6 @@
       <ul class="other-section">
          <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
          <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
-         <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
-         <ul class="other-section">
-            <li><a href="singleton.html" class="no-ch">Singleton</a></li>
-         </ul>
-         </li>
          <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
          <ul class="other-section">
             <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
@@ -128,92 +120,86 @@
 <div class="iDevice_wrapper FreeTextIdevice" id="id101">
 <div class="iDevice emphasis0">
 <div id="ta101_1" class="block iDevice_content">
-
-<p>
-A continuación se muestran las operaciones fundamentales del EntityManager.
-</p>
+<p>A través del EntityManager se pueden realizar las siguientes operaciones.</p>
 <table align="center" border="1" cellpadding="1" cellspacing="1" width="600">
-	<tbody>
-		<tr>
-			<td> <b>OPERACIÓN</b></td>
-			<td align="center"><b>DESCRIPCIÓN</b> </td>
-		</tr>
-		<tr>
-			<td> Persist</td>
-			<td>
-			<ul>
-				<li>(<b>Create</b>) Persiste en la BD un objeto entidad(@Entity ). </li>
-			</ul>
-			<ul>
-				<li>Persiste, también, todos los objetos relacionados, cuya relación haya sido anotada con CascadeType.PERSIST o CascadeType.ALL. </li>
-			</ul>
-			<ul>
-				<li>Se traduce en un INSERT en SQL, normalmente en la ejecución del commit(). </li>
-			</ul>
-			<ul>
-				<li>El objeto pasa al estado Managed.</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td> Find</td>
-			<td>
-			<ul>
-				<li>(<b>Read</b>) Busca un objeto en la BD. </li>
-			</ul>
-			<ul>
-				<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td> Remove</td>
-			<td>
-			<ul>
-				<li>(<b>Delete</b>) Se borra el objeto de la BD (debe estar en estado Managed). </li>
-				<li>Después de realizar esta operación, el objeto queda en estado Removed. </li>
-				<li>Al terminar la transacción, se ejecuta una sentencia DELETE de SQL. </li>
-				<li>Se borran los objetos relacionados con la anotación: CascadeType.REMOVE o CascadeType.ALL</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td> Merge</td>
-			<td>
-			<ul>
-				<li>(<b>Update</b>) Actualiza el objeto en la BD. </li>
-				<li>Al terminar la transacción, se ejecuta una sentencia UPDATE en SQL. </li>
-				<li>El objeto no debe estar en estado Removed. </li>
-				<li>Después de ejecutar esta operación, el objeto queda en estado Managed. </li>
-				<li>Se actualizan los objetos relacionados con la anotación: CascadeType.MERGE o CascadeType.ALL</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td> Refresh</td>
-			<td>
-			<ul>
-				<li>Actualiza el objeto obteniendo los valores de sus atributos y relaciones de la BD. </li>
-				<li>Se ejecuta una sentencia SELECT en SQL. </li>
-				<li>Después de ejecutar esta operación, el objeto queda en estado Managed. </li>
-				<li>Se actualizan los objetos relacionados con la anotación: CascadeType.REFRESH o CascadeType.ALL</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td> Flush</td>
-			<td>
-			<ul>
-				<li>Sincroniza BD con el contexto de persistencia, es decir, actualiza los cambios realizados en el contexto en la BD</li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
+<tbody>
+<tr>
+<td><b>OPERACIÓN</b></td>
+<td align="center"><b>DESCRIPCIÓN</b></td>
+</tr>
+<tr>
+<td>Persist</td>
+<td>
+<ul>
+<li>(<b>Create</b>) Persiste en la BD un objeto entidad(@Entity ).</li>
+</ul>
+<ul>
+<li>Persiste, también, todos los objetos relacionados, cuya relación haya sido anotada con CascadeType.PERSIST o CascadeType.ALL.</li>
+</ul>
+<ul>
+<li>Se traduce en un INSERT en SQL, normalmente en la ejecución del commit().</li>
+</ul>
+<ul>
+<li>El objeto pasa al estado Managed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Find</td>
+<td>
+<ul>
+<li>(<b>Read</b>) Busca un objeto en la BD.</li>
+</ul>
+<ul>
+<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Remove</td>
+<td>
+<ul>
+<li>(<b>Delete</b>) Se borra el objeto de la BD (debe estar en estado Managed).</li>
+<li>Después de realizar esta operación, el objeto queda en estado Removed.</li>
+<li>Al terminar la transacción, se ejecuta una sentencia DELETE de SQL.</li>
+<li>Se borran los objetos relacionados con la anotación: CascadeType.REMOVE o CascadeType.ALL</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Merge</td>
+<td>
+<ul>
+<li>(<b>Update</b>) Actualiza el objeto en la BD.</li>
+<li>Al terminar la transacción, se ejecuta una sentencia UPDATE en SQL.</li>
+<li>El objeto no debe estar en estado Removed.</li>
+<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
+<li>Se actualizan los objetos relacionados con la anotación: CascadeType.MERGE o CascadeType.ALL</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Refresh</td>
+<td>
+<ul>
+<li>Actualiza el objeto obteniendo los valores de sus atributos y relaciones de la BD.</li>
+<li>Se ejecuta una sentencia SELECT en SQL.</li>
+<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
+<li>Se actualizan los objetos relacionados con la anotación: CascadeType.REFRESH o CascadeType.ALL</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Flush</td>
+<td>
+<ul>
+<li>Sincroniza BD con el contexto de persistencia, es decir, actualiza los cambios realizados en el contexto en la BD</li>
+</ul>
+</td>
+</tr>
+</tbody>
 </table>
-<p>
-&nbsp;
-</p>
-
+<p> </p>
 </div>
 </div>
 </div>
