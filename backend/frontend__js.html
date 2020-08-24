@@ -1,28 +1,26 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
-<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>POM | Fundamentos de JAVA WEB </title>
+<title>FrontEnd - JS | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
-<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
-<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-125"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-124"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
-<nav id="siteNav">
+<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
+<div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -142,112 +140,33 @@
       </li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="proyecto_final.html" class="current-page-parent daddy">PROYECTO FINAL</a>
-   <ul>
-      <li id="active"><a href="pom.html" class="active no-ch">POM</a></li>
-      <li><a href="base_de_datos.html" class="daddy">BASE DE DATOS</a>
-      <ul class="other-section">
-         <li><a href="script_de_creacin.html" class="no-ch">Script de Creación</a></li>
-      </ul>
-      </li>
-      <li><a href="modelo.html" class="no-ch">MODELO</a></li>
-   </ul>
-   </li>
+   <li id="active"><a href="frontend__js.html" class="active no-ch">FrontEnd - JS</a></li>
 </ul>
-</nav>
+</div>
 <div id='topPagination'>
-<nav class="pagination noprt">
-<a href="proyecto_final.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="base_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</nav>
+<div class="pagination noprt">
+<a href="ejercicio_4_crud.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</div>
 </div>
 <div id="main-wrapper">
-<section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">POM</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id164">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">FrontEnd - JS</h1></div>
+<div class="iDevice_wrapper textIdevice" id="id115">
 <div class="iDevice emphasis0" >
-<div id="ta164_108_2" class="block iDevice_content">
-<div class="exe-text"><div class="highlighted-code code-style-2 language-markup line-numbers">
-<div>
-<pre><code>&lt;dependencies&gt;
-
-		&lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-servlet --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
-			&lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
-			&lt;version&gt;2.31&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.inject/jersey-hk2 --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.glassfish.jersey.inject&lt;/groupId&gt;
-			&lt;artifactId&gt;jersey-hk2&lt;/artifactId&gt;
-			&lt;version&gt;2.31&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- BASE DE DATOS --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;mysql&lt;/groupId&gt;
-			&lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
-			&lt;version&gt;8.0.21&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- JAXB --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;
-			&lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;
-			&lt;version&gt;2.3.1&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- PERSISTENCIA --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.persistence&lt;/groupId&gt;
-			&lt;artifactId&gt;javax.persistence-api&lt;/artifactId&gt;
-			&lt;version&gt;2.2&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- JSTL --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.servlet/jstl --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
-			&lt;artifactId&gt;jstl&lt;/artifactId&gt;
-			&lt;version&gt;1.2&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- EclipseLink --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.eclipse.persistence&lt;/groupId&gt;
-			&lt;artifactId&gt;eclipselink&lt;/artifactId&gt;
-			&lt;version&gt;2.5.2&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- Javax JSON Bind API --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.json.bind/javax.json.bind-api --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.json.bind&lt;/groupId&gt;
-			&lt;artifactId&gt;javax.json.bind-api&lt;/artifactId&gt;
-			&lt;version&gt;1.0&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- Jackson para MessageBodyWriter --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
-			&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
-			&lt;version&gt;2.31&lt;/version&gt;
-		&lt;/dependency&gt;
-
-
-	&lt;/dependencies&gt;</code></pre>
+<div id="ta115_164_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><iframe width="900" height="675" src="https://ciniguez.github.io/balava/presentaciones/JS/" id="inlineFrameExample"></iframe></p></div>
 </div>
 </div>
-<p></p></div>
 </div>
-</div>
-</article>
 <div id="packageLicense" class="cc cc-by-nc">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
 </div>
-</section>
+</div>
 </div>
 <div id='bottomPagination'>
-<nav class="pagination noprt">
-<a href="proyecto_final.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="base_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</nav>
+<div class="pagination noprt">
+<a href="ejercicio_4_crud.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
 </div>
-<footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
+</div>
+<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
 <script type="text/javascript" src="_intef_js.js"></script></body></html>

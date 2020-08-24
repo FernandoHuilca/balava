@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
@@ -7,10 +7,10 @@
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
 <title>JPA | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
-<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -19,8 +19,8 @@
 <body class="exe-web-site" id="exe-node-43"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
-<nav id="siteNav">
+<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
+<div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -140,30 +140,20 @@
       </li>
    </ul>
    </li>
-   <li><a href="proyecto_final.html" class="daddy">PROYECTO FINAL</a>
-   <ul class="other-section">
-      <li><a href="pom.html" class="no-ch">POM</a></li>
-      <li><a href="base_de_datos.html" class="daddy">BASE DE DATOS</a>
-      <ul class="other-section">
-         <li><a href="script_de_creacin.html" class="no-ch">Script de Creación</a></li>
-      </ul>
-      </li>
-      <li><a href="modelo.html" class="no-ch">MODELO</a></li>
-   </ul>
-   </li>
+   <li><a href="frontend__js.html" class="no-ch">FrontEnd - JS</a></li>
 </ul>
-</nav>
+</div>
 <div id='topPagination'>
-<nav class="pagination noprt">
+<div class="pagination noprt">
 <a href="ejercicio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="jpa_en_la_arquitectura_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</nav>
+</div>
 </div>
 <div id="main-wrapper">
-<section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">JPA</h1></header>
-<article class="iDevice_wrapper ReflectionIdevice em_iDevice" id="id69">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">JPA</h1></div>
+<div class="iDevice_wrapper ReflectionIdevice em_iDevice" id="id69">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header"><h1 class="iDeviceTitle">Motivación de JPA</h1></header>
+<div class="iDevice_header"><h2 class="iDeviceTitle">Motivación de JPA</h2></div>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta69_8" class="block iDevice_content">
@@ -173,8 +163,8 @@
 <div class="block iDevice_buttons feedback-button js-required">
 <p><script type="text/javascript">var feedback69_9text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-69_9" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
 </div>
-<section id="feedback-69_9" class="feedback js-feedback js-hidden">
-<h1 class="js-sr-av">Retroalimentación</h1>
+<div id="feedback-69_9" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
 <ul>
 	<li><font face="arial,helvetica,sans-serif">
 	La <b>persistencia</b> o el <b>almacenamiento permanente</b>, es una de las necesidades básicas de cualquier sistema de información de cualquier tipo. Cómo hacemos esto?<br />
@@ -200,13 +190,13 @@ Debido a lo mencionado, aparecieron los motores de persistencia, <u>cuya funció
 <p>
 Fuente: http://www.lab.inf.uc3m.es/~a0080802/RAI/jpa.html
 </p>
-</section>
+</div>
 </form>
 </div>
 </div>
 </div>
-</article>
-<article class="iDevice_wrapper FreeTextIdevice" id="id74">
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id74">
 <div class="iDevice emphasis0">
 <div id="ta74_1" class="block iDevice_content">
 
@@ -243,16 +233,16 @@ Qué es JPA?</font></b>
 
 </div>
 </div>
-</article>
+</div>
 <div id="packageLicense" class="cc cc-by-nc">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
 </div>
-</section>
+</div>
 </div>
 <div id='bottomPagination'>
-<nav class="pagination noprt">
+<div class="pagination noprt">
 <a href="ejercicio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="jpa_en_la_arquitectura_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</nav>
 </div>
-<footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
+</div>
+<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
 <script type="text/javascript" src="_intef_js.js"></script></body></html>
