@@ -5,31 +5,30 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>FronEnd Javascript </title>
+<title>Modificando Hojas de estilo | FronEnd Javascript </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
-<meta name="description" content="Interfaz de usuario con Javascript" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">FronEnd Javascript</div></header>
 <nav id="siteNav">
 <ul>
-   <li id="active"><a href="index.html" class="active daddy main-node">FrontEnd (JavaScript)</a></li>
+   <li><a href="index.html" class="daddy main-node">FrontEnd (JavaScript)</a></li>
    <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
    <li><a href="ajax.html" class="no-ch">Ajax</a></li>
-   <li><a href="libreras_js.html" class="daddy">Librerías JS</a>
-   <ul class="other-section">
-      <li><a href="jquery.html" class="daddy">JQuery</a>
-      <ul class="other-section">
+   <li class="current-page-parent"><a href="libreras_js.html" class="current-page-parent daddy">Librerías JS</a>
+   <ul>
+      <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
+      <ul>
          <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
          <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
@@ -43,8 +42,8 @@
          <li><a href="modificando_atributos.html" class="no-ch">Modificando atributos</a></li>
          <li><a href="modificando_contenido.html" class="no-ch">Modificando contenido</a></li>
          <li><a href="formularios.html" class="no-ch">Formularios</a></li>
-         <li><a href="modificando_hojas_de_estilo.html" class="daddy">Modificando Hojas de estilo</a>
-         <ul class="other-section">
+         <li id="active"><a href="modificando_hojas_de_estilo.html" class="active daddy">Modificando Hojas de estilo</a>
+         <ul>
             <li><a href="ejercicio_redimensionamiento.html" class="no-ch">Ejercicio Redimensionamiento</a></li>
          </ul>
          </li>
@@ -62,12 +61,40 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="creacin_de_contenido_dinmico.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicio_redimensionamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">FrontEnd (JavaScript)</h1></header>
+<header id="nodeDecoration"><h1 id="nodeTitle">Modificando Hojas de estilo</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id15">
+<div class="iDevice emphasis0" >
+<div id="ta15_119_2" class="block iDevice_content">
+<div class="exe-text"><div><span><strong>css(nombre)</strong>:</span>  acceder a una propiedad de estilo (nombre) del primer elemento que se encuentra.</div>
+<pre style="padding-left: 60px;"><span style="font-size: 14pt;">$(“p”).css(“color”); </span></pre>
+<div><span><strong>css({propiedad de estilo})</strong>:</span> modificar las propiedades de estilo de un elemento dado</div>
+<pre style="padding-left: 60px;"><span style="font-size: 14pt;">$(“p”).css({color:”red”, background: “blue2});</span></pre>
+<div><strong>css(clave,valor)</strong>: Modifica las propiedades de estilo de un elemento dado.</div>
+<pre style="padding-left: 60px;"><span style="font-size: 14pt;">$(“p”).css(“color”,”red)”;<br /><br /></span></pre>
+<hr />
+<h2><span>Dimensionamiento</span></h2>
+<ul>
+<li>
+<div><strong>height()</strong></div>
+</li>
+<li>
+<div><strong>height(valor)</strong></div>
+</li>
+<li>
+<div><strong>width()</strong></div>
+</li>
+<li>
+<div><strong>width(valor)</strong></div>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>
@@ -75,7 +102,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="creacin_de_contenido_dinmico.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicio_redimensionamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

@@ -2,37 +2,38 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>FronEnd Javascript </title>
+<title>Iniciación | FronEnd Javascript </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
-<meta name="description" content="Interfaz de usuario con Javascript" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">FronEnd Javascript</div></header>
 <nav id="siteNav">
 <ul>
-   <li id="active"><a href="index.html" class="active daddy main-node">FrontEnd (JavaScript)</a></li>
+   <li><a href="index.html" class="daddy main-node">FrontEnd (JavaScript)</a></li>
    <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
    <li><a href="ajax.html" class="no-ch">Ajax</a></li>
-   <li><a href="libreras_js.html" class="daddy">Librerías JS</a>
-   <ul class="other-section">
-      <li><a href="jquery.html" class="daddy">JQuery</a>
-      <ul class="other-section">
+   <li class="current-page-parent"><a href="libreras_js.html" class="current-page-parent daddy">Librerías JS</a>
+   <ul>
+      <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
+      <ul>
          <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
-         <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
+         <li id="active"><a href="iniciacin.html" class="active no-ch">Iniciación</a></li>
          <li><a href="selectores.html" class="no-ch">Selectores</a></li>
          <li><a href="eventos.html" class="no-ch">Eventos</a></li>
          <li><a href="modificando_clases.html" class="daddy">Modificando clases</a>
@@ -62,12 +63,65 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="creacin_de_contenido_dinmico.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="instalacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="selectores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">FrontEnd (JavaScript)</h1></header>
+<header id="nodeDecoration"><h1 id="nodeTitle">Iniciación</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id3">
+<div class="iDevice emphasis0" >
+<div id="ta3_109_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>
+<div>Todos los scripts jQuery inician con:</div>
+</li>
+</ul>
+<div>
+<div class="highlighted-code language-js">
+<div>
+<pre><code>jQuery(function(){
+    //contenido que se ejecuta cuando se carga el documento
+});</code></pre>
+</div>
+</div>
+</div>
+<ul>
+<li>
+<div>Usando “$” como Alias de jQuery </div>
+</li>
+</ul>
+<div>
+<div class="highlighted-code language-js line-numbers">
+<div>
+<pre><code>$(function(){
+    //contenido que se ejecuta cuando se carga el documento
+});</code></pre>
+</div>
+</div>
+</div>
+<ul>
+<li>
+<div>Bajo este modelo, para utilizar los elementos del DOM una vez ya estén cargados, el script jQuery empieza por:</div>
+</li>
+</ul>
+<div>
+<div class="highlighted-code language-js line-numbers">
+<div>
+<pre><code>&lt;script&gt;
+$(document).ready(function(){ 
+    //codigo jQuery
+}):
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+</div>
+<div>En este último ejemplo, la línea 2 hace que se cargue el árbol DOM del documento en un objeto jQuery. Esta línea se puede traducir en:</div>
+<div style="text-align: center;"><strong> “Crear un objeto jQuery($) a partir del documento (document), cuando esté preparado (ready)”</strong></div>
+<div>La línea 2 sería equivalente a lo que en JavaScript tradicional se escribe como: <strong>window.onload = function()</strong></div></div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>
@@ -75,7 +129,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="creacin_de_contenido_dinmico.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="instalacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="selectores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

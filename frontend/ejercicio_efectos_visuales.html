@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Ejercicio: Efectos Visuales | FronEnd Javascript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Carlos Iñiguez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">FronEnd Javascript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">FrontEnd (JavaScript)</a></li>
+   <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
+   <li><a href="ajax.html" class="no-ch">Ajax</a></li>
+   <li class="current-page-parent"><a href="libreras_js.html" class="current-page-parent daddy">Librerías JS</a>
+   <ul>
+      <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
+      <ul>
+         <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+         <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+         <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
+         <li><a href="selectores.html" class="no-ch">Selectores</a></li>
+         <li><a href="eventos.html" class="no-ch">Eventos</a></li>
+         <li><a href="modificando_clases.html" class="daddy">Modificando clases</a>
+         <ul class="other-section">
+            <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
+         </ul>
+         </li>
+         <li><a href="modificando_atributos.html" class="no-ch">Modificando atributos</a></li>
+         <li><a href="modificando_contenido.html" class="no-ch">Modificando contenido</a></li>
+         <li><a href="formularios.html" class="no-ch">Formularios</a></li>
+         <li><a href="modificando_hojas_de_estilo.html" class="daddy">Modificando Hojas de estilo</a>
+         <ul class="other-section">
+            <li><a href="ejercicio_redimensionamiento.html" class="no-ch">Ejercicio Redimensionamiento</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="efectos_visuales.html" class="current-page-parent daddy">Efectos visuales</a>
+         <ul>
+            <li id="active"><a href="ejercicio_efectos_visuales.html" class="active no-ch">Ejercicio: Efectos Visuales</a></li>
+         </ul>
+         </li>
+         <li><a href="ajax0.html" class="no-ch">Ajax</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="efectos_visuales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ajax0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejercicio: Efectos Visuales</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id21">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Objetivos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta21_125_2" class="block iDevice_content">
+<p>Vamos a poner en práctica los métodos de animación:</p>
+<ul>
+<li>slideDown() , slideUp(), slideToggle()</li>
+</ul>
+<p>Instrucciones:</p>
+<ol>
+<li>Crea un fichero eventos.html</li>
+<li>Copia en el fichero eventos.html, el código propuesto.</li>
+<li>Visualiza el ejercicio y los efectos</li>
+</ol>
+<p><span style="font-size: 8pt;">Fuente del ejercicio: <a href="https://www.anerbarrena.com/jquery-slidedown-slideup-slidetoggle-3670/">https://www.anerbarrena.com/jquery-slidedown-slideup-slidetoggle-3670/</a></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id22">
+<div class="iDevice emphasis0" >
+<div id="ta22_126_2" class="block iDevice_content">
+<div class="exe-text"><div class="highlighted-code code-style-2 language-markup line-numbers">
+<div>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+        body{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        input{display: block;margin-top: 20px;}
+    &lt;/style&gt;
+    &lt;script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id="rectangulo" style="padding:20px 20px 20px 20px; background-color:#004488; color:#fff;"&gt;Rectángulo de Ejemplo&lt;/div&gt;
+    &lt;input type="button" id="up01" value="Ocultar con slideUp()"&gt;
+    &lt;input type="button" id="down01" value="Mostrar con slideDown()"&gt;
+    &lt;input type="button" id="up02" value="Ocultar con slideUp() en 4000 milisegundos"&gt;
+    &lt;input type="button" id="down02" value="Mostrar con slideDown() en 4000 milisegundos"&gt;
+    &lt;input type="button" id="up03" value="Ocultar con slideUp() con 'slow'"&gt;
+    &lt;input type="button" id="down03" value="Mostrar con slideDown() con 'fast'"&gt;
+    &lt;input type="button" id="up04" value="Ocultar con slideUp() con 'slow' y callback"&gt;
+    &lt;input type="button" id="down04" value="Mostrar con slideDown() con 'fast' y callback"&gt;
+    &lt;input type="button" id="toggle01" value="Mostrar / ocultar con slideToggle()"&gt;
+    &lt;input type="button" id="toggle02" value="Mostrar / ocultar con slideToggle() en 4000 milisengos"&gt;
+    &lt;input type="button" id="toggle03" value="Mostrar / ocultar con slideToggle() con 'slow' con callback"&gt;
+
+    &lt;script type="text/javascript"&gt;
+        $(document).ready(function () {
+            $("#down01").click(function (event) {
+                $("#rectangulo").slideDown();
+            });
+            $("#down02").click(function (event) {
+                $("#rectangulo").slideDown(4000);
+            });
+            $("#down03").click(function (event) {
+                $("#rectangulo").slideDown("fast");
+            });
+            $("#down04").click(function (event) {
+                $("#rectangulo").slideDown("fast", function () {
+                    alert('Efecto slideDown con velocidad fast terminado!');
+                });
+            });
+
+            $("#up01").click(function (event) {
+                $("#rectangulo").slideUp();
+            });
+            $("#up02").click(function (event) {
+                $("#rectangulo").slideUp(4000);
+            });
+            $("#up03").click(function (event) {
+                $("#rectangulo").slideUp("slow");
+            });
+            $("#up04").click(function (event) {
+                $("#rectangulo").slideUp("slow", function () {
+                    alert('Efecto slideUp con velocidad slow terminado!');
+                });
+            });
+
+            $("#toggle01").click(function (event) {
+                $("#rectangulo").slideToggle();
+            });
+            $("#toggle02").click(function (event) {
+                $("#rectangulo").slideToggle(4000);
+            });
+            $("#toggle03").click(function (event) {
+                $("#rectangulo").slideToggle("slow", function () {
+                    alert('Efecto slideToggle con velocidad slow terminado!');
+                });
+            });
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="efectos_visuales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ajax0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
