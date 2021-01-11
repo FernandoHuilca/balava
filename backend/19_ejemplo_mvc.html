@@ -2,29 +2,33 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Instalación | Segundo Bimestre AppWeb </title>
+<title>1.9 Ejemplo MVC | Segundo Bimestre AppWeb </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-132"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-87"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Segundo Bimestre AppWeb</div></div>
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">BIMESTRE II</a></li>
-   <li><a href="1_backend.html" class="daddy">1. BACKEND</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="1_backend.html" class="current-page-parent daddy">1. BACKEND</a>
+   <ul>
       <li><a href="11_patrn_de_arquitectura_mvc.html" class="no-ch">1.1 Patrón de Arquitectura MVC</a></li>
       <li><a href="12_mvc_en_escritorio.html" class="no-ch">1.2 MVC en Escritorio</a></li>
       <li><a href="13_mvc_en_web.html" class="no-ch">1.3 MVC en WEB</a></li>
@@ -52,7 +56,7 @@
       </ul>
       </li>
       <li><a href="18_javabeans.html" class="no-ch">1.8 JavaBeans</a></li>
-      <li><a href="19_ejemplo_mvc.html" class="no-ch">1.9 Ejemplo MVC</a></li>
+      <li id="active"><a href="19_ejemplo_mvc.html" class="active no-ch">1.9 Ejemplo MVC</a></li>
       <li><a href="110_persistencia.html" class="no-ch">1.10 Persistencia</a></li>
       <li><a href="111_jdbc.html" class="daddy">1.11 JDBC</a>
       <ul class="other-section">
@@ -122,17 +126,17 @@
       </li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="2_frontend_javascript.html" class="current-page-parent daddy">2. FRONTEND (JavaScript)</a>
-   <ul>
+   <li><a href="2_frontend_javascript.html" class="daddy">2. FRONTEND (JavaScript)</a>
+   <ul class="other-section">
       <li><a href="introduccin_a_js.html" class="no-ch">Introducción a JS</a></li>
       <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
       <li><a href="ajax.html" class="no-ch">Ajax</a></li>
-      <li class="current-page-parent"><a href="libreras_js.html" class="current-page-parent daddy">Librerías JS</a>
-      <ul>
-         <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
-         <ul>
+      <li><a href="libreras_js.html" class="daddy">Librerías JS</a>
+      <ul class="other-section">
+         <li><a href="jquery.html" class="daddy">JQuery</a>
+         <ul class="other-section">
             <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-            <li id="active"><a href="instalacin.html" class="active no-ch">Instalación</a></li>
+            <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
             <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
             <li><a href="selectores.html" class="no-ch">Selectores</a></li>
             <li><a href="eventos.html" class="no-ch">Eventos</a></li>
@@ -191,47 +195,226 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="18_javabeans.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="110_persistencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Instalación</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id167">
-<div class="iDevice emphasis0" >
-<div id="ta167_109_2" class="block iDevice_content">
-<div class="exe-text"><div class=" diapositiva" style="margin: 0 auto;">
+<div id="nodeDecoration"><h1 id="nodeTitle">1.9 Ejemplo MVC</h1></div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id84">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio: Implementación MVC</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta84_110_2" class="block iDevice_content">
+<p>El objetivo de este ejercicio es llevar a la práctica los conocimientos hasta aquí estudiados. Implementaremos una aplicación que consulta los datos de una persona. Seguiremos el patrón MVC, como lo muestra la figura, ubicando cada uno de los conceptos aprendidos:</p>
 <ul>
-<li>Local
-<ol>
-<li>Acceder a <a href="https://jquery.com/download/">https://jquery.com/download/</a></li>
-<li>Escoger la versión
-<ul>
-<li>Existen versiones comprimidas y no comprimidas:</li>
-<li>Versión no comprimida recomendable para “desarrollo”</li>
-<li>Versión comprimida recomendable para “producción”</li>
+<li>Servlets como controladores,</li>
+<li>JSP como vistas y</li>
+<li>JavaBeans como el modelo.</li>
 </ul>
-</li>
-<li>Abrir fichero en el Navegador</li>
-<li>Guardar fichero (“Guardar como …” ) en el directorio del proyecto.</li>
+<p>Para facilidad de entendimiento, en este ejercicio se provee el código de cada punto mencionado.</p>
+<hr />
+<p><b>Instrucciones</b></p>
+<ol>
+<li><strong>Crea un Dynamic Web Project con el nombre: mvc_1_persona</strong></li>
+<li><strong>Crea un paquete com.modelo</strong>
+<ol>
+<li><strong>Crea el Java Bean: Persona, dentro del paquete</strong></li>
 </ol>
 </li>
-<li>Por CDN
-<ul>
-<li>&lt;script src=<a href="http://code.jquery.com/jquery-numero%20de%20versión.min.js">http://code.jquery.com/jquery-numero de versión.min.js</a>&gt;&lt;/script&gt;</li>
-</ul>
+<li><strong>Crea un paquete com.controlador</strong>
+<ol>
+<li><strong>Crea el Servlet: PersonaController, dentro del paquete</strong><strong></strong></li>
+</ol>
 </li>
-<li>API de Google
-<ul>
-<li>
-<div>
-<div><span>&lt;</span><span>script</span><span> </span><span>type</span><span>=</span><span>'text/javascript'</span><span> </span><span>src</span><span>=</span><span>"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"</span><span>&gt;&lt;/</span><span>script</span><span>&gt;</span></div>
+<li><strong>En el directorio WebContent, crea un directorio denominado JSPs que contenga:</strong>
+<ol>
+<li><strong>pagina persona.jsp</strong></li>
+</ol>
+</li>
+</ol>
 </div>
-</li>
-</ul>
-</li>
-</ul>
-</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice" id="id70">
+<div class="iDevice emphasis0" >
+<div id="ta70_117_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="MVC.svg" width="751" height="389" alt="Arquitectura MVC ejemplo Persona" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id71">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Modelo: javabeans</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta71_118_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Modelo: Persona (JavaBean)</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.modelo;
+
+import java.io.Serializable;
+
+public class Persona implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	private int id;
+	private String nombre;
+	private String[] idiomas = {"es", "en"};
+	
+	//Constructor sin parámetros y obligatorio
+	public Persona() {}
+	public Persona(int id, String nombre) {
+		this.setId(id);
+		this.setNombre(nombre);
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String[] getIdiomas() {
+		return idiomas;
+	}
+	public void setIdiomas(String[] idiomas) {
+		this.idiomas = idiomas;
+	}
+	
+
+}</code></pre>
+</div>
+</div>
+<p></p>
+<h2>Controlador: PersonaController (servlet)</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.controlador;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ec.edu.epn.modelo.Persona;
+
+@WebServlet("/PersonaController")
+public class PersonaController extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		Persona persona = new Persona();
+		String url;
+		try {
+			persona.setId(Integer.valueOf(req.getParameter("id")));
+			persona.setNombre(req.getParameter("nombre"));
+			req.setAttribute("persona", persona);
+			url = "/JSPs/persona.jsp";
+		} catch (Exception e) {
+			url = "/JSPs/error.jsp";
+		}
+		//reenvia datos a persona.jsp
+		getServletContext().getRequestDispatcher(url).forward(req, resp);
+
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	}
+
+	private static final long serialVersionUID = 1L;
+
+}
+</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<h2>Vista: persona.jsp (JSP + JSTL)</h2>
+<p>persona.jsp</p>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%&gt;
+&lt;%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;JSTL&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Uso de JSTLs&lt;/h1&gt;
+	&lt;h2&gt;Acceso a Objetos&lt;/h2&gt;
+	&lt;c:set var="p1" value="${requestScope['persona']}" /&gt;
+	&lt;c:set var="p2" scope="request" value="${persona}" /&gt;
+	&lt;c:set var="p3" scope="session" value="${persona}" /&gt;
+
+	&lt;p&gt;Id: ${p1.id}&lt;/p&gt;
+	&lt;p&gt;Nombre: ${p1.nombre}&lt;/p&gt;
+
+	&lt;h2&gt;Sentencia if&lt;/h2&gt;
+
+	&lt;c:if test="${p1.id == 666}"&gt;
+		&lt;p&gt;Dentro del if: es un demonio&lt;/p&gt;
+	&lt;/c:if&gt;
+
+	&lt;h2&gt;Sentencia Switch&lt;/h2&gt;
+
+	&lt;c:choose&gt;
+		&lt;c:when test="${p1.id==1}"&gt;Es 1&lt;/c:when&gt;
+		&lt;c:when test="${p1.id==2}"&gt;Es 2&lt;/c:when&gt;
+		&lt;c:otherwise&gt;
+			&lt;p&gt;Es mayor que 2&lt;/p&gt;
+		&lt;/c:otherwise&gt;
+	&lt;/c:choose&gt;
+
+	&lt;h2&gt;Colecciones&lt;/h2&gt;
+	&lt;p&gt;Idiomas:&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;c:forEach var="idioma" items="${p1.idiomas}"&gt;
+			&lt;li&gt;${idioma}&lt;/li&gt;
+		&lt;/c:forEach&gt;
+	&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<p>error.jsp</p>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;MVC - java&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Respuesta del controlador&lt;/h1&gt;
+	&lt;p&gt;Error. Se debe añadir a la URL: ?id=666&amp;nombre=uno&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+</div>
+<p></p></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -242,7 +425,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="18_javabeans.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="110_persistencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

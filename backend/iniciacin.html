@@ -2,21 +2,23 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Instalación | Segundo Bimestre AppWeb </title>
+<title>Iniciación | Segundo Bimestre AppWeb </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-132"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-133"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Segundo Bimestre AppWeb</div></div>
@@ -132,8 +134,8 @@
          <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
          <ul>
             <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-            <li id="active"><a href="instalacin.html" class="active no-ch">Instalación</a></li>
-            <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
+            <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+            <li id="active"><a href="iniciacin.html" class="active no-ch">Iniciación</a></li>
             <li><a href="selectores.html" class="no-ch">Selectores</a></li>
             <li><a href="eventos.html" class="no-ch">Eventos</a></li>
             <li><a href="modificando_clases.html" class="daddy">Modificando clases</a>
@@ -191,47 +193,62 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="instalacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="selectores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Instalación</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id167">
+<div id="nodeDecoration"><h1 id="nodeTitle">Iniciación</h1></div>
+<div class="iDevice_wrapper textIdevice" id="id168">
 <div class="iDevice emphasis0" >
-<div id="ta167_109_2" class="block iDevice_content">
-<div class="exe-text"><div class=" diapositiva" style="margin: 0 auto;">
-<ul>
-<li>Local
-<ol>
-<li>Acceder a <a href="https://jquery.com/download/">https://jquery.com/download/</a></li>
-<li>Escoger la versión
-<ul>
-<li>Existen versiones comprimidas y no comprimidas:</li>
-<li>Versión no comprimida recomendable para “desarrollo”</li>
-<li>Versión comprimida recomendable para “producción”</li>
+<div id="ta168_109_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>
+<div>Todos los scripts jQuery inician con:</div>
+</li>
 </ul>
-</li>
-<li>Abrir fichero en el Navegador</li>
-<li>Guardar fichero (“Guardar como …” ) en el directorio del proyecto.</li>
-</ol>
-</li>
-<li>Por CDN
-<ul>
-<li>&lt;script src=<a href="http://code.jquery.com/jquery-numero%20de%20versión.min.js">http://code.jquery.com/jquery-numero de versión.min.js</a>&gt;&lt;/script&gt;</li>
-</ul>
-</li>
-<li>API de Google
+<div>
+<div class="highlighted-code language-js">
+<div>
+<pre><code>jQuery(function(){
+    //contenido que se ejecuta cuando se carga el documento
+});</code></pre>
+</div>
+</div>
+</div>
 <ul>
 <li>
+<div>Usando “$” como Alias de jQuery </div>
+</li>
+</ul>
 <div>
-<div><span>&lt;</span><span>script</span><span> </span><span>type</span><span>=</span><span>'text/javascript'</span><span> </span><span>src</span><span>=</span><span>"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"</span><span>&gt;&lt;/</span><span>script</span><span>&gt;</span></div>
+<div class="highlighted-code language-js line-numbers">
+<div>
+<pre><code>$(function(){
+    //contenido que se ejecuta cuando se carga el documento
+});</code></pre>
 </div>
+</div>
+</div>
+<ul>
+<li>
+<div>Bajo este modelo, para utilizar los elementos del DOM una vez ya estén cargados, el script jQuery empieza por:</div>
 </li>
 </ul>
-</li>
-</ul>
-</div></div>
+<div>
+<div class="highlighted-code language-js line-numbers">
+<div>
+<pre><code>&lt;script&gt;
+$(document).ready(function(){ 
+    //codigo jQuery
+}):
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+</div>
+<div>En este último ejemplo, la línea 2 hace que se cargue el árbol DOM del documento en un objeto jQuery. Esta línea se puede traducir en:</div>
+<div style="text-align: center;"><strong> “Crear un objeto jQuery($) a partir del documento (document), cuando esté preparado (ready)”</strong></div>
+<div>La línea 2 sería equivalente a lo que en JavaScript tradicional se escribe como: <strong>window.onload = function()</strong></div></div>
 </div>
 </div>
 </div>
@@ -242,7 +259,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="instalacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="selectores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

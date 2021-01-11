@@ -2,21 +2,23 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Instalación | Segundo Bimestre AppWeb </title>
+<title>Práctica JS | Segundo Bimestre AppWeb </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-132"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-146"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Segundo Bimestre AppWeb</div></div>
@@ -129,10 +131,10 @@
       <li><a href="ajax.html" class="no-ch">Ajax</a></li>
       <li class="current-page-parent"><a href="libreras_js.html" class="current-page-parent daddy">Librerías JS</a>
       <ul>
-         <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
-         <ul>
+         <li><a href="jquery.html" class="daddy">JQuery</a>
+         <ul class="other-section">
             <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-            <li id="active"><a href="instalacin.html" class="active no-ch">Instalación</a></li>
+            <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
             <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
             <li><a href="selectores.html" class="no-ch">Selectores</a></li>
             <li><a href="eventos.html" class="no-ch">Eventos</a></li>
@@ -157,7 +159,7 @@
             <li><a href="ajax0.html" class="no-ch">Ajax</a></li>
          </ul>
          </li>
-         <li><a href="prctica_js.html" class="no-ch">Práctica JS</a></li>
+         <li id="active"><a href="prctica_js.html" class="active no-ch">Práctica JS</a></li>
       </ul>
       </li>
    </ul>
@@ -191,47 +193,248 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ajax0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_cms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Instalación</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id167">
-<div class="iDevice emphasis0" >
-<div id="ta167_109_2" class="block iDevice_content">
-<div class="exe-text"><div class=" diapositiva" style="margin: 0 auto;">
-<ul>
-<li>Local
-<ol>
-<li>Acceder a <a href="https://jquery.com/download/">https://jquery.com/download/</a></li>
-<li>Escoger la versión
-<ul>
-<li>Existen versiones comprimidas y no comprimidas:</li>
-<li>Versión no comprimida recomendable para “desarrollo”</li>
-<li>Versión comprimida recomendable para “producción”</li>
-</ul>
-</li>
-<li>Abrir fichero en el Navegador</li>
-<li>Guardar fichero (“Guardar como …” ) en el directorio del proyecto.</li>
-</ol>
-</li>
-<li>Por CDN
-<ul>
-<li>&lt;script src=<a href="http://code.jquery.com/jquery-numero%20de%20versión.min.js">http://code.jquery.com/jquery-numero de versión.min.js</a>&gt;&lt;/script&gt;</li>
-</ul>
-</li>
-<li>API de Google
-<ul>
-<li>
-<div>
-<div><span>&lt;</span><span>script</span><span> </span><span>type</span><span>=</span><span>'text/javascript'</span><span> </span><span>src</span><span>=</span><span>"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"</span><span>&gt;&lt;/</span><span>script</span><span>&gt;</span></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Práctica JS</h1></div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice" id="id187">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Objetivos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta187_109_2" class="block iDevice_content">
+<p>En esta práctica te propongo realizar un formulario de Registro dentro del proyecto "Tutorías" y validar los controles del formulario usando JS o jQuery.</p>
+<p>La Imagen siguiente muestra el formulario que se persigue:</p>
+<p><img src="m2_img0.1.png" width="691" height="630" alt="Formulario registro - practica" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Las instrucciones de la práctica para lograr el formulario de la figura se encuentran a continuación. </p>
+<p>NOTA: La última columna de la tabla muestra el puntaje a obtener por el logro de cada requerimiento.</p>
 </div>
-</li>
-</ul>
-</li>
-</ul>
-</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id188">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header" style="background-image:url(icon_stars.png)"><h2 class="iDeviceTitle">Práctica: Validación de Formulario de Registro</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta188_108_2" class="block iDevice_content">
+<div class="exe-text"><p></p>
+<table style="width: 841px; border-style: solid; border-color: #000000; margin-left: auto; margin-right: auto;" border="1">
+<thead>
+<tr style="border-style: solid; border-color: #000000;">
+<td style="width: 48px;">
+<p>Cod.</p>
+</td>
+<td style="width: 671px;">
+<p>Descripción</p>
+</td>
+<td style="width: 100px;">
+<p>Puntuación</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr style="border-style: solid; border-color: #000000;">
+<td style="width: 48px;">
+<p>1</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Crear un formulario de registro</strong> en la aplicación tutorías. Crear el controlador respectivo para el funcionamiento. El formulario debe consistir en los campos indicados en la figura. Respetar el nombre de los controles (color verde) y los “placeholders”. Los cambos txtNombre, txtApellido, txtCorreo, txtClave, txtClaveConfirmacion deben ser requeridos.</p>
+<p>En el tag &lt;form&gt; incluir el manejador de evento: onsubmit:</p>
+<div class="highlighted-code code-style-2 language-markup line-numbers">
+<div>
+<pre><code>&lt;form id="formulario-registro" … onsubmit="return validar();"&gt;</code></pre>
+</div>
+</div>
+</td>
+<td style="width: 100px;">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>2</p>
+</td>
+<td style="width: 671px;">
+<p>Crear los siguientes directorios: WebContent/js y WebContent/css. En el primer directorio crear un fichero con el nombre “<strong>validaciones.js</strong>”. En el segundo directorio crear un fichero con el nombre “<strong>estilos.css</strong>”.</p>
+</td>
+<td style="width: 100px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="width: 831px;">
+<p><strong>Validaciones ejecutadas al pulsar botón “Registrarse”</strong>. - Las validaciones deben ser codificadas en el fichero WebContent/js/validaciones.js. Para las validaciones puedes utilizar jQuery o JS tradicional.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>3</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Longitud de textos:</strong> El texto introducido en txtNombre y txtApellido deben tener una longitud mínima de 2 caracteres.</p>
+</td>
+<td style="width: 100px;">
+<p>0,5</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>4</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Correo: </strong>El texto introducido en txtCorreo debe contener el símbolo “@”.</p>
+</td>
+<td style="width: 100px;">
+<p>0,5</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>5</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Contraseñas iguales: </strong>el texto en txtClaveConfirmacion debe ser igual que el introducido en txtClave.</p>
+</td>
+<td style="width: 100px;">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>6</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Completitud: </strong>Las listas desplegables, excepto cmbDepartamento, deben tener una opción con el texto “Seleccione …” como se muestra en la figura. Esta opción debe tener el valor “-1” y debe estar seleccionada por defecto. Antes de enviar el formulario, se debe validar, que la opción seleccionada en la lista sea diferente al valor = -1.</p>
+</td>
+<td style="width: 100px;">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>7</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Solo números: </strong>el txtOficina debe aceptar únicamente números. Por ejemplo, una oficina “4005C” no es permitida. La función JS para validar si un parámetro es número es la siguiente:</p>
+<div class="highlighted-code code-style-2 language-js line-numbers">
+<div>
+<pre><code>function isNumber(n) {
+         return !isNaN(parseFloat(n)) &amp;&amp; isFinite(n);
+}</code></pre>
+</div>
+</div>
+</td>
+<td style="width: 100px;">
+<p>0,5</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>8</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Mensajes de Error:</strong> Cada vez que se pulsa el botón “Registrarse” debe suceder dos cosas:</p>
+<p>1.- Los errores en la validación deben presentarse en pantalla a través del &lt;div id=”salida”&gt;&lt;/div&gt;, indicado en el anexo. El div “salida” debe indicar los textos de validación en color rojo.</p>
+<p>NOTA: Cada vez que se pulsa el botón “Registrarse” se debe limpiar el contenido del div “salida”.</p>
+<p>2.- Cada control que presente problema en la validación debe incluir la clase “input-error”. Esta regla de estilo debe estar escrita en el fichero WebContent/css/estilos.css</p>
+<div class="highlighted-code code-style-2 language-css line-numbers">
+<div>
+<pre><code>.input-error{
+         border: 1px solid red;
+         background: #EEEEEE;
+}</code></pre>
+</div>
+</div>
+</td>
+<td style="width: 100px;">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>9 </p>
+</td>
+<td style="width: 671px;">
+<p><strong>Número de Cédula:</strong> El número introducido en txtCedula debe ser una cedula válida. Se provee la función que valida una cédula válida:</p>
+<div class="highlighted-code code-style-2 language-js line-numbers">
+<div>
+<pre><code>function validarCedula(cedula) {
+         var cad = cedula.trim();
+         var total = 0;
+         var longitud = cad.length;
+         var longcheck = longitud - 1;
+
+         if (cad !== "" &amp;&amp; longitud === 10) {
+                  for (i = 0; i &lt; longcheck; i++) {
+                           if (i % 2 === 0) {
+                                    var aux = cad.charAt(i) * 2;
+                                    if (aux &gt; 9)
+                                            aux -= 9;
+                                    total += aux;
+                           } else {
+                                    total += parseInt(cad.charAt(i));
+                           }
+                  }
+
+                  total = total % 10 ? 10 - total % 10 : 0;
+
+                  if (cad.charAt(longitud - 1) == total) {
+                           return true;
+                  } else {
+                           return false;
+                  }
+         }
+}</code></pre>
+</div>
+</div>
+</td>
+<td style="width: 100px;">
+<p>0,5</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p> </p>
+</td>
+<td style="width: 671px;">
+<p><strong>Funcionalidades durante el ingreso a datos</strong></p>
+</td>
+<td style="width: 100px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>10</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Solo mayúsculas:</strong> Cada vez que se introduce un caracter en los controles txtNombre y txtApellido, el caracter debe transformase a Mayúsculas.</p>
+</td>
+<td style="width: 100px;">
+<p>0,5</p>
+</td>
+</tr>
+<tr>
+<td style="width: 48px;">
+<p>11</p>
+</td>
+<td style="width: 671px;">
+<p><strong>Selección de Perfil:</strong></p>
+<p>Dependiendo de la opción (“Estudiante” o “Docente”) seleccionada en el cmbPerfil, debe mostrarse el sector indicado con líneas entrecortadas como se indica con las líneas curvas entre el cmbPerfil y los sectores con línea entrecortada. Si un sector se muestra, el otro debe ocultarse. Si está seleccionada la opción “Seleccionar Perfil”, no debe aparecer ningún sector. En las validaciones indicadas posteriormente, considere únicamente la validación de los controles visibles. La funcionalidad de Selección Perfil debe ser codificada en el fichero WebContent/js/validaciones.js</p>
+</td>
+<td style="width: 100px;">
+<p>1,5</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -242,7 +445,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ajax0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_cms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

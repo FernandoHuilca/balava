@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Instalación | Segundo Bimestre AppWeb </title>
+<title>1.12 JPA | Segundo Bimestre AppWeb </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
@@ -16,15 +16,15 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-132"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-43"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Segundo Bimestre AppWeb</div></div>
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">BIMESTRE II</a></li>
-   <li><a href="1_backend.html" class="daddy">1. BACKEND</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="1_backend.html" class="current-page-parent daddy">1. BACKEND</a>
+   <ul>
       <li><a href="11_patrn_de_arquitectura_mvc.html" class="no-ch">1.1 Patrón de Arquitectura MVC</a></li>
       <li><a href="12_mvc_en_escritorio.html" class="no-ch">1.2 MVC en Escritorio</a></li>
       <li><a href="13_mvc_en_web.html" class="no-ch">1.3 MVC en WEB</a></li>
@@ -60,8 +60,8 @@
          <li><a href="1112_ejemplo.html" class="no-ch">1.11.2 Ejemplo</a></li>
       </ul>
       </li>
-      <li><a href="112_jpa.html" class="daddy">1.12 JPA</a>
-      <ul class="other-section">
+      <li id="active"><a href="112_jpa.html" class="active daddy">1.12 JPA</a>
+      <ul>
          <li><a href="1121_jpa_en_la_arquitectura_web.html" class="no-ch">1.12.1 JPA en la Arquitectura Web</a></li>
          <li><a href="1122_implementaciones.html" class="no-ch">1.12.2 Implementaciones</a></li>
          <li><a href="1123_instalacin.html" class="no-ch">1.12.3 Instalación</a></li>
@@ -122,17 +122,17 @@
       </li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="2_frontend_javascript.html" class="current-page-parent daddy">2. FRONTEND (JavaScript)</a>
-   <ul>
+   <li><a href="2_frontend_javascript.html" class="daddy">2. FRONTEND (JavaScript)</a>
+   <ul class="other-section">
       <li><a href="introduccin_a_js.html" class="no-ch">Introducción a JS</a></li>
       <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
       <li><a href="ajax.html" class="no-ch">Ajax</a></li>
-      <li class="current-page-parent"><a href="libreras_js.html" class="current-page-parent daddy">Librerías JS</a>
-      <ul>
-         <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
-         <ul>
+      <li><a href="libreras_js.html" class="daddy">Librerías JS</a>
+      <ul class="other-section">
+         <li><a href="jquery.html" class="daddy">JQuery</a>
+         <ul class="other-section">
             <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-            <li id="active"><a href="instalacin.html" class="active no-ch">Instalación</a></li>
+            <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
             <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
             <li><a href="selectores.html" class="no-ch">Selectores</a></li>
             <li><a href="eventos.html" class="no-ch">Eventos</a></li>
@@ -191,47 +191,92 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="1112_ejemplo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="1121_jpa_en_la_arquitectura_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Instalación</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id167">
-<div class="iDevice emphasis0" >
-<div id="ta167_109_2" class="block iDevice_content">
-<div class="exe-text"><div class=" diapositiva" style="margin: 0 auto;">
-<ul>
-<li>Local
-<ol>
-<li>Acceder a <a href="https://jquery.com/download/">https://jquery.com/download/</a></li>
-<li>Escoger la versión
-<ul>
-<li>Existen versiones comprimidas y no comprimidas:</li>
-<li>Versión no comprimida recomendable para “desarrollo”</li>
-<li>Versión comprimida recomendable para “producción”</li>
-</ul>
-</li>
-<li>Abrir fichero en el Navegador</li>
-<li>Guardar fichero (“Guardar como …” ) en el directorio del proyecto.</li>
-</ol>
-</li>
-<li>Por CDN
-<ul>
-<li>&lt;script src=<a href="http://code.jquery.com/jquery-numero%20de%20versión.min.js">http://code.jquery.com/jquery-numero de versión.min.js</a>&gt;&lt;/script&gt;</li>
-</ul>
-</li>
-<li>API de Google
-<ul>
-<li>
-<div>
-<div><span>&lt;</span><span>script</span><span> </span><span>type</span><span>=</span><span>'text/javascript'</span><span> </span><span>src</span><span>=</span><span>"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"</span><span>&gt;&lt;/</span><span>script</span><span>&gt;</span></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.12 JPA</h1></div>
+<div class="iDevice_wrapper ReflectionIdevice em_iDevice" id="id69">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Motivación de JPA</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta69_8" class="block iDevice_content">
+<p>¿Qué motivó la creación de JPA?</p>
 </div>
-</li>
+<form name="feedback-form-69_9" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback69_9text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-69_9" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-69_9" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<ul>
+	<li><font face="arial,helvetica,sans-serif">
+	La <b>persistencia</b> o el <b>almacenamiento permanente</b>, es una de las necesidades básicas de cualquier sistema de información de cualquier tipo. Cómo hacemos esto?<br />
+	</font>
+	<ul>
+		<li><font face="arial,helvetica,sans-serif">En los inicios de la programación se propuso que <u>el programa tratara los datos haciendo consultas directas a la base de datos</u>. </font></li>
+	</ul>
+	<ul>
+		<li><font face="arial,helvetica,sans-serif"><u>Después, se propuso trabajar con objetos, pero las bases de datos tradicionales no admiten esta opción. </u></font></li>
+	</ul>
+	</li>
 </ul>
-</li>
+<p>
+<font face="arial,helvetica,sans-serif">
+Debido a lo mencionado, aparecieron los motores de persistencia, <u>cuya función es traducir entre los dos formatos de datos: de registros a objetos y de objetos a registros</u>. </font>
+</p>
+<p>
+<font face="arial,helvetica,sans-serif"><i><u>Persistir objetos Java en una base de datos relacional implica serializar un árbol de objetos Java en una base de datos de estructura tabular y viceversa</u>.</i> Esencial es la necesidad de <b>mapear</b> <b>objetos</b> <b>Java</b> para optimizar velocidad y eficiencia de la base de datos</font>
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+Fuente: http://www.lab.inf.uc3m.es/~a0080802/RAI/jpa.html
+</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id74">
+<div class="iDevice emphasis0">
+<div id="ta74_1" class="block iDevice_content">
+
+<p>
+<br />
+<b><font color="#ff0000">
+Qué es JPA?</font></b>
+</p>
+<ul>
+	<li>Es un framework del lenguaje de programación Java que maneja datos relacionales en aplicaciones usando la Plataforma Java en sus ediciones Standard (Java SE) y Enterprise (Java EE).  En sus siglas JPA sería descrito como  <b>API</b> <b>para Persistencia en JAVA</b> 
+	<i>(API = Interfaz de Programación de aplicaciones)</i>
+	<ul>
+	</ul>
+	</li>
+	<li>JPA se constituye como un modelo de persistencia para objetos java en bases de datos relacionales.</li>
 </ul>
-</div></div>
+<div style="text-align: center">
+<img src="mapeo1.gif" height="189" width="509" />
+</div>
+<ul>
+	<li><font color="#993300"><b>Persistencia</b></font> en este contexto cubre tres áreas:<br />
+	<ul>
+		<li>La API en sí misma, definida en el paquete javax.persistence</li>
+	</ul>
+	<ul>
+		<li>El lenguaje de consulta Java Persistence Query Language (JPQL).</li>
+	</ul>
+	<ul>
+		<li>Metadatos objeto/relacional.- El mapeo objeto-relacional (<b>Object-Relational Mapping ORM</b>) <b>es una técnica para convertir datos de un lenguaje de programación orientado a objetos a una base de datos relacional.</b></li>
+	</ul>
+	</li>
+</ul>
+<font color="#993300"></font>
+
 </div>
 </div>
 </div>
@@ -242,7 +287,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="1112_ejemplo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="1121_jpa_en_la_arquitectura_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

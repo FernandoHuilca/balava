@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Instalación | Segundo Bimestre AppWeb </title>
+<title>Selectores | Segundo Bimestre AppWeb </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-132"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-134"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Segundo Bimestre AppWeb</div></div>
@@ -132,9 +132,9 @@
          <li class="current-page-parent"><a href="jquery.html" class="current-page-parent daddy">JQuery</a>
          <ul>
             <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-            <li id="active"><a href="instalacin.html" class="active no-ch">Instalación</a></li>
+            <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
             <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
-            <li><a href="selectores.html" class="no-ch">Selectores</a></li>
+            <li id="active"><a href="selectores.html" class="active no-ch">Selectores</a></li>
             <li><a href="eventos.html" class="no-ch">Eventos</a></li>
             <li><a href="modificando_clases.html" class="daddy">Modificando clases</a>
             <ul class="other-section">
@@ -191,47 +191,104 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="iniciacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="eventos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Instalación</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id167">
+<div id="nodeDecoration"><h1 id="nodeTitle">Selectores</h1></div>
+<div class="iDevice_wrapper textIdevice" id="id169">
 <div class="iDevice emphasis0" >
-<div id="ta167_109_2" class="block iDevice_content">
-<div class="exe-text"><div class=" diapositiva" style="margin: 0 auto;">
-<ul>
-<li>Local
-<ol>
-<li>Acceder a <a href="https://jquery.com/download/">https://jquery.com/download/</a></li>
-<li>Escoger la versión
-<ul>
-<li>Existen versiones comprimidas y no comprimidas:</li>
-<li>Versión no comprimida recomendable para “desarrollo”</li>
-<li>Versión comprimida recomendable para “producción”</li>
-</ul>
-</li>
-<li>Abrir fichero en el Navegador</li>
-<li>Guardar fichero (“Guardar como …” ) en el directorio del proyecto.</li>
-</ol>
-</li>
-<li>Por CDN
-<ul>
-<li>&lt;script src=<a href="http://code.jquery.com/jquery-numero%20de%20versión.min.js">http://code.jquery.com/jquery-numero de versión.min.js</a>&gt;&lt;/script&gt;</li>
-</ul>
-</li>
-<li>API de Google
-<ul>
-<li>
-<div>
-<div><span>&lt;</span><span>script</span><span> </span><span>type</span><span>=</span><span>'text/javascript'</span><span> </span><span>src</span><span>=</span><span>"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"</span><span>&gt;&lt;/</span><span>script</span><span>&gt;</span></div>
+<div id="ta169_111_2" class="block iDevice_content">
+<div class="exe-text"><table width="853" class="exe-table-minimalist" style="width: 853px;">
+<tbody>
+<tr>
+<td width="254">
+<p><b>JQuery</b></p>
+</td>
+<td width="327">
+<p><b>Comentario</b></p>
+</td>
+<td width="272">
+<p><b>Correspondencia con JS tradicional</b></p>
+</td>
+</tr>
+<tr>
+<td width="254">
+<p><span style="font-size: 14pt;"><code>$("*")</code></span></p>
+</td>
+<td width="327">
+<p>Seleccionar todos los elementos</p>
+</td>
+<td width="272"></td>
+</tr>
+<tr>
+<td width="254">
+<p><span style="font-size: 14pt;"><code>$(“.clase”)</code></span></p>
+</td>
+<td width="327">
+<p>Seleccionar por Clase</p>
+</td>
+<td width="272">
+<p><code>document.getElementByClassName(“clase”)</code></p>
+</td>
+</tr>
+<tr>
+<td width="254">
+<p><span style="font-size: 14pt;"><code>$("elemento")</code></span></p>
+</td>
+<td width="327">
+<p>Seleccionar por Tag</p>
+</td>
+<td width="272">
+<p><code>document.getElementByTagName(“tag”)</code></p>
+</td>
+</tr>
+<tr>
+<td width="254">
+<p><span style="font-size: 14pt;"><code>$("#id")</code></span></p>
+</td>
+<td width="327">
+<p>Seleccionar por ID</p>
+</td>
+<td width="272">
+<p><code>document.getElementById(“id”)</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
 </div>
-</li>
-</ul>
-</li>
-</ul>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id170">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header" style="background-image:url(icon_puzzle.png)"><h2 class="iDeviceTitle">Ejemplos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta170_112_2" class="block iDevice_content">
+<div class="exe-text"><p>Mira algunos ejemplos de selectores. Fuente: <a href="https://uniwebsidad.com/libros/fundamentos-jquery/capitulo-3/seleccion-de-elementos">https://uniwebsidad.com/libros/fundamentos-jquery/capitulo-3/seleccion-de-elementos</a></p>
+<p><strong>Selección de elementos en base a su<span> </span><code>id</code></strong></p>
+<div class="code javascript">
+<pre class="javascript"><span style="font-size: 14pt;">$(<span class="hljs-string">'#myId'</span>); <span class="hljs-comment">// notar que los IDs deben ser únicos por página</span></span></pre>
+</div>
+<p><strong>Selección de elementos en base al nombre de clase</strong></p>
+<div class="code javascript">
+<pre class="javascript"><span style="font-size: 14pt;">$(<span class="hljs-string">'div.myClass'</span>); <span class="hljs-comment">// si se especifica el tipo de elemento,</span>
+                  <span class="hljs-comment">// se mejora el rendimiento de la selección</span></span></pre>
+</div>
+<div><strong>Selección de elementos por su atributo</strong></div>
+<pre><span style="font-size: 14pt;">$(“div[id]”); //Selecciona elementos que tienen un atributo id</span></pre>
+<p><strong>Selección de elementos por su atributo con valor</strong></p>
+<div class="code javascript">
+<pre class="javascript"><span style="font-size: 14pt;">$(<span class="hljs-string">'input[name=first_name]'</span>); <span class="hljs-comment">// tenga cuidado, que puede ser muy lento</span></span></pre>
+</div>
+<p><strong>Selección de elementos en forma de selector CSS</strong></p>
+<div class="code javascript">
+<pre class="javascript"><span style="font-size: 14pt;">$(<span class="hljs-string">'#contents ul.people li'</span>);</span></pre>
 </div></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -242,7 +299,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="iniciacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="iniciacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="eventos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
