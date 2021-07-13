@@ -18,7 +18,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-197"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-235"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -283,12 +283,12 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">3.- Actividad: Agenda de Contactos</h1></header>
-<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id347">
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id396">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header"><h1 class="iDeviceTitle">Caso práctico: Músicos Clásicos</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<section id="ta347_94" class="block iDevice_content">
+<section id="ta396_94" class="block iDevice_content">
 <p>En este caso práctico crearemos un documento XML con la información de músicos clásicos como Paganini, Vivaldi, Mozart, Beethoven, entre otros, junto con algunas de sus obras relevantes:</p>
 <ul>
 <li>Antonio Vivaldi (Italia, venencia) (obras: Las cuatro estaciones, Gloria)</li>
@@ -297,14 +297,14 @@
 <li>Ludwing van Beethoven (Alemania, Boon) (obras: Claro de Luna, Concierto para violín en Re mayor)</li>
 </ul>
 </section>
-<section id="taquesQuestion0b347" class="block iDevice_content">
+<section id="taquesQuestion0b396" class="block iDevice_content">
 <p>Crea un fichero XML donde cada músico contenga la siguiente información: nombre, apellido, obra (pueden ser mas de una), localización (lugar de nacimiento del artista).</p>
 </section>
-<form name="feedback-form-quesFeedback0b347" action="#" onsubmit="return false" class="feedback-form">
+<form name="feedback-form-quesFeedback0b396" action="#" onsubmit="return false" class="feedback-form">
 <div class="block iDevice_buttons feedback-button js-required">
-<p><script type="text/javascript">var feedbackquesFeedback0b347text = "Revisa el XML";</script><input type="button" name="toggle-feedback-quesFeedback0b347" value="Revisa el XML" class="feedbackbutton feedback-toggler" /></p>
+<p><script type="text/javascript">var feedbackquesFeedback0b396text = "Revisa el XML";</script><input type="button" name="toggle-feedback-quesFeedback0b396" value="Revisa el XML" class="feedbackbutton feedback-toggler" /></p>
 </div>
-<section id="feedback-quesFeedback0b347" class="feedback js-feedback js-hidden">
+<section id="feedback-quesFeedback0b396" class="feedback js-feedback js-hidden">
 <h1 class="js-sr-av">Retroalimentación</h1>
 <div class="highlighted-code language-markup line-numbers">
 <div>
@@ -314,8 +314,10 @@
 	&lt;musico id="1"&gt;
 		&lt;nombre&gt;Antonio&lt;/nombre&gt;
 		&lt;apellido&gt;Vivaldi&lt;/apellido&gt;
-		&lt;obra movimientos="4"&gt;Las Cuatro Estaciones&lt;/obra&gt;
-		&lt;obra movimientos="4"&gt;Gloria&lt;/obra&gt;
+		&lt;obras&gt;
+			&lt;obra movimientos="4"&gt;Las Cuatro Estaciones&lt;/obra&gt;
+			&lt;obra movimientos="4"&gt;Gloria&lt;/obra&gt;
+		&lt;/obras&gt;
 		&lt;localizacion&gt;
 			&lt;pais&gt;Italia&lt;/pais&gt;
 			&lt;ciudad&gt;Venecia&lt;/ciudad&gt;
@@ -324,8 +326,10 @@
 	&lt;musico id="2"&gt;
 		&lt;nombre&gt;Nicolo&lt;/nombre&gt;
 		&lt;apellido&gt;Paganini&lt;/apellido&gt;
-		&lt;obra movimientos="4"&gt;Campanella&lt;/obra&gt;
-		&lt;obra movimientos="4"&gt;24 caprichos&lt;/obra&gt;
+		&lt;obras&gt;
+			&lt;obra movimientos="4"&gt;Campanella&lt;/obra&gt;
+			&lt;obra movimientos="4"&gt;24 caprichos&lt;/obra&gt;
+		&lt;/obras&gt;
 		&lt;localizacion&gt;
 			&lt;pais&gt;Italia&lt;/pais&gt;
 			&lt;ciudad&gt;Génova&lt;/ciudad&gt;
@@ -334,8 +338,10 @@
 	&lt;musico id="3"&gt;
 		&lt;nombre&gt;Ludwing V.&lt;/nombre&gt;
 		&lt;apellido&gt;Beethoven&lt;/apellido&gt;
-		&lt;obra movimientos="3"&gt;Concierto para violín en RE mayor&lt;/obra&gt;
-		&lt;obra movimientos="1"&gt;Claro de Luna&lt;/obra&gt;
+		&lt;obras&gt;
+			&lt;obra movimientos="3"&gt;Concierto para violín en RE mayor&lt;/obra&gt;
+			&lt;obra movimientos="1"&gt;Claro de Luna&lt;/obra&gt;
+		&lt;/obras&gt;
 		&lt;localizacion&gt;
 			&lt;pais&gt;Alemania&lt;/pais&gt;
 			&lt;ciudad&gt;Bonn&lt;/ciudad&gt;
@@ -344,8 +350,10 @@
 	&lt;musico id="4"&gt;
 		&lt;nombre&gt;Wolfgang A.&lt;/nombre&gt;
 		&lt;apellido&gt;Mozart&lt;/apellido&gt;
-		&lt;obra movimientos="3"&gt;Sinfonía Nº 40&lt;/obra&gt;
-		&lt;obra movimientos="2"&gt;Opera Flauta Mágica&lt;/obra&gt;
+		&lt;obras&gt;
+			&lt;obra movimientos="3"&gt;Sinfonía Nº 40&lt;/obra&gt;
+			&lt;obra movimientos="2"&gt;Opera Flauta Mágica&lt;/obra&gt;
+		&lt;/obras&gt;
 		&lt;localizacion&gt;
 			&lt;pais&gt;Viena&lt;/pais&gt;
 			&lt;ciudad&gt;Salzburgo&lt;/ciudad&gt;
@@ -360,12 +368,12 @@
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id348">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id397">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header" style="background-image:url(icon_presentation.png)"><h1 class="iDeviceTitle">Actividad: Agenda de Teléfonos</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta348_124_2" class="block iDevice_content">
+<div id="ta397_124_2" class="block iDevice_content">
 <div class="exe-text"><p>Crear un XML con la información de una agenda de contactos para un teléfono móvil, donde:</p>
 <ul>
 <li>La agenda debe tener al menos 3 contactos y cada contacto debe tener:
