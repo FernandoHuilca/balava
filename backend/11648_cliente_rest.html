@@ -2,21 +2,25 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>MVC en WEB | Segundo Bimestre AppWeb </title>
+<title>1.16.4.8 Cliente Rest | Segundo Bimestre AppWeb </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-80"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-177"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Segundo Bimestre AppWeb</div></div>
@@ -68,7 +72,7 @@
    <ul>
       <li><a href="21_patrn_de_arquitectura_mvc.html" class="no-ch">2.1 Patrón de Arquitectura MVC</a></li>
       <li><a href="22_mvc_en_escritorio.html" class="no-ch">2.2 MVC en Escritorio</a></li>
-      <li id="active"><a href="mvc_en_web.html" class="active no-ch">MVC en WEB</a></li>
+      <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
       <li><a href="14_instalacin_de_herramientas.html" class="daddy">1.4 Instalación de Herramientas</a>
       <ul class="other-section">
          <li><a href="141_configurando_el_ambiente_de_desarrollo.html" class="no-ch">1.4.1 Configurando el Ambiente de Desarrollo</a></li>
@@ -143,16 +147,16 @@
          <li><a href="1155_cdigo_dao.html" class="no-ch">1.15.5 Código DAO</a></li>
       </ul>
       </li>
-      <li><a href="116_servicios_web.html" class="daddy">1.16 Servicios Web</a>
-      <ul class="other-section">
+      <li class="current-page-parent"><a href="116_servicios_web.html" class="current-page-parent daddy">1.16 Servicios Web</a>
+      <ul>
          <li><a href="1161_concepto.html" class="no-ch">1.16.1 Concepto</a></li>
          <li><a href="1163_servicios_web_soap.html" class="daddy">1.16.3 Servicios Web SOAP</a>
          <ul class="other-section">
             <li><a href="11631_prctica_ws_soap_login_persona.html" class="no-ch">1.16.3.1 Práctica WS SOAP: Login Persona</a></li>
          </ul>
          </li>
-         <li><a href="1164_servicios_web_rest.html" class="daddy">1.16.4 Servicios Web REST</a>
-         <ul class="other-section">
+         <li class="current-page-parent"><a href="1164_servicios_web_rest.html" class="current-page-parent daddy">1.16.4 Servicios Web REST</a>
+         <ul>
             <li><a href="1164_1_tecnologas.html" class="no-ch">1.16.4 .1 Tecnologías</a></li>
             <li><a href="11642_ejercicio_1_hola_rest.html" class="no-ch">1.16.4.2 Ejercicio 1: Hola Rest</a></li>
             <li><a href="11643_recursos.html" class="no-ch">1.16.4.3 Recursos</a></li>
@@ -160,7 +164,7 @@
             <li><a href="11645_parmetros.html" class="no-ch">1.16.4.5 Parámetros</a></li>
             <li><a href="11646_ejercicio_3_parmetros.html" class="no-ch">1.16.4.6 Ejercicio 3: Parámetros</a></li>
             <li><a href="11647_ejercicio_4_crud.html" class="no-ch">1.16.4.7 Ejercicio 4: CRUD</a></li>
-            <li><a href="11648_cliente_rest.html" class="no-ch">1.16.4.8 Cliente Rest</a></li>
+            <li id="active"><a href="11648_cliente_rest.html" class="active no-ch">1.16.4.8 Cliente Rest</a></li>
          </ul>
          </li>
       </ul>
@@ -196,27 +200,225 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="22_mvc_en_escritorio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="14_instalacin_de_herramientas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="11647_ejercicio_4_crud.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_cms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">MVC en WEB</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id49">
-<div class="iDevice emphasis0" >
-<div id="ta49_109_2" class="block iDevice_content">
-<div class="exe-text"><p>El patrón MVC en la Web es más ilustrativo si lo vemos en el contexto de la Arquitectura Web.</p>
-<p>La arquitectura Web, está compuesta de capas (Figura: MVC en Arquitectura Web). La Capa Web contiene a lo que denominamos la vista y el controlador, mientras que el modelo se encuentra en la capa de "negocio". La capa de negocio contiene las <em>reglas</em> o l<em>ógica de negocio</em> (o <em>funcionalidades</em>) que opera la aplicación. </p>
-<div class="exe-figure exe-image position-center license-copyright" style="width: 800px;">
-<div class="figcaption header"><strong>MVC en Arquitectura Web</strong></div>
-<img src="ArquitecturaWeb.svg" alt="MVC en Arquitectura Web" width="800" height="600" />
-<div class="figcaption"><span class="author">Carlos Iñiguez</span> <span class="license"><span class="sep">(</span><span>Todos los derechos reservados</span><span class="sep">)</span></span></div>
-</div>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.16.4.8 Cliente Rest</h1></div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice" id="id123">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Objetivos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta123_259_2" class="block iDevice_content">
+<p>En esta sección crearemos un prototipo de cliente REST para consumir los Servicios Web expuestos por el Servidor. La imagen siguiente muestra la aplicación de escritorio que la realizaremos en Java. El propósito es codificar la lógica del botón "Consultar" para consumir el servicio web expuesto por el servidor.</p>
+<p>Para esto necesitaremos:</p>
 <ul>
-<li><strong><span style="color: #993300;">Modelo</span></strong>: la información almacenada en una base de datos o en XML junto con las reglas de negocio que transforman esa información (teniendo en cuenta las acciones de los usuarios)</li>
-<li><b><span style="color: #993300;">Vista: </span></b>La página HTML</li>
-<li><b><span style="color: #993300;">Controlador: </span></b>Código que obtiene datos dinámicamente y genera el contenido HTML</li>
-</ul></div>
+<li><strong>Una clase Java que represente a la clase Persona del Servidor</strong>.- El código de esta clase se presenta en el fichero Persona.java.</li>
+<li><strong>Un formulario GUI desde la cual se gestionan los servicios</strong> (Operaciones CRUD expuestas por el servicio REST).- El código del Formulario se presenta en el fichero Principal.java. En esta clase debes codificar el método <strong>btnCargarPersonas()</strong>.</li>
+</ul>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice" id="id121">
+<div class="iDevice emphasis0" >
+<div id="ta121_257_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="ClienteRest.png" alt="" width="812" height="412" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice" id="id122">
+<div class="iDevice emphasis0" >
+<div id="ta122_258_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Persona.java</h2>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>import java.io.Serializable;
+
+
+public class Persona implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private Integer id;
+
+	private String nombre;
+	
+
+	private String clave;
+
+
+	public Persona() {
+
+	}
+
+	public Persona(String nombre, String clave) {
+		this.nombre = nombre;
+		this.clave = clave;
+	}
+
+	
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getClave() {
+		return clave;
+	}
+
+	public void setClave(String clave) {
+		this.clave = clave;
+	}
+
+
+	@Override
+	public String toString() {
+		return this.nombre+ ' '+ this.clave;
+	}
+	@Override
+	public int hashCode() {
+		int hash = 0;
+        hash += (this.id != null ? this.id.hashCode() : 0);
+        return hash;
+	}
+	@Override
+	public boolean equals(Object object) {
+		// TODO: Warning - this method won't work in the case the id fields are not set
+        if (!(object instanceof Persona)) {
+            return false;
+        }
+        Persona other = (Persona) object;
+        if ((this.id == null &amp;&amp; other.id != null) || (this.id != null &amp;&amp; !this.id.equals(other.id))) {
+            return false;
+        }
+        return true;
+	}
+
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<h2>Principal.java</h2>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>public class Principal {
+
+	private JFrame frmClienteRestPersona;
+	private JPanel panelComandos;
+	private JPanel panelTabla;
+	private JTable tblPersonas;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Principal window = new Principal();
+					window.frmClienteRestPersona.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Principal() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmClienteRestPersona = new JFrame();
+		frmClienteRestPersona.setTitle("Cliente REST Persona");
+		frmClienteRestPersona.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmClienteRestPersona.setLayout(new FlowLayout(FlowLayout.LEFT));
+		frmClienteRestPersona.setSize(700, 300);
+		frmClienteRestPersona.setVisible(true);
+
+		// Panel Comandos
+		panelComandos = new JPanel(new FlowLayout(FlowLayout.CENTER));
+		panelComandos.setBackground(new Color(250, 248, 185));
+		panelComandos.setSize(680, 100);
+		frmClienteRestPersona.add(panelComandos);
+		// Botones
+		JButton btnCargar = new JButton("Cargar...");
+		panelComandos.add(btnCargar);
+		btnCargar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				btnCargarPersonas();
+			}
+		});
+
+		JButton btnInsertar = new JButton("Nuevo");
+		panelComandos.add(btnInsertar);
+		btnInsertar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+
+		JButton btnActualizar = new JButton("Actualizar");
+		panelComandos.add(btnActualizar);
+
+		JButton btnEliminar = new JButton("Eliminar");
+		panelComandos.add(btnEliminar);
+
+		// Tabla
+		DefaultTableModel model = new DefaultTableModel();
+		model.addColumn("Id");
+		model.addColumn("Nombre");
+		model.addColumn("Clave");
+		tblPersonas = new JTable(model);
+		JScrollPane JS = new JScrollPane(tblPersonas);
+		JS.setPreferredSize(new Dimension(680, 195));
+
+		// Panel Tabla
+		panelTabla = new JPanel(new FlowLayout(FlowLayout.CENTER));
+		panelTabla.setSize(680, 195);
+		panelTabla.add(JS);
+		frmClienteRestPersona.add(panelTabla);
+
+	}
+
+	private void btnCargarPersonas() {
+		//TODO: A desarrollar!
+	}
+
+	private void btnInsertarPersona() {
+	}
+
+	private void btnEliminarPersona() {
+	}
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+</div>
+<p></p></div>
 </div>
 </div>
 </div>
@@ -227,7 +429,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="22_mvc_en_escritorio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="14_instalacin_de_herramientas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="11647_ejercicio_4_crud.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_cms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
