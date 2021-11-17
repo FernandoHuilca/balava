@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
@@ -13,6 +14,7 @@
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -96,25 +98,18 @@
          <li><a href="recursos_de_lectura0.html" class="no-ch">Recursos de Lectura</a></li>
       </ul>
       </li>
-      <li><a href="prctica_http.html" class="daddy">Práctica HTTP</a>
-      <ul class="other-section">
-         <li><a href="tecnologas_de_lado_del_servidor.html" class="no-ch">Tecnologías de lado del Servidor</a></li>
-      </ul>
-      </li>
+      <li><a href="prctica_http.html" class="no-ch">Práctica HTTP</a></li>
       <li><a href="cookies_y_sesiones.html" class="daddy">Cookies y Sesiones</a>
       <ul class="other-section">
          <li><a href="cookies.html" class="no-ch">Cookies</a></li>
+         <li><a href="ejemplo_aplicacin_de_cookies.html" class="no-ch">Ejemplo: Aplicación de Cookies</a></li>
          <li><a href="sesiones.html" class="no-ch">Sesiones</a></li>
          <li><a href="ejemplo_aplicacin_de_sesiones.html" class="no-ch">Ejemplo: Aplicación de Sesiones</a></li>
       </ul>
       </li>
       <li class="current-page-parent"><a href="actividad_mi_tienda_virtual.html" class="current-page-parent daddy">Actividad: Mi Tienda Virtual</a>
       <ul>
-         <li id="active"><a href="antes_de_empezar.html" class="active daddy">Antes de empezar...</a>
-         <ul>
-            <li><a href="manipulacin_de_ficheros.html" class="no-ch">Manipulación de ficheros</a></li>
-         </ul>
-         </li>
+         <li id="active"><a href="antes_de_empezar.html" class="active no-ch">Antes de empezar...</a></li>
          <li><a href="instrucciones.html" class="no-ch">Instrucciones</a></li>
       </ul>
       </li>
@@ -199,7 +194,7 @@
          <li><a href="variables_y_tipos_de_datos.html" class="no-ch">Variables y tipos de datos</a></li>
          <li><a href="sentencias_de_control.html" class="no-ch">Sentencias de Control</a></li>
          <li><a href="variables_predefinidas.html" class="no-ch">Variables Predefinidas</a></li>
-         <li><a href="manipulacin_de_ficheros0.html" class="daddy">Manipulación de ficheros</a>
+         <li><a href="manipulacin_de_ficheros.html" class="daddy">Manipulación de ficheros</a>
          <ul class="other-section">
             <li><a href="ejemplo_lectura.html" class="no-ch">Ejemplo lectura</a></li>
             <li><a href="actividad_escritura.html" class="no-ch">Actividad: escritura</a></li>
@@ -259,7 +254,7 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="actividad_mi_tienda_virtual.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="manipulacin_de_ficheros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_mi_tienda_virtual.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="instrucciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -271,6 +266,12 @@
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta334_170_2" class="block iDevice_content">
+<ul>
+<li>Sintaxis de un Checkbox</li>
+<li>Uso de funciones var_dump(), die() y pre</li>
+<li>Lectura/escritura de Ficheros en PHP</li>
+</ul>
+<hr />
 <h2>Checkbox HTML</h2>
 <p>Para realizar la práctica necesitas conocer cómo escribir un Checkbox. Fíjate en la línea 10.</p>
 <div class="highlighted-code language-markup line-numbers">
@@ -317,6 +318,149 @@ echo "&lt;/pre&gt;";
 </div>
 </div>
 </article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id60">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_piece.png)"><h1 class="iDeviceTitle">Lectura y escritura de Ficheros</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta60_419_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li class="p1"><strong>apertura de ficheros</strong>
+<ul>
+<li class="p1"><span style="font-size: 14pt;"><code>$fp = fopen(NombreFichero, modo[, include_path]);</code></span>
+<ul>
+<li class="p1">modo: r, r+, w, w+, a, a+</li>
+<li class="p1">include_path<span style="color: #333333; font-size: 1.05em;">: incluye la búsqueda en los directorios del </span>path indicado por defecto</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="p1">lectura
+<ul>
+<li class="p1">texto: <span style="font-size: 14pt;"><code><span style="color: #333333;">$cadena = fgets($fp [, longitud]);</span></code></span></li>
+<li class="p1">binario: <code><span style="color: #333333; font-size: 1.05em;"><span style="font-size: 14pt;">$cadena = fread($fp, longitud);</span></span></code></li>
+</ul>
+</li>
+<li class="p1">escritura
+<ul>
+<li class="p1"><span style="font-size: 14pt;"><code>$num_bytes = fwrite($fp, $cadena [, longitud]);</code></span></li>
+</ul>
+</li>
+<li class="p1">cierre
+<ul>
+<li class="p1"><span style="font-size: 14pt;"><code>$ok = fclose($fp);</code></span></li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id55">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad: Lectura de Fichero de texto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta55_342_2" class="block iDevice_content">
+<p>Aplica los comandos PHP para leer un fichero de texto. Usa los ficheros a continuación para la implementación:</p>
+<div class="exe-fx exe-tabs">
+<h2>leer.php</h2>
+<div class="highlighted-code code-style-2 language-php line-numbers">
+<div>
+<pre><code>&lt;?php
+# abrimos fichero
+$fp = fopen("datos.txt", "r");
+
+#leemos el fichero utilizando un bucle. Usamos feof 
+# para comprobar si el puntero a un archivo está al final del archivo. 
+# Si feof ==TRUE significa que el puntero está al final del archivo
+while (!feof($fp)){
+    #fgets permite obtener una línea desde el puntero a un fichero
+    $linea = fgets($fp);
+    #imprimimos la línea
+    echo $linea. "&lt;br&gt;";
+}
+
+#cerramos fichero
+fclose($fp);
+
+?&gt;</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<h2>datos.txt</h2>
+<div class="highlighted-code language-markup">
+<div>
+<pre><code>uno
+dos
+tres
+cuatro
+cinco</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad: Escribir Fichero</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_343_2" class="block iDevice_content">
+<p>Crea una aplicación Web para escribir en un fichero. Usa los ficheros que se presentan a continuación:</p>
+<div class="exe-fx exe-tabs">
+<h2>escribir.php</h2>
+<div class="highlighted-code code-style-2 language-php line-numbers">
+<div>
+<pre><code>&lt;?php
+## créditos: https://www.php.net/manual/es/function.fwrite.php
+
+$nombre_archivo = 'prueba.txt';
+$contenido = "Añade esto al archivo 2\n";
+
+// Primero vamos a asegurarnos de que el archivo existe y es escribible.
+if (is_writable($nombre_archivo)) {
+
+    // En nuestro ejemplo estamos abriendo $nombre_archivo en modo de adición.
+    // El puntero al archivo está al final del archivo
+    // donde irá $contenido cuando usemos fwrite() sobre él.
+    if (!$gestor = fopen($nombre_archivo, 'a')) {
+         echo "No se puede abrir el archivo ($nombre_archivo)";
+         exit;
+    }
+
+    // Escribir $contenido a nuestro archivo abierto.
+    if (fwrite($gestor, $contenido) === FALSE) {
+        echo "No se puede escribir en el archivo ($nombre_archivo)";
+        exit;
+    }
+
+    echo "Éxito, se escribió ($contenido) en el archivo ($nombre_archivo)";
+
+    fclose($gestor);
+
+} else {
+    echo "El archivo $nombre_archivo no es escribible";
+}
+?&gt;</code></pre>
+</div>
+</div>
+<p></p>
+<h2>prueba.txt</h2>
+<p>NOTA: Creao el fichero preuba.txt al mismo nivel del fichero escribir.php</p>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>
@@ -324,7 +468,7 @@ echo "&lt;/pre&gt;";
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="actividad_mi_tienda_virtual.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="manipulacin_de_ficheros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_mi_tienda_virtual.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="instrucciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
