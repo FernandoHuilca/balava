@@ -387,8 +387,15 @@
 <article class="iDevice_wrapper FreeTextIdevice" id="id616">
 <div class="iDevice emphasis0">
 <div id="ta616_85" class="block iDevice_content">
-<p>En JPA, existen cuatro tipo de relaciones entre las entidades . Cada relación tiene su respectiva anotación así como los atributos que forman parte de la anotación. Las cuatro relaciones cubren las posibles relaciones que pueden existir entre las tablas de una base de datos relacional. </p>
-<p></p>
+<p>En JPA, existen cuatro tipo de relaciones entre las entidades.Las cuatro relaciones cubren las posibles relaciones que pueden existir entre las tablas de una base de datos relacional. Estas cuatro relaciones son expresadas a través de <strong>anotaciones</strong>.</p>
+<ul>
+<li>@OneToOne</li>
+<li>@OneToMany</li>
+<li>@ManyToOne</li>
+<li>@ManyToMany</li>
+</ul>
+<p>Además, cada anotación acepta <strong>atributos</strong> que definen a profundidad el comportamiento de la relación.</p>
+<p>La primera pestaña explica los atributos involucrados en las anotaciones mientras que las otras pestañas describen cada una de las relaciones.</p>
 </div>
 </div>
 </article>
@@ -396,43 +403,8 @@
 <div class="iDevice emphasis0" >
 <div id="ta617_428_2" class="block iDevice_content">
 <div class="exe-text"><div class="exe-fx exe-tabs">
-<h2>OneToOne</h2>
-<p>Cada entidad se relaciona con una sola instancia de otra entidad.</p>
-<ul>
-<li>Por ejemplo, los datos básicos de un Usuario y datos detallados del usuario.<br /><br /></li>
-</ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="OneToOne.png" title="OneToOne" width="600" height="378" /></p>
-<h2>OneToMany</h2>
-<p>Una entidad, puede estar relacionada con varias instancias de otras entidades.</p>
-<ul>
-<li>Por ejemplo, una Cesta de la Compra tiene varios Productos comprados.</li>
-</ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="OneToMany_ManyToOne.png" alt="OneToMany_ManyToOne" title="OneToMany_ManyToOne" width="600" height="385" /></p>
-<h2>ManyToOne</h2>
-<p>Múltiples instancias de una entidad pueden estar relacionadas con una sola instancia de otra entidad.</p>
-<ul>
-<li>Por ejemplo: Varios Productos comprados están asociados con la misma Cesta..</li>
-</ul>
-<h2>ManyToMany</h2>
-<p>Varias instancias de una entidad pueden relacionarse con múltiples instancias de otras entidades.</p>
-<ul>
-<li>Por ejemplo, cada asignatura tiene muchos estudiantes, y cada estudiante puede tener varias asignaturas</li>
-</ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="ManyToMany.png" alt="Many To Many" title="Many To Many" width="600" height="388" /></p>
-</div>
-<p></p></div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id618">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Anotaciones</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta618_429_2" class="block iDevice_content">
-<div class="exe-text"><div class="diapositiva" style="margin: 0 auto;">
-<ul>
-<li>Parámetros comunes de las relaciones (@OneToOne, @OneToMany...)
+<h2>Atributos de una anotación de relación</h2>
+<div class="diapositiva" style="margin: 0 auto;">
 <ul>
 <li><strong>cascade</strong>. Tipo de operaciones en cascada a aplicar:
 <ul>
@@ -449,23 +421,41 @@
 <li><strong>FechType.EAGER</strong>. Los datos se recuperan de forma temprana</li>
 </ul>
 </li>
-<li><strong>mappedBy</strong>. el campo que posee la relación
+<li><strong>mappedBy</strong>. El campo que posee la relación.
 <ul>
 <li>mappedBy=“variable”</li>
 </ul>
 </li>
 <li><strong>optional</strong>. Si la asociación es opcional</li>
 </ul>
-</li>
+<ul>
 <li><strong>@JoinColumn</strong>. Se establece como una clave foránea en otra entidad.
 <ul>
 <li>name. Nombre de la columna</li>
 </ul>
 </li>
 </ul>
-</div></div>
 </div>
+<h2>OneToOne</h2>
+<p>Cada entidad se relaciona con una sola instancia de otra entidad.</p>
+<ul>
+<li>Por ejemplo, los datos básicos de un Usuario y datos detallados del usuario.<br /><br /></li>
+</ul>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="OneToOne.png" title="OneToOne" width="800" height="504" /></p>
+<h2>OneToMany y ManyToOne</h2>
+<p>Una entidad, puede estar relacionada con varias instancias de otras entidades.</p>
+<ul>
+<li>Por ejemplo, una Cesta de la Compra tiene varios Productos comprados.</li>
+</ul>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="OneToMany_ManyToOne.png" alt="OneToMany_ManyToOne" title="OneToMany_ManyToOne" width="799" height="513" /></p>
+<h2>ManyToMany</h2>
+<p>Varias instancias de una entidad pueden relacionarse con múltiples instancias de otras entidades.</p>
+<ul>
+<li>Por ejemplo, cada asignatura tiene muchos estudiantes, y cada estudiante puede tener varias asignaturas</li>
+</ul>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="ManyToMany.png" alt="Many To Many" title="Many To Many" width="799" height="517" /></p>
 </div>
+<p></p></div>
 </div>
 </div>
 </article>
