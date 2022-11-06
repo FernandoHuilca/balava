@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Servicios Web REST | Aplicaciones Web </title>
+<title>Operaciones CRUD EntityManger | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-391"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-332"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -219,37 +219,7 @@
       <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
    </ul>
    </li>
-   <li><a href="semana_11_persistencia_con_jpa.html" class="daddy">SEMANA 11: Persistencia con JPA</a>
-   <ul class="other-section">
-      <li><a href="qu_es_jpa.html" class="daddy">¿Qué es JPA?</a>
-      <ul class="other-section">
-         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
-         <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
-         <li><a href="instalacin_eclipselink.html" class="no-ch">Instalación (EclipseLink)</a></li>
-         <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
-         <li><a href="arquitectura.html" class="no-ch">Arquitectura</a></li>
-         <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
-         <li><a href="entidades.html" class="no-ch">Entidades</a></li>
-         <li><a href="relaciones.html" class="no-ch">Relaciones</a></li>
-         <li><a href="herencia.html" class="no-ch">Herencia</a></li>
-         <li><a href="ejercicio_tutorias0.html" class="no-ch">Ejercicio: Tutorias</a></li>
-      </ul>
-      </li>
-      <li><a href="jpql.html" class="daddy">JPQL</a>
-      <ul class="other-section">
-         <li><a href="sql_vs_jpql.html" class="no-ch">SQL vs JPQL</a></li>
-         <li><a href="ejemplos_de_consultas.html" class="no-ch">Ejemplos de Consultas</a></li>
-         <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios Propuestos</a></li>
-         <li><a href="createquery.html" class="no-ch">CreateQuery</a></li>
-         <li><a href="named_queries.html" class="no-ch">Named Queries</a></li>
-         <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
-         <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
-         <li><a href="recursos.html" class="no-ch">Recursos</a></li>
-      </ul>
-      </li>
-   </ul>
-   </li>
-   <li><a href="semana_12_dao.html" class="daddy">SEMANA 12: DAO</a>
+   <li><a href="semana_11_dao.html" class="daddy">SEMANA 11: DAO</a>
    <ul class="other-section">
       <li><a href="patrones_de_diseo_una_revisin.html" class="no-ch">Patrones de Diseño: una revisión.</a></li>
       <li><a href="patrones_orientados_a_los_datos.html" class="no-ch">Patrones orientados a los datos</a></li>
@@ -259,50 +229,68 @@
       <li><a href="ejercicio_implementando_patrn_dao.html" class="no-ch">Ejercicio: Implementando patrón DAO</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="semana_14_servicios_web.html" class="current-page-parent daddy">SEMANA 14: Servicios Web</a>
+   <li class="current-page-parent"><a href="semana_12_jpa_i_fundamentos.html" class="current-page-parent daddy">SEMANA 12: JPA (I) Fundamentos</a>
    <ul>
-      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
-      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
-      <ul class="other-section">
-         <li><a href="prctica_ws_soap_login_persona.html" class="no-ch">Práctica WS SOAP: Login Persona</a></li>
-      </ul>
-      </li>
-      <li id="active"><a href="servicios_web_rest.html" class="active daddy">Servicios Web REST</a>
-      <ul>
-         <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
-         <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
-         <li><a href="qu_es_un_recurso.html" class="no-ch">¿Qué es un Recurso?</a></li>
-         <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
-         <li><a href="parmetros0.html" class="no-ch">Parámetros</a></li>
-         <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
-         <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
-         <li><a href="cliente_rest.html" class="no-ch">Cliente Rest</a></li>
-      </ul>
-      </li>
+      <li><a href="qu_es_jpa.html" class="no-ch">¿Qué es JPA?</a></li>
+      <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
+      <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+      <li><a href="instalacin_eclipselink.html" class="no-ch">Instalación (EclipseLink)</a></li>
+      <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
+      <li><a href="arquitectura_entitymanager.html" class="no-ch">Arquitectura EntityManager</a></li>
+      <li><a href="entidades.html" class="no-ch">Entidades</a></li>
+      <li><a href="relaciones.html" class="no-ch">Relaciones</a></li>
+      <li id="active"><a href="operaciones_crud_entitymanger.html" class="active no-ch">Operaciones CRUD EntityManger</a></li>
+      <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+      <li><a href="ejercicio_tutorias0.html" class="no-ch">Ejercicio: Tutorias</a></li>
    </ul>
    </li>
-   <li><a href="semana_15_sistemas_manejadores_de_contenido.html" class="daddy">SEMANA 15: Sistemas Manejadores de Contenido</a>
+   <li><a href="semana_13_jpa_ii_consultas_jpql.html" class="daddy">SEMANA 13: JPA (II) Consultas JPQL</a>
+   <ul class="other-section">
+      <li><a href="sql_vs_jpql.html" class="no-ch">SQL vs JPQL</a></li>
+      <li><a href="ejemplos_de_consultas.html" class="no-ch">Ejemplos de Consultas</a></li>
+      <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios Propuestos</a></li>
+      <li><a href="createquery.html" class="no-ch">CreateQuery</a></li>
+      <li><a href="named_queries.html" class="no-ch">Named Queries</a></li>
+      <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
+      <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
+      <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_14_servicios_web_soap.html" class="daddy">SEMANA 14: Servicios Web SOAP</a>
+   <ul class="other-section">
+      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
+      <li><a href="servicios_web_soap.html" class="no-ch">Servicios Web SOAP</a></li>
+      <li><a href="prctica_ws_soap_login_persona.html" class="no-ch">Práctica WS SOAP: Login Persona</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_15_servicios_web_rest.html" class="daddy">SEMANA 15: Servicios Web REST</a>
+   <ul class="other-section">
+      <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
+      <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
+      <li><a href="qu_es_un_recurso.html" class="no-ch">¿Qué es un Recurso?</a></li>
+      <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
+      <li><a href="parmetros0.html" class="no-ch">Parámetros</a></li>
+      <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
+      <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
+      <li><a href="cliente_rest.html" class="no-ch">Cliente Rest</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_16_sistemas_manejadores_de_contenido.html" class="daddy">SEMANA 16: Sistemas Manejadores de Contenido</a>
    <ul class="other-section">
       <li><a href="qu_es_un_cms.html" class="no-ch">¿Qué es un CMS?</a></li>
       <li><a href="qu_se_puede_hacer_con_un__cms.html" class="no-ch">¿Qué se puede hacer con un  CMS?</a></li>
       <li><a href="caractersticas_de_un_cms.html" class="no-ch">Características de un CMS</a></li>
       <li><a href="con_y_sin_un_cms.html" class="no-ch">Con y sin un CMS</a></li>
       <li><a href="cms_populares.html" class="no-ch">CMS populares</a></li>
-   </ul>
-   </li>
-   <li><a href="semana_16_aplicando_cms_wordpress.html" class="daddy">SEMANA 16: Aplicando CMS: WordPress</a>
-   <ul class="other-section">
+      <li><a href="aplicando_cms_wordpress.html" class="no-ch">Aplicando CMS: WordPress</a></li>
       <li><a href="ventajas_de_wordpress.html" class="no-ch">Ventajas de Wordpress</a></li>
       <li><a href="estructura_de_wordpress.html" class="no-ch">Estructura de WordPress</a></li>
       <li><a href="perfiles_de_usuarios.html" class="no-ch">Perfiles de Usuarios</a></li>
       <li><a href="instalacin0.html" class="no-ch">Instalación</a></li>
       <li><a href="pantalla_de_adminsitracin.html" class="no-ch">Pantalla de adminsitración</a></li>
       <li><a href="estructura_de_directorio_wordpress.html" class="no-ch">Estructura de Directorio Wordpress</a></li>
-      <li><a href="instalacin_en_host.html" class="daddy">Instalación en host</a>
-      <ul class="other-section">
-         <li><a href="ejemplos_de_instalacin.html" class="no-ch">Ejemplos de instalación</a></li>
-      </ul>
-      </li>
+      <li><a href="instalacin_en_host.html" class="no-ch">Instalación en host</a></li>
+      <li><a href="ejemplos_de_instalacin.html" class="no-ch">Ejemplos de instalación</a></li>
    </ul>
    </li>
    <li><a href="anexos.html" class="daddy">ANEXOS</a>
@@ -376,59 +364,95 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="prctica_ws_soap_login_persona.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tecnologas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="relaciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="herencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Servicios Web REST</h1></header>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id658">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(icon_edia.png)"><h1 class="iDeviceTitle">Concepto</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta658_118_2" class="block iDevice_content">
-<div class="exe-text"><ul>
-<li>REST (Representational State Transfer) es un estilo arquitectónico para el desarrollo de aplicaciones sobre la Web.</li>
-<li>Se basa en la Web tal como está en la actualidad: HTTP.</li>
-<li>Fue introducido por Roy T. Fielding en el año 2000</li>
-<li>También referenciado como <strong>RESTful</strong></li>
-<li>Se pretende construir sistemas distribuidos por servicios independientes, con evoluciones independientes y anárquicas</li>
-</ul></div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id659">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(icon_award.png)"><h1 class="iDeviceTitle">Estilo Arquitectónico</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta659_119_2" class="block iDevice_content">
-<div class="exe-text"><ul>
-<li>Servidor sin estado. El servidor no gestiona los recursos de los clientes. En cada petición el cliente debe enviar toda la información.
+<header id="nodeDecoration"><h1 id="nodeTitle">Operaciones CRUD EntityManger</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id612">
+<div class="iDevice emphasis0">
+<div id="ta612_1" class="block iDevice_content">
+<p>A través del EntityManager se pueden realizar las siguientes operaciones.</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1" width="600">
+<tbody>
+<tr>
+<td><b>OPERACIÓN</b></td>
+<td align="center"><b>DESCRIPCIÓN</b></td>
+</tr>
+<tr>
+<td>Persist</td>
+<td>
 <ul>
-<li>Los estados diferentes se corresponden con Uri diferente</li>
+<li>(<b>Create</b>) Persiste en la BD un objeto entidad(@Entity ).</li>
 </ul>
-</li>
-<li><strong>Los datos y acciones</strong> se consideran como recursos y se acceden mediante las URIs.
 <ul>
-<li>.../cliente/23, /cliente/23/nombre</li>
+<li>Persiste, también, todos los objetos relacionados, cuya relación haya sido anotada con CascadeType.PERSIST o CascadeType.ALL.</li>
 </ul>
-</li>
-<li>Se permite la elección del tipo de representación (HTML, XML, JSON...) a través de los tipos MIME</li>
-<li>Métodos HTTP (<strong>CRUD</strong>):
 <ul>
-<li><strong>POST</strong> (C): Para guardar un nuevo objeto (instancia de identidad) en la aplicación</li>
-<li><strong>GET</strong> (R): Para obtener un valor. Puede ser un listado de objetos</li>
-<li><strong>PUT</strong> (U): Para actualizar un objeto</li>
-<li><strong>DELETE</strong> (D): Para eliminar un objeto (instancia de identidad)</li>
+<li>Se traduce en un INSERT en SQL, normalmente en la ejecución del commit().</li>
 </ul>
-</li>
-</ul></div>
-</div>
-</div>
+<ul>
+<li>El objeto pasa al estado Managed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Find</td>
+<td>
+<ul>
+<li>(<b>Read</b>) Busca un objeto en la BD.</li>
+</ul>
+<ul>
+<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Remove</td>
+<td>
+<ul>
+<li>(<b>Delete</b>) Se borra el objeto de la BD (debe estar en estado Managed).</li>
+<li>Después de realizar esta operación, el objeto queda en estado Removed.</li>
+<li>Al terminar la transacción, se ejecuta una sentencia DELETE de SQL.</li>
+<li>Se borran los objetos relacionados con la anotación: CascadeType.REMOVE o CascadeType.ALL</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Merge</td>
+<td>
+<ul>
+<li>(<b>Update</b>) Actualiza el objeto en la BD.</li>
+<li>Al terminar la transacción, se ejecuta una sentencia UPDATE en SQL.</li>
+<li>El objeto no debe estar en estado Removed.</li>
+<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
+<li>Se actualizan los objetos relacionados con la anotación: CascadeType.MERGE o CascadeType.ALL</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Refresh</td>
+<td>
+<ul>
+<li>Actualiza el objeto obteniendo los valores de sus atributos y relaciones de la BD.</li>
+<li>Se ejecuta una sentencia SELECT en SQL.</li>
+<li>Después de ejecutar esta operación, el objeto queda en estado Managed.</li>
+<li>Se actualizan los objetos relacionados con la anotación: CascadeType.REFRESH o CascadeType.ALL</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Flush</td>
+<td>
+<ul>
+<li>Sincroniza BD con el contexto de persistencia, es decir, actualiza los cambios realizados en el contexto en la BD</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
 </div>
 </div>
 </article>
@@ -439,7 +463,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="prctica_ws_soap_login_persona.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tecnologas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="relaciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="herencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
