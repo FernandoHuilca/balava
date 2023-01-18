@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-303"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-453"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -155,6 +155,7 @@
    <ul class="other-section">
       <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
       <li><a href="ajax.html" class="no-ch">Ajax</a></li>
+      <li><a href="json.html" class="no-ch">JSON</a></li>
       <li><a href="librera_js_jquery.html" class="daddy">Librería JS (JQuery)</a>
       <ul class="other-section">
          <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
@@ -179,12 +180,8 @@
    </li>
    <li class="current-page-parent"><a href="semana_9_fundamentos_back_end_java.html" class="current-page-parent daddy">SEMANA 9: Fundamentos Back End (Java)</a>
    <ul>
-      <li><a href="14_instalacin_de_ambiente_de_desarrollo.html" class="daddy">1.4 Instalación de Ambiente de Desarrollo</a>
-      <ul class="other-section">
-         <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
-         <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
-      </ul>
-      </li>
+      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
       <li id="active"><a href="mvc_en_escritorio.html" class="active no-ch">MVC en Escritorio</a></li>
       <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
@@ -197,6 +194,7 @@
          <li><a href="reenvo_entre_componentes_servlet.html" class="no-ch">Reenvío entre componentes (Servlet)</a></li>
       </ul>
       </li>
+      <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
       <li><a href="jsp.html" class="daddy">JSP</a>
       <ul class="other-section">
          <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
@@ -205,9 +203,10 @@
          <li><a href="jsp_ejercicios.html" class="no-ch">JSP: Ejercicios</a></li>
       </ul>
       </li>
-      <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
+      <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
       <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+      <li><a href="prctica_docente.html" class="no-ch">Práctica docente</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -297,11 +296,11 @@
    <ul class="other-section">
       <li><a href="lenguaje_php.html" class="daddy">Lenguaje PHP</a>
       <ul class="other-section">
-         <li><a href="php_hypertext_preprocessir.html" class="no-ch">PHP: HyperText Preprocessir</a></li>
          <li><a href="instalacin_y_configuracin.html" class="no-ch">Instalación y Configuración</a></li>
          <li><a href="primer_ejemplo.html" class="no-ch">Primer Ejemplo</a></li>
          <li><a href="insercin_de_cdigo_php.html" class="no-ch">Inserción de código PHP</a></li>
          <li><a href="variables_y_tipos_de_datos.html" class="no-ch">Variables y tipos de datos</a></li>
+         <li><a href="instrucciones_bsicas.html" class="no-ch">Instrucciones básicas</a></li>
          <li><a href="sentencias_de_control0.html" class="no-ch">Sentencias de Control</a></li>
          <li><a href="variables_predefinidas.html" class="no-ch">Variables Predefinidas</a></li>
          <li><a href="manipulacin_de_ficheros.html" class="daddy">Manipulación de ficheros</a>
@@ -315,7 +314,6 @@
          <ul class="other-section">
             <li><a href="antes_de_empezar.html" class="no-ch">Antes de empezar...</a></li>
             <li><a href="instrucciones.html" class="no-ch">Instrucciones</a></li>
-            <li><a href="solucin.html" class="no-ch">Solución</a></li>
          </ul>
          </li>
          <li><a href="clases_y_objetos.html" class="no-ch">Clases y Objetos</a></li>
@@ -370,9 +368,9 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">MVC en Escritorio</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id569">
+<article class="iDevice_wrapper textIdevice" id="id735">
 <div class="iDevice emphasis0" >
-<div id="ta569_108_2" class="block iDevice_content">
+<div id="ta735_108_2" class="block iDevice_content">
 <div class="exe-text"><p>En una pequeña aplicación de escritorio, el patrón MVC luciría como lo muestra la siguiente gráfica:</p>
 <div style="text-align: center;">
 <div class="exe-figure exe-image position-center license-copyright" style="width: 992px;">

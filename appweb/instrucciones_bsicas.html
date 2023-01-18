@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>SEMANA 16: Sistemas Manejadores de Contenido | Aplicaciones Web </title>
+<title>Instrucciones básicas | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-434"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-476"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -155,6 +157,7 @@
    <ul class="other-section">
       <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
       <li><a href="ajax.html" class="no-ch">Ajax</a></li>
+      <li><a href="json.html" class="no-ch">JSON</a></li>
       <li><a href="librera_js_jquery.html" class="daddy">Librería JS (JQuery)</a>
       <ul class="other-section">
          <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
@@ -179,12 +182,8 @@
    </li>
    <li><a href="semana_9_fundamentos_back_end_java.html" class="daddy">SEMANA 9: Fundamentos Back End (Java)</a>
    <ul class="other-section">
-      <li><a href="14_instalacin_de_ambiente_de_desarrollo.html" class="daddy">1.4 Instalación de Ambiente de Desarrollo</a>
-      <ul class="other-section">
-         <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
-         <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
-      </ul>
-      </li>
+      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
       <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
       <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
@@ -197,6 +196,7 @@
          <li><a href="reenvo_entre_componentes_servlet.html" class="no-ch">Reenvío entre componentes (Servlet)</a></li>
       </ul>
       </li>
+      <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
       <li><a href="jsp.html" class="daddy">JSP</a>
       <ul class="other-section">
          <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
@@ -205,9 +205,10 @@
          <li><a href="jsp_ejercicios.html" class="no-ch">JSP: Ejercicios</a></li>
       </ul>
       </li>
-      <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
+      <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
       <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+      <li><a href="prctica_docente.html" class="no-ch">Práctica docente</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -275,8 +276,8 @@
       <li><a href="cliente_rest.html" class="no-ch">Cliente Rest</a></li>
    </ul>
    </li>
-   <li id="active"><a href="semana_16_sistemas_manejadores_de_contenido.html" class="active daddy">SEMANA 16: Sistemas Manejadores de Contenido</a>
-   <ul>
+   <li><a href="semana_16_sistemas_manejadores_de_contenido.html" class="daddy">SEMANA 16: Sistemas Manejadores de Contenido</a>
+   <ul class="other-section">
       <li><a href="qu_es_un_cms.html" class="no-ch">¿Qué es un CMS?</a></li>
       <li><a href="qu_se_puede_hacer_con_un__cms.html" class="no-ch">¿Qué se puede hacer con un  CMS?</a></li>
       <li><a href="caractersticas_de_un_cms.html" class="no-ch">Características de un CMS</a></li>
@@ -293,15 +294,15 @@
       <li><a href="ejemplos_de_instalacin.html" class="no-ch">Ejemplos de instalación</a></li>
    </ul>
    </li>
-   <li><a href="anexos.html" class="daddy">ANEXOS</a>
-   <ul class="other-section">
-      <li><a href="lenguaje_php.html" class="daddy">Lenguaje PHP</a>
-      <ul class="other-section">
-         <li><a href="php_hypertext_preprocessir.html" class="no-ch">PHP: HyperText Preprocessir</a></li>
+   <li class="current-page-parent"><a href="anexos.html" class="current-page-parent daddy">ANEXOS</a>
+   <ul>
+      <li class="current-page-parent"><a href="lenguaje_php.html" class="current-page-parent daddy">Lenguaje PHP</a>
+      <ul>
          <li><a href="instalacin_y_configuracin.html" class="no-ch">Instalación y Configuración</a></li>
          <li><a href="primer_ejemplo.html" class="no-ch">Primer Ejemplo</a></li>
          <li><a href="insercin_de_cdigo_php.html" class="no-ch">Inserción de código PHP</a></li>
          <li><a href="variables_y_tipos_de_datos.html" class="no-ch">Variables y tipos de datos</a></li>
+         <li id="active"><a href="instrucciones_bsicas.html" class="active no-ch">Instrucciones básicas</a></li>
          <li><a href="sentencias_de_control0.html" class="no-ch">Sentencias de Control</a></li>
          <li><a href="variables_predefinidas.html" class="no-ch">Variables Predefinidas</a></li>
          <li><a href="manipulacin_de_ficheros.html" class="daddy">Manipulación de ficheros</a>
@@ -315,7 +316,6 @@
          <ul class="other-section">
             <li><a href="antes_de_empezar.html" class="no-ch">Antes de empezar...</a></li>
             <li><a href="instrucciones.html" class="no-ch">Instrucciones</a></li>
-            <li><a href="solucin.html" class="no-ch">Solución</a></li>
          </ul>
          </li>
          <li><a href="clases_y_objetos.html" class="no-ch">Clases y Objetos</a></li>
@@ -364,23 +364,96 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="cliente_rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="qu_es_un_cms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="variables_y_tipos_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sentencias_de_control0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">SEMANA 16: Sistemas Manejadores de Contenido</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id676">
+<header id="nodeDecoration"><h1 id="nodeTitle">Instrucciones básicas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id794">
 <div class="iDevice emphasis0" >
-<div id="ta676_108_2" class="block iDevice_content">
-<div class="exe-text"><div class="diapositiva" style="margin: 0 auto;">
-<div>MOTIVACION:</div>
-<ul>
-<li>
-<div>Una empresa requiere un portal Web para realizar su publicidad. El sitio web considera varios contenidos. El sitio no debe ser algo estático sino algo que crezca y evoluciones con el tiempo para crear nuevos contenidos o actualizar los existentes. Por ejemplo, la página de testimonios de clientes deberá actualizarse frecuentemente Los contenidos irán creciendo según demanda, por tanto se deberá poder crear páginas web con cada contenido variado. Las personas que ingresarán los contenidos no disponen de conocimiento tecnológico.</div>
-</li>
-</ul>
-</div></div>
+<div id="ta794_790_2" class="block iDevice_content">
+<div class="exe-text"><h1>Impresión en pantalla</h1>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 33.3333%;">echo</td>
+<td style="width: 33.3333%;">
+<div class="highlighted-code code-style-2 language-php line-numbers">
+<div>
+<pre><code>&lt;?php
+    echo "hola";
+?&gt;</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">print</td>
+<td style="width: 33.3333%;">
+<div class="highlighted-code code-style-2 language-php line-numbers">
+<div>
+<pre><code>&lt;?php
+    #impresion en pantalla
+    print "esta es una prueba con \"print\"";
+?&gt;</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">var_dump</td>
+<td style="width: 33.3333%;">
+<div class="highlighted-code code-style-2 language-php line-numbers">
+<div>
+<div class="pre-code">
+<div>
+<pre><code>&lt;?php
+    # imprimir todas las propiedades ocultas de un objeto $estadocivil
+    var_dump($estadocivil);
+?&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h1>Arrays</h1>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50%;">Array simple</td>
+<td style="width: 50%;">
+<div class="highlighted-code code-style-2 language-php line-numbers">
+<div>
+<pre><code>&lt;?php
+    $estadocivil = array("soltero", "casado", "divorciado");
+    #print_r imprime información legible para humanos
+    print_r($estadocivil);
+?&gt;</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 50%;">Array con clave, valor</td>
+<td style="width: 50%;">
+<div class="highlighted-code code-style-2 language-php line-numbers">
+<div>
+<pre><code>&lt;?php
+   $estadocivilClaveValor = array("val1"=&gt;"soltero", "val2"=&gt;"divorciado");
+    echo "&lt;br&gt;";
+    echo "Estado civil (clave,valor) : $estadocivilClaveValor[val1]";
+?&gt;</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
 </div>
 </div>
 </article>
@@ -391,7 +464,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="cliente_rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="qu_es_un_cms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="variables_y_tipos_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sentencias_de_control0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Variables y tipos de datos | Aplicaciones Web </title>
+<title>JSON | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-131"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-492"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -151,10 +153,11 @@
       <li><a href="cambio_de_contenido.html" class="no-ch">Cambio de contenido</a></li>
    </ul>
    </li>
-   <li><a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="daddy">SEMANA 8: Javascript (Parte II): Creación de contenido y comunicación asíncrona</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="current-page-parent daddy">SEMANA 8: Javascript (Parte II): Creación de contenido y comunicación asíncrona</a>
+   <ul>
       <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
       <li><a href="ajax.html" class="no-ch">Ajax</a></li>
+      <li id="active"><a href="json.html" class="active no-ch">JSON</a></li>
       <li><a href="librera_js_jquery.html" class="daddy">Librería JS (JQuery)</a>
       <ul class="other-section">
          <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
@@ -179,12 +182,8 @@
    </li>
    <li><a href="semana_9_fundamentos_back_end_java.html" class="daddy">SEMANA 9: Fundamentos Back End (Java)</a>
    <ul class="other-section">
-      <li><a href="14_instalacin_de_ambiente_de_desarrollo.html" class="daddy">1.4 Instalación de Ambiente de Desarrollo</a>
-      <ul class="other-section">
-         <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
-         <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
-      </ul>
-      </li>
+      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
       <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
       <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
@@ -197,6 +196,7 @@
          <li><a href="reenvo_entre_componentes_servlet.html" class="no-ch">Reenvío entre componentes (Servlet)</a></li>
       </ul>
       </li>
+      <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
       <li><a href="jsp.html" class="daddy">JSP</a>
       <ul class="other-section">
          <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
@@ -205,9 +205,10 @@
          <li><a href="jsp_ejercicios.html" class="no-ch">JSP: Ejercicios</a></li>
       </ul>
       </li>
-      <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
+      <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
       <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+      <li><a href="prctica_docente.html" class="no-ch">Práctica docente</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -293,15 +294,15 @@
       <li><a href="ejemplos_de_instalacin.html" class="no-ch">Ejemplos de instalación</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="anexos.html" class="current-page-parent daddy">ANEXOS</a>
-   <ul>
-      <li class="current-page-parent"><a href="lenguaje_php.html" class="current-page-parent daddy">Lenguaje PHP</a>
-      <ul>
-         <li><a href="php_hypertext_preprocessir.html" class="no-ch">PHP: HyperText Preprocessir</a></li>
+   <li><a href="anexos.html" class="daddy">ANEXOS</a>
+   <ul class="other-section">
+      <li><a href="lenguaje_php.html" class="daddy">Lenguaje PHP</a>
+      <ul class="other-section">
          <li><a href="instalacin_y_configuracin.html" class="no-ch">Instalación y Configuración</a></li>
          <li><a href="primer_ejemplo.html" class="no-ch">Primer Ejemplo</a></li>
          <li><a href="insercin_de_cdigo_php.html" class="no-ch">Inserción de código PHP</a></li>
-         <li id="active"><a href="variables_y_tipos_de_datos.html" class="active no-ch">Variables y tipos de datos</a></li>
+         <li><a href="variables_y_tipos_de_datos.html" class="no-ch">Variables y tipos de datos</a></li>
+         <li><a href="instrucciones_bsicas.html" class="no-ch">Instrucciones básicas</a></li>
          <li><a href="sentencias_de_control0.html" class="no-ch">Sentencias de Control</a></li>
          <li><a href="variables_predefinidas.html" class="no-ch">Variables Predefinidas</a></li>
          <li><a href="manipulacin_de_ficheros.html" class="daddy">Manipulación de ficheros</a>
@@ -315,7 +316,6 @@
          <ul class="other-section">
             <li><a href="antes_de_empezar.html" class="no-ch">Antes de empezar...</a></li>
             <li><a href="instrucciones.html" class="no-ch">Instrucciones</a></li>
-            <li><a href="solucin.html" class="no-ch">Solución</a></li>
          </ul>
          </li>
          <li><a href="clases_y_objetos.html" class="no-ch">Clases y Objetos</a></li>
@@ -364,38 +364,104 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="insercin_de_cdigo_php.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sentencias_de_control0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ajax.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="librera_js_jquery.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Variables y tipos de datos</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id287">
-<div class="iDevice emphasis0">
-<div id="ta287_85" class="block iDevice_content">
+<header id="nodeDecoration"><h1 id="nodeTitle">JSON</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id75">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Definiciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta75_814_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Es un formato para estructurar datos en forma de texto y transmitirlo de un sistema a otro.
 <ul>
-<li class="p1"><span class="s1"> </span>variables:
-<ul>
-<li class="p1">carácter <span class="s3" style="color: #333333; font-size: 1.05em;">$ </span><span style="color: #333333; font-size: 1.05em;">seguido del nombre de la variable</span></li>
-<li class="p1">1<span class="s4" style="color: #333333; font-size: 1.05em;">er. </span><span style="color: #333333; font-size: 1.05em;">carácter nombre: letra o guión bajo (</span><span class="s3" style="color: #333333; font-size: 1.05em;">_</span><span style="color: #333333; font-size: 1.05em;">)</span></li>
-<li class="p1">sensible mayúsculas/minúsculas
-<ul>
-<li class="p1"><span style="color: #333333; font-size: 1.05em;">palabras reservadas y funciones --&gt; no sensible</span></li>
+<li>Otro formato conocido es XML</li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="p1">tipos de datos:
+<li>Su especificación surgió en el año 2000 y pasó a formar parte de JS después del lanzamiento de la versión 5 de ECMAScript.</li>
+<li>Es independiente del lenguaje de programación</li>
+<li>Usado ampliamente en las peticiones con AJAX.</li>
+<li>JSON =<em><strong> JavaScript Object Notation</strong></em>. </li>
+<li>Estructura básica: Los datos se estructura con
 <ul>
-<li class="p1">integer</li>
-<li class="p1">float</li>
-<li class="p1">boolean</li>
-<li class="p1">string</li>
-<li class="p1">array</li>
-<li class="p1">object</li>
+<li><strong>Clave</strong>: Identificador del contenido (debe estar en comillas porque es un String)</li>
+<li><strong>Valor</strong>: Contenido correspondiente a la Clave. Pueden almacenarse tipos de datos como  string, array, object, number, boolean, null.</li>
 </ul>
 </li>
+<li>Reglas de Formato: Los datos deben seguir la siguiente notación...
+<ul>
+<li><strong>Llaves</strong> { } .- Sirve para delimitar objetos y son obligatorias para iniciar y terminar el contenido</li>
+<li><strong>Corchetes</strong> [ ] .- indican un array</li>
+<li><strong>Dos puntos</strong> : usados para separar la clave y su valor</li>
+<li><strong>Coma</strong> , para separar elementos</li>
 </ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id76">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta76_815_2" class="block iDevice_content">
+<div class="exe-text"><h4>String</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{ "nombre": "Pedro"}</code></pre>
+</div>
+</div>
+<h4>Array</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{
+	"marca_autos": ["Ford", "Mazda", "Datsun"]
+}
+</code></pre>
+</div>
+</div>
+<h4>Objeto</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{
+	"persona": {
+		"nombre": "Luis",
+		"apellido": "Gutierrez"
+	}
+}</code></pre>
+</div>
+</div>
+<h4>Lista de Objetos</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{
+    "list":[
+      {"item":"Gestión de auditoría"},
+      {"item":"Gestión de menús"},
+      {"item":"Gestión de pedidos"},
+      {"item":"Gestión de contratos"},
+      {"item":"Gestion de logistica"},
+      {"item":"Administración"},
+      {"item":"Gestión de recursos humanos"},
+      {"item":"Gestión de compras"},
+      {"item":"Gestión mayorista"},
+      {"item":"Gestion de seguridad"},
+      {"item":"Administración de cuentas"},
+      {"item":"Gestión financiera"},
+      {"item":"Otra gestión"}
+    ]
+  }</code></pre>
+</div>
+</div></div>
+</div>
+</div>
 </div>
 </div>
 </article>
@@ -406,7 +472,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="insercin_de_cdigo_php.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="sentencias_de_control0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ajax.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="librera_js_jquery.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
