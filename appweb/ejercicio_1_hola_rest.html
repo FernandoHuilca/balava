@@ -20,7 +20,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-393"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-532"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -280,6 +280,7 @@
       <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
       <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
       <li><a href="cliente_rest.html" class="no-ch">Cliente Rest</a></li>
+      <li><a href="resolviendo_coors.html" class="no-ch">Resolviendo COORS</a></li>
    </ul>
    </li>
    <li><a href="semana_16_sistemas_manejadores_de_contenido.html" class="daddy">SEMANA 16: Sistemas Manejadores de Contenido</a>
@@ -376,9 +377,9 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Ejercicio 1: Hola Rest</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id639">
+<article class="iDevice_wrapper textIdevice" id="id928">
 <div class="iDevice emphasis0" >
-<div id="ta639_121_2" class="block iDevice_content">
+<div id="ta928_121_2" class="block iDevice_content">
 <div class="exe-text"><p>Sigue los siguientes 5 pasos para poner en marcha tu Servicio Web Rest</p>
 <hr />
 <div class="exe-fx exe-paginated">
@@ -389,9 +390,50 @@
 </ul>
 <h2>Instala librerías</h2>
 <ul>
+<li><strong>Opción Manual:</strong>
+<ul>
 <li>Copiar todos los Jars de Jersey, jackson, jAXB en la carpeta <span style="font-size: 14pt;"><code>lib</code></span>, de WEB-INF</li>
 <li><a href="https://ciniguez.github.io/balava/libreriasjava/">https://ciniguez.github.io/balava/libreriasjava/</a>(Sección Servicios Web - REST)</li>
 </ul>
+</li>
+<li><strong>Opción con Maven</strong>:</li>
+</ul>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;!-- SERVICIO WEB REST --&gt;
+&lt;dependency&gt;
+	&lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+	&lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
+	&lt;version&gt;2.31&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+	&lt;groupId&gt;org.glassfish.jersey.inject&lt;/groupId&gt;
+	&lt;artifactId&gt;jersey-hk2&lt;/artifactId&gt;
+	&lt;version&gt;2.28&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- JAXB --&gt;
+&lt;!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api --&gt;
+&lt;dependency&gt;
+	&lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;
+	&lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;
+	&lt;version&gt;2.3.1&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- Javax JSON Bind API --&gt;
+&lt;!-- https://mvnrepository.com/artifact/javax.json.bind/javax.json.bind-api --&gt;
+&lt;dependency&gt;
+	&lt;groupId&gt;javax.json.bind&lt;/groupId&gt;
+	&lt;artifactId&gt;javax.json.bind-api&lt;/artifactId&gt;
+	&lt;version&gt;1.0&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- Jackson para MessageBodyWriter --&gt;
+&lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson --&gt;
+&lt;dependency&gt;
+	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
+	&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
+	&lt;version&gt;2.31&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
 <h2>Anotar clase</h2>
 <p>Crea una clase y anótala para convertirla en el servicio ( o recurso)</p>
 <div class="highlighted-code language-java line-numbers">
@@ -454,12 +496,12 @@ public class Hola {
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id640">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id929">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header" style="background-image:url(icon_share.png)"><h1 class="iDeviceTitle">Herramienta de Apoyo</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta640_122_2" class="block iDevice_content">
+<div id="ta929_122_2" class="block iDevice_content">
 <div class="exe-text"><p>Para consumir los servicios web - REST te recomiendo descargar una herramienta para Google Chrome: <strong>Advanced Rest Client</strong></p>
 <p><strong><img src="m6_img0.2.png" width="517" height="133" alt="Advanced REST Client" style="display: block; margin-left: auto; margin-right: auto;" /></strong></p></div>
 </div>

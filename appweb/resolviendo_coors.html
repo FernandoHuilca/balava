@@ -2,23 +2,21 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
-<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>JSP | Aplicaciones Web </title>
+<title>Resolviendo COORS | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
-<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-462"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-539"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -186,8 +184,8 @@
       </li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="semana_9_fundamentos_back_end_java.html" class="current-page-parent daddy">SEMANA 9: Fundamentos Back End (Java)</a>
-   <ul>
+   <li><a href="semana_9_fundamentos_back_end_java.html" class="daddy">SEMANA 9: Fundamentos Back End (Java)</a>
+   <ul class="other-section">
       <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
       <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
@@ -203,8 +201,8 @@
       </ul>
       </li>
       <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
-      <li id="active"><a href="jsp.html" class="active daddy">JSP</a>
-      <ul>
+      <li><a href="jsp.html" class="daddy">JSP</a>
+      <ul class="other-section">
          <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
          <li><a href="jstl_y_jsp.html" class="no-ch">JSTL y JSP</a></li>
          <li><a href="jstl_instalacin_y_uso.html" class="no-ch">JSTL: Instalación y Uso</a></li>
@@ -268,8 +266,8 @@
       <li><a href="prctica_ws_soap_login_persona.html" class="no-ch">Práctica WS SOAP: Login Persona</a></li>
    </ul>
    </li>
-   <li><a href="semana_15_servicios_web_rest.html" class="daddy">SEMANA 15: Servicios Web REST</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="semana_15_servicios_web_rest.html" class="current-page-parent daddy">SEMANA 15: Servicios Web REST</a>
+   <ul>
       <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
       <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
       <li><a href="qu_es_un_recurso.html" class="no-ch">¿Qué es un Recurso?</a></li>
@@ -278,7 +276,7 @@
       <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
       <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
       <li><a href="cliente_rest.html" class="no-ch">Cliente Rest</a></li>
-      <li><a href="resolviendo_coors.html" class="no-ch">Resolviendo COORS</a></li>
+      <li id="active"><a href="resolviendo_coors.html" class="active no-ch">Resolviendo COORS</a></li>
    </ul>
    </li>
    <li><a href="semana_16_sistemas_manejadores_de_contenido.html" class="daddy">SEMANA 16: Sistemas Manejadores de Contenido</a>
@@ -369,57 +367,43 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="javabeans.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cdigo_java_de_jsp_no_recomendado.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="cliente_rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="semana_16_sistemas_manejadores_de_contenido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">JSP</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id758">
-<div class="iDevice emphasis0">
-<div id="ta758_1" class="block iDevice_content">
-<p>JSP (JavaServer Pages), es una tecnología basada en Java que combina HTML con fragmentos de código Java para producir páginas web dinámicas. Está orientada a la presentación Web (la vista).</p>
-<ul>
-<li>Un JSP, es una página dinámica de servidor Java.</li>
-<li>Las páginas JSP se traducen a servlets en tiempo de ejecución.</li>
-<li>Una página JSP es un archivo de texto simple que está compuesto de (ver Ejemplo JSP):
-<ul>
-<li>Cabecera con importaciones y parámetros <span style="color: #800000;">(línea 1 del ejemplo)</span></li>
-<li>Código cliente, normalmente HTML, XML, JavaScript <span style="color: #800000;">(línea 8 del ejemplo)</span></li>
-<li>Tags: instrucciones en formato XML asociadas a clases Java <span style="color: #800000;">(línea 9)</span></li>
-<li>Código de servidor Java denominado Scriplet y escrito entre los caracteres &lt;% y %&gt; <span style="color: #800000;">(línea 13 al 16)</span></li>
-</ul>
-</li>
-</ul>
-<h5 style="text-align: center;">Ejemplo JSP: Ejemplo de JSP con sus elementos principales</h5>
-<div style="text-align: center;">
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;title&gt;Insert title here&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;jsp:getProperty name="usuario" property="username" /&gt;
+<header id="nodeDecoration"><h1 id="nodeTitle">Resolviendo COORS</h1></header>
+<article class="iDevice_wrapper ListaIdevice em_iDevice" id="id947">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad desplegable</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta947_115" class="block instructions iDevice_content">
+<p>Lee el siguiente artículo sobre cómo abordar el problema de COORS para que los servicios expuestos por tu aplicación JAVA puedan ser consumidos por una aplicación externa (de otro dominio diferente al de tu aplicación JAVA)</p>
+</section>
 
-&lt;br&gt;
-
-&lt;%
-String edad = request.getParameter("edad");
-out.print("La edad es" + edad);
-%&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-</div>
-</div>
-</div>
-<h2>Notas de Implementación</h2>
+<section class="activity" id="activity-947_116">
+<form name="cloze-form-947_116" action="#" class="activity-form cloze-form">
+<div id="cloze947_116">
 <ul>
-<li>Daremos a nuestro fichero una extensión *.jsp, y normalmente lo copiaremos en la misma carpeta del servidor donde están las páginas HTML</li>
+<li>https://kenjikawaida.medium.com/cross-origin-request-blocked-en-java-servlet-9de5379be02d</li>
 </ul>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore947_116" value="Comprobar"  id="getScore947_116" />
+
+<input type="hidden" name="clozeOtras947_116" id="clozeOtras947_116" value=""/>
+
+<input type="hidden" name="clozeFlag947_116.strictMarking" id="clozeFlag947_116.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag947_116.checkCaps" id="clozeFlag947_116.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag947_116.instantMarking" id="clozeFlag947_116.instantMarking" value="false" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore947_116"></div>
+</div>
+</form>
+</section></div>
 </div>
 </div>
 </article>
@@ -430,7 +414,7 @@ out.print("La edad es" + edad);
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="javabeans.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cdigo_java_de_jsp_no_recomendado.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="cliente_rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="semana_16_sistemas_manejadores_de_contenido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
