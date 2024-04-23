@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Mensajes HTTP: La respuesta | Aplicaciones Web </title>
+<title>HTML 5 | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-38"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-234"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -27,68 +29,44 @@
    <ul class="other-section">
       <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia...</a></li>
       <li><a href="conceptos_clave.html" class="no-ch">Conceptos Clave</a></li>
-      <li><a href="qu_es_una_pgina_web.html" class="no-ch">¿Qué es una Página Web?</a></li>
+      <li><a href="qu_es_una_aplicacin_web.html" class="no-ch">¿Qué es una Aplicación Web?</a></li>
       <li><a href="tipos_de_aplicaciones.html" class="no-ch">Tipos de Aplicaciones</a></li>
       <li><a href="aplicaciones_web_estticas.html" class="no-ch">Aplicaciones Web Estáticas</a></li>
       <li><a href="aplicaciones_web_dinmicas.html" class="no-ch">Aplicaciones Web Dinámicas</a></li>
       <li><a href="aplicaciones_web_de_pgina_nica_spa.html" class="no-ch">Aplicaciones Web de Página Única (SPA)</a></li>
-      <li><a href="aplicaciones_nativas.html" class="no-ch">Aplicaciones Nativas</a></li>
       <li><a href="aplicaciones_web_progresivas_pwa.html" class="no-ch">Aplicaciones Web Progresivas (PWA)</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="semana_2_el_protocolo_http.html" class="current-page-parent daddy">SEMANA 2: El protocolo HTTP</a>
-   <ul>
+   <li><a href="semana_2_el_protocolo_http.html" class="daddy">SEMANA 2: El protocolo HTTP</a>
+   <ul class="other-section">
       <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-      <li><a href="modelo_clienteservidor.html" class="no-ch">Modelo Cliente-Servidor</a></li>
       <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
-      <li><a href="protocolo_http.html" class="no-ch">Protocolo HTTP</a></li>
-      <li><a href="dinamismo_del_protocolo_http.html" class="no-ch">Dinamismo del protocolo HTTP</a></li>
+      <li><a href="el_protocolo_http.html" class="no-ch">El protocolo HTTP</a></li>
       <li><a href="mensajes_http.html" class="no-ch">Mensajes HTTP</a></li>
-      <li><a href="mensajes_http_la_solicitud.html" class="no-ch">Mensajes HTTP: La solicitud</a></li>
-      <li id="active"><a href="mensajes_http_la_respuesta.html" class="active no-ch">Mensajes HTTP: La respuesta</a></li>
       <li><a href="la_uri.html" class="no-ch">La URI</a></li>
-      <li><a href="sintaxis_de_la_uri.html" class="no-ch">Sintaxis de la URI</a></li>
-      <li><a href="ejemplo_sintaxis.html" class="no-ch">Ejemplo Sintaxis</a></li>
-      <li><a href="creando_uris_adecuadas.html" class="no-ch">Creando URIs adecuadas</a></li>
       <li><a href="cabeceras.html" class="no-ch">Cabeceras</a></li>
-      <li><a href="cabeceras_de_respuesta.html" class="no-ch">Cabeceras de Respuesta</a></li>
-      <li><a href="cabeceras_de_peticin.html" class="no-ch">Cabeceras de Petición</a></li>
-      <li><a href="referencias.html" class="no-ch">Referencias</a></li>
-      <li><a href="recursos_de_lectura.html" class="no-ch">Recursos de Lectura</a></li>
       <li><a href="mtodos_http.html" class="no-ch">Métodos HTTP</a></li>
-      <li><a href="mtodo_get.html" class="no-ch">Método GET</a></li>
-      <li><a href="mtodo_post.html" class="no-ch">Método POST</a></li>
       <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
-      <li><a href="parmetros_envo_por_get.html" class="no-ch">Parámetros: Envío por GET</a></li>
-      <li><a href="parmetros_envo_por_post.html" class="no-ch">Parámetros: Envío por POST</a></li>
-      <li><a href="parmetros_get_o_post.html" class="no-ch">Parámetros: ¿GET o POST?</a></li>
       <li><a href="cdigos_de_estado.html" class="no-ch">Códigos de Estado</a></li>
-      <li><a href="dnde_est_el_cdigo.html" class="no-ch">¿Dónde está el Código?</a></li>
-      <li><a href="categora_de_cdigos_de_estado.html" class="no-ch">Categoría de Códigos de Estado</a></li>
-      <li><a href="prctica_http.html" class="no-ch">Práctica HTTP</a></li>
-      <li><a href="recursos_de_lectura0.html" class="no-ch">Recursos de Lectura</a></li>
       <li><a href="cookies_y_sesiones.html" class="no-ch">Cookies y Sesiones</a></li>
-      <li><a href="cookies.html" class="no-ch">Cookies</a></li>
+      <li><a href="prctica_http.html" class="no-ch">Práctica HTTP</a></li>
       <li><a href="ejemplo_aplicacin_de_cookies.html" class="no-ch">Ejemplo: Aplicación de Cookies</a></li>
-      <li><a href="sesiones.html" class="no-ch">Sesiones</a></li>
       <li><a href="ejemplo_aplicacin_de_sesiones.html" class="no-ch">Ejemplo: Aplicación de Sesiones</a></li>
       <li><a href="actividad_mi_tienda_virtual.html" class="no-ch">Actividad: Mi Tienda Virtual</a></li>
    </ul>
    </li>
-   <li><a href="semana_3_html_y_html5.html" class="daddy">SEMANA 3: HTML y HTML5</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="semana_3_html_y_html5.html" class="current-page-parent daddy">SEMANA 3: HTML y HTML5</a>
+   <ul>
       <li><a href="un_poco_de_historia0.html" class="no-ch">Un poco de historia...</a></li>
       <li><a href="qu_es_html.html" class="no-ch">¿Qué es HTML?</a></li>
       <li><a href="etiquetas_bsicas.html" class="no-ch">Etiquetas básicas</a></li>
       <li><a href="etiquetas_del_header.html" class="no-ch">Etiquetas del header</a></li>
       <li><a href="etiquetas_del_body.html" class="no-ch">Etiquetas del body</a></li>
       <li><a href="formulario_y_controles.html" class="no-ch">Formulario y Controles</a></li>
-      <li><a href="atributos_de_form.html" class="no-ch">Atributos de FORM</a></li>
       <li><a href="controles_de_formulario.html" class="no-ch">Controles de Formulario</a></li>
+      <li id="active"><a href="html_5.html" class="active no-ch">HTML 5</a></li>
       <li><a href="actividad_catlogo_de_controles.html" class="no-ch">Actividad: Catálogo de Controles</a></li>
       <li><a href="autoevaluacin_html.html" class="no-ch">Autoevaluación HTML</a></li>
-      <li><a href="html_5_estructura_semntica.html" class="no-ch">HTML 5: Estructura semántica</a></li>
-      <li><a href="html5_validaciones_bsicas_en_formulario.html" class="no-ch">HTML5: Validaciones básicas en Formulario</a></li>
       <li><a href="actividad_formulario.html" class="no-ch">Actividad: Formulario</a></li>
       <li><a href="bibliografa_y_recursos_adicionales.html" class="no-ch">Bibliografía y Recursos adicionales</a></li>
    </ul>
@@ -100,8 +78,11 @@
       <li><a href="anatoma_de_un_estilo_css.html" class="no-ch">Anatomía de un Estilo CSS</a></li>
       <li><a href="selectores_simples.html" class="no-ch">Selectores simples</a></li>
       <li><a href="formas_de_incluir_css.html" class="no-ch">Formas de incluir CSS</a></li>
-      <li><a href="propiedades_css.html" class="no-ch">Propiedades CSS</a></li>
-      <li><a href="propiedad_bordes.html" class="no-ch">Propiedad: Bordes</a></li>
+      <li><a href="propiedades_css.html" class="daddy">Propiedades CSS</a>
+      <ul class="other-section">
+         <li><a href="propiedad_bordes.html" class="no-ch">Propiedad: Bordes</a></li>
+      </ul>
+      </li>
       <li><a href="modelo_de_caja.html" class="daddy">Modelo de Caja</a>
       <ul class="other-section">
          <li><a href="modelo_de_caja_margin_y_padding.html" class="no-ch">Modelo de Caja: Margin y Padding</a></li>
@@ -381,34 +362,186 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="mensajes_http_la_solicitud.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="la_uri.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="controles_de_formulario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_catlogo_de_controles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Mensajes HTTP: La respuesta</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id155">
-<div class="iDevice emphasis0">
-<div id="ta155_85" class="block iDevice_content">
-<p>La respuesta HTTP es un mensaje que el Servidor envía al Cliente. Estudiemos la estructura de este mensaje a través del siguiente ejemplo:</p>
-<figure class="exe-figure exe-image position-center license-pd" style="width: 800px;">
-<div class="figcaption header"><strong>HTTP Response</strong></div>
-<img src="m2_img0.2.png" alt="HTTP response" width="800" height="371" />
-<figcaption class="figcaption"><span class="author">Carlos Iñiguez</span> <span class="license"><span class="sep">(</span><span>Dominio público</span><span class="sep">)</span></span></figcaption>
-</figure>
-<p>El mensaje está formato por tres partes: <em><span style="color: #ff6600;">línea de inicio </span></em>(línea 1), <span style="color: #ff6600;"><em>cabeceras</em></span> (o <em>headers</em>, en inglés) (líneas 2 a 7) y <span style="color: #ff6600;">cuerpo</span> (línea 8).</p>
-<h2>Línea de inicio</h2>
-<p>Esta parte (línea 1) está conformada por:</p>
+<header id="nodeDecoration"><h1 id="nodeTitle">HTML 5</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id78">
+<div class="iDevice emphasis0" >
+<div id="ta78_951_2" class="block iDevice_content">
+<div class="exe-text"><p>La versión más actual de HTML es la versión 5. HTML5 incorpora nuevas etiquetas valiosas para estructurar el cuerpo de la página web, nuevos controles de formulario que integran código javascript transparente para el desarrollador y poderosas APIs del navegador.</p>
+<p>Para definir una página en HTML5, la siguiente sentencia debe estar en la cabecera del documento. </p>
+<pre><code>&lt;!DOCTYPE html&gt;
+</code></pre>
+<p>Esta sentencia es una versión simplificada de la larga cabecera que se tenía en versiones anteriores a la versión 5.</p>
+<h2 id="estructura-semántica">Estructura semántica</h2>
+<p>HTML 5 trae nuevas etiquetas para brindar semántica al código del contenido de la página (el código entre las etiquetas &lt;body&gt;). Estas etiquetas son:</p>
 <ul>
-<li><strong>Versión del protocolo HTTP.-</strong> Es la versión del protocolo HTTP en la que se envía la respuesta. En el ejemplo se usa la versión 1.1 de HTTP (<code>HTTP/ 1.1</code>).</li>
-<li><strong>Código de estado.- I</strong>ndica si la petición ha sido exitosa, o no, y debido a que. El código de estado viene acompañado de un <em>mensaje de estado, </em>que es una breve descripción del código de estado. En el ejemplo, el código es <code>200</code> y el mensaje de estado es <code>ok</code></li>
+<li><strong>&lt;header&gt;</strong> : Etiqueta para indicar que el contenido en ella corresponde a la cabecera de la página. No confundir con la etiqueta &lt;head&gt; que corresponde a la cabecera de una página.</li>
+<li><strong>&lt;nav&gt;</strong>: indica que el contenido en ella corresponde a la navegación</li>
+<li><strong>&lt;section&gt;</strong>: indica una sección de información principal de la página. Generalmente utilizado para contener la información más relevante del documento.</li>
+<li><strong>&lt;aside&gt;</strong>: barra lateral de una página</li>
+<li><strong>&lt;footer&gt;</strong>: pie de página</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id480">
+<div class="iDevice emphasis0" >
+<div id="ta480_109_2" class="block iDevice_content">
+<div class="exe-text"><p>La figura 1 indica algunas de estas etiquetas (header, nav, section, aside, footer) y su localización respecto a las partes de una página normal.</p>
+<p style="text-align: center;"><strong>Figura 1. Etiquetas HTML5</strong></p>
+<p style="text-align: center;"><br /><img src="HTML5_body.PNG" alt="Sectores HTML5" title="Sectores HTML5" width="523" height="548" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">NOTA: El contenido dentro de la etiqueta &lt;section&gt; es información principal de la página, pero está a su vez puede estar dividida en subseccciones. Estas subsecciones pueden ser indicadas/estructuradas mediante una etiqueta denominada &lt;article&gt;.</p>
+<p style="text-align: justify;"><br />El siguiente código muestra un ejemplo de la estructura del contenido de la página aplicando las etiquetas semánticas. Apuesto a que ahora si te puedes dar cuenta de cada una de las secciones que conforman la página. Lo importante de este código es que puedas observar el uso de las etiquetas:</p>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="iso-8859-1"&gt;
+    &lt;meta name="description" content="Ejemplo de HTML5"&gt;
+    &lt;meta name="keywords" content="HTML5, CSS3, JavaScript"&gt;
+    &lt;title&gt;Este texto es el título del documento&lt;/title&gt;
+    &lt;link rel="stylesheet" href="misestilos.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Este es el título principal del sitio web&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;principal&lt;/li&gt;
+            &lt;li&gt;fotos&lt;/li&gt;
+            &lt;li&gt;videos&lt;/li&gt;
+            &lt;li&gt;contacto&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;section&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;blockquote&gt;Mensaje número uno&lt;/blockquote&gt;
+        &lt;blockquote&gt;Mensaje número dos&lt;/blockquote&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        Derechos Reservados &amp;copy; 2010-2011
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id77">
+<div class="iDevice emphasis0" >
+<div id="ta77_950_2" class="block iDevice_content">
+<div class="exe-text"><h2>Validaciones básicas de formulario</h2>
+<p>Una de las grandes preocupaciones al crear formularios es la validación de cada uno de los controles que lo contienen. Por ejemplo, una caja de texto en la que el usuario debe ingresar un número de teléfono, tiene que ser validada para verificar que la información ingresada por el usuario sean números y no letras, que el número tenga una sintaxis como tal de número telefónico.</p>
+<p>En las versiones de HTML, la validación se realizaba a través de código Javascript. Era una tarea tediosa escribir código Javascript para validar cada control de formulario, más aún cuando cada control tenía su propia restricción en cuanto al ingreso de información.</p>
+<p> HTML 5 provee varios controles de formulario que se auto-validan. Es decir, controlan que la entrada de datos sea la adecuada. En otras palabras, HTML 5 incluye código Javascript de validación en los controles y este código es transparente para ti como desarrollador, ya no debes preocuparte por escribir extensas líneas de código para validar el ingreso del usuario.</p>
+<p>Algunos de los controles HTML5 se listan a continuación:</p>
+<h3 id="placeholder">placeholder</h3>
+<p>Proporciona sugerencias o ejemplo del contenido a ingresar por el usuario</p>
+<pre><code>&lt;input type="text" placeholder="Ingrese su nombre"&gt;
+</code></pre>
+<h3 id="required">required</h3>
+<p>Entrada de usuario obligatoria</p>
+<pre><code>&lt;input type="text" id="username" name="username" required&gt;
+</code></pre>
+<p>Nota: required o required="required" son correspondientes</p>
+<h3 id="autofocus">autofocus</h3>
+<p>Enfocar en el control al cargar la página</p>
+<pre><code>&lt;input name="q" autofocus /&gt;
+</code></pre>
+<h3 id="form">form</h3>
+<p>Si por un lado se tiene formulario y por otro un control <strong>button</strong> o <strong>submit</strong> fuera del formulario. El atributo <strong>form</strong> es aplicado al control para indicar que al pulsar, se envíe el formulario (aun cuando el control no está dentro del formulario) [1].</p>
+<pre><code>&lt;form id="myForm"&gt;
+Add your telephone: &lt;input type="tel" name="phone" required /&gt;&lt;br /&gt;
+&lt;/form&gt;
+
+&lt;input type="submit" form="myForm" /&gt;
+</code></pre>
+<h3 id="autocomplete">autocomplete</h3>
+<p>Permite especificar si el agente (browser) tiene permiso para permitir el autollenado de los valores de los campos de formulario. Aplicable a controles: input (con entrada numérica o texto), textarea, select, form</p>
+<pre><code>&lt;input name="lastName" id="lastName" type="text" autocomplete="family-name" /&gt;
+</code></pre>
+<p>En este contexto, también es factible utilizar un control <strong>data-list</strong> para conectar valores a un control input [2]</p>
+<pre><code>&lt;label for="browser"&gt;Choose your browser from the list:&lt;/label&gt;  
+&lt;input list="browsers" name="browser" id="browser"&gt;  
+  
+&lt;datalist id="browsers"&gt;  
+  &lt;option value="Edge"&gt;  
+  &lt;option value="Firefox"&gt;  
+  &lt;option value="Chrome"&gt;  
+  &lt;option value="Opera"&gt;  
+  &lt;option value="Safari"&gt;  
+&lt;/datalist&gt;
+</code></pre>
+<h3 id="pattern">pattern</h3>
+<p>Permite indicar la expresión regular que validará la entrada del usuario.</p>
+<pre><code>Introduce tu TELEFONO con los 9 dígitos: &lt;input type="tel" name="telefono" pattern="[0-9]{9}" title="El número ingresado no cumple con el formato"&gt;
+</code></pre>
+<h3 id="min-max">min, max</h3>
+<p>Permite establecer un rango de valores permitidos. Se puede aplicar en controles tipo number, range, date, datetime-local, month, time y week [3]</p>
+<pre><code>&lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;
+</code></pre>
+<h3 id="typedate">type="date"</h3>
+<p>Provee un control que permite al usuario ingresar una fecha. Soporta año, mes y día, mas no el tiempo. El tiempo es soportado por controles cuyo valor del atributo type es <strong>time</strong> y <strong>datatime-local</strong> [4]. Otros controles relacionados a fecha y tiempo son: <strong>month</strong> y <strong>week</strong></p>
+<pre><code>&lt;input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" /&gt;
+</code></pre>
+<h3 id="typerange">type="range"</h3>
+<p>Permite al usuario indicar un número dentro de un rango especificado [5].</p>
+<pre><code>&lt;input type="range" id="volume" name="volume" min="0" max="11" step="1" value="3"/&gt;
+</code></pre>
+<h3 id="typecolor">type="color"</h3>
+<p>Permite al usuario especificar un color utilizando un selector de colores.</p>
+<pre><code>&lt;input type="color" id="head" name="head" value="#e66465" /&gt;
+</code></pre>
+<h3 id="progress">&lt;progress&gt;</h3>
+<p>Etiqueta de HTML 5 que provee una barra de progreso [6]</p>
+<pre><code>&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+</code></pre>
+<h2 id="referencias">Referencias</h2>
+<ol>
+<li>Cravens, J., &amp; Burtoft, J. (2012). <em>HTML5 Hacks: Tips &amp; Tools for Creating Interactive Web Applications</em>. " O'Reilly Media, Inc.".</li>
+<li><a href="https://www.w3schools.com/tags/tag_datalist.asp">https://www.w3schools.com/tags/tag_datalist.asp</a></li>
+<li><a href="https://www.w3schools.com/tags/att_input_min.asp">https://www.w3schools.com/tags/att_input_min.asp</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input/date">https://developer.mozilla.org/es/docs/Web/HTML/Element/input/date</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range</a></li>
+<li><a href="https://www.w3schools.com/tags/tag_progress.asp">https://www.w3schools.com/tags/tag_progress.asp</a></li>
+</ol></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper readingIdevice em_iDevice em_iDevice_reading" id="id482">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad de Descubrimiento</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta482_113_4" class="block iDevice_content">
+<p>Lee el siguiente blog sobre validación de controles de formulario con HTML5.</p>
+<ul>
+<li><a href="https://cybmeta.com/validacion-de-formularios-con-html5" target="_blank" rel="noopener">https://cybmeta.com/validacion-de-formularios-con-html5</a></li>
 </ul>
-<p>De esta manera, si unimos todo, la línea 1 se traduciría en: <em>"Oye cliente, te envío el recurso que me pediste a través del protocolo HTTP en su versión 1.1 y adicionalmente te indico que tuve éxito en encontrar lo que me pediste, es por eso que te envío un OK y su código equivalente: 200".</em></p>
-<h2>Cabeceras de Respuesta</h2>
-<p>Las lineas 2 a 7 forman el conjunto de "cabeceras". Existe una gran variedad de cabeceras de respuesta y su estudio es un tema de una lección posterior.</p>
-<p>Nota: Es importante notar que, aunque no se lo puede ver, existe un espacio entre la cabecera y la sección siguiente (el cuerpo). En nuestro ejemplo esto está marcado con "&gt;&gt;&gt; blanco". Este espacio es propio del estándar HTTP.</p>
-<h2>Cuerpo</h2>
-<p>El cuerpo del mensaje contiene, opcionalmente, el contenido del recurso que se ha solicitado en la petición HTTP. En nuestro caso, este recurso es la página ”mipaginal.html” que está escrita en código HTML y que fue solicitada en la solicitud HTTP (ver la sección <a href="mensajes_http_la_solicitud.html">anterior</a>).</p>
+</section>
+<section id="ta482_113_5" class="block iDevice_content">
+<p>Crea una página Web con un formulario que contenga los componentes HTML5 que se menciona en el artículo. Comprueba que las validaciones funcionan.</p>
+</section>
+<form name="feedback-form-482_113_6" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback482_113_6text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-482_113_6" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-482_113_6" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>Lo importante de esta actividad es que tengas en cuenta que los controles HTML 5 te permiten automáticamente realizar validaciones en el formulario.</p></section>
+</form>
+</div>
 </div>
 </div>
 </article>
@@ -419,7 +552,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="mensajes_http_la_solicitud.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="la_uri.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="controles_de_formulario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_catlogo_de_controles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
