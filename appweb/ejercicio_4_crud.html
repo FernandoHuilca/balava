@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
@@ -13,6 +14,7 @@
 <meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -41,9 +43,9 @@
    <ul class="other-section">
       <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
       <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
+      <li><a href="la_uri.html" class="no-ch">La URI</a></li>
       <li><a href="el_protocolo_http.html" class="no-ch">El protocolo HTTP</a></li>
       <li><a href="mensajes_http.html" class="no-ch">Mensajes HTTP</a></li>
-      <li><a href="la_uri.html" class="no-ch">La URI</a></li>
       <li><a href="cabeceras.html" class="no-ch">Cabeceras</a></li>
       <li><a href="mtodos_http.html" class="no-ch">Métodos HTTP</a></li>
       <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
@@ -94,7 +96,8 @@
    </li>
    <li><a href="semana_5_css_3.html" class="daddy">SEMANA 5: CSS 3</a>
    <ul class="other-section">
-      <li><a href="selectores_avanzados.html" class="daddy">Selectores avanzados</a>
+      <li><a href="uso_de_prefijos.html" class="no-ch">Uso de prefijos</a></li>
+      <li><a href="nuevos_selectores.html" class="daddy">Nuevos selectores</a>
       <ul class="other-section">
          <li><a href="pseudoclases.html" class="no-ch">Pseudo-clases</a></li>
          <li><a href="pseudoelementos.html" class="no-ch">Pseudo-elementos</a></li>
@@ -102,41 +105,30 @@
          <li><a href="atributos.html" class="no-ch">Atributos</a></li>
       </ul>
       </li>
-      <li><a href="transformaciones.html" class="daddy">Transformaciones</a>
+      <li><a href="aspectos_de_forma.html" class="daddy">Aspectos de Forma</a>
       <ul class="other-section">
-         <li><a href="transformaciones_una_visa_en_detalle.html" class="no-ch">Transformaciones: Una visa en detalle</a></li>
+         <li><a href="modelo_de_caja_flexible.html" class="no-ch">Modelo de caja flexible</a></li>
+         <li><a href="propiedades_de_cambio_de_forma.html" class="no-ch">Propiedades de cambio de forma</a></li>
       </ul>
       </li>
-      <li><a href="transiciones.html" class="daddy">Transiciones</a>
+      <li><a href="aspectos_de_movimiento.html" class="daddy">Aspectos de Movimiento</a>
       <ul class="other-section">
-         <li><a href="transiciones0.html" class="no-ch">Transiciones</a></li>
-         <li><a href="ejemplo_transiciones.html" class="no-ch">Ejemplo Transiciones</a></li>
-         <li><a href="transiciones_una_vista_en_detalle.html" class="no-ch">Transiciones: Una vista en detalle</a></li>
-         <li><a href="ejemplo_transiciones0.html" class="no-ch">Ejemplo Transiciones</a></li>
+         <li><a href="transiciones.html" class="no-ch">Transiciones</a></li>
+         <li><a href="transformaciones.html" class="no-ch">Transformaciones</a></li>
+         <li><a href="animaciones.html" class="no-ch">Animaciones</a></li>
       </ul>
       </li>
-      <li><a href="animaciones.html" class="daddy">Animaciones</a>
-      <ul class="other-section">
-         <li><a href="animaciones_una_vista_en_detalle.html" class="no-ch">Animaciones: Una vista en detalle</a></li>
-         <li><a href="ejemplo_animaciones.html" class="no-ch">Ejemplo Animaciones</a></li>
-      </ul>
-      </li>
+      <li><a href="bibliografa.html" class="no-ch">Bibliografía</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_6_libreras_de_estilos.html" class="daddy">SEMANA 6: Librerías de Estilos</a>
+   <ul class="other-section">
       <li><a href="bootstrap_una_librera_de_estilos.html" class="daddy">Bootstrap: una librería de estilos</a>
       <ul class="other-section">
          <li><a href="instalacin_bootstrap.html" class="no-ch">Instalación Bootstrap</a></li>
       </ul>
       </li>
       <li><a href="sass.html" class="no-ch">Sass</a></li>
-   </ul>
-   </li>
-   <li><a href="semana_6_libreras_de_estilos.html" class="daddy">SEMANA 6: Librerías de Estilos</a>
-   <ul class="other-section">
-      <li><a href="bootstrap_una_librera_de_estilos0.html" class="daddy">Bootstrap: una librería de estilos</a>
-      <ul class="other-section">
-         <li><a href="instalacin_bootstrap0.html" class="no-ch">Instalación Bootstrap</a></li>
-      </ul>
-      </li>
-      <li><a href="sass0.html" class="no-ch">Sass</a></li>
    </ul>
    </li>
    <li><a href="semana_7_javascript_parte_i_agregando_dinamismo.html" class="daddy">SEMANA 7: Javascript (Parte I): Agregando dinamismo</a>
@@ -359,6 +351,7 @@
          <li><a href="jakartaservlet.html" class="no-ch">Jakarta.servlet</a></li>
          <li><a href="persistencia0.html" class="no-ch">Persistencia</a></li>
          <li><a href="junit.html" class="no-ch">JUnit</a></li>
+         <li><a href="servicios_web__jersey.html" class="no-ch">Servicios Web - Jersey</a></li>
       </ul>
       </li>
    </ul>
@@ -435,94 +428,184 @@
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id1108">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id129">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Dependencias con MAVEN</h1></header>
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Código</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta1108_257_2" class="block iDevice_content">
-<div class="exe-text"><div class="highlighted-code code-style-2 language-markup">
+<div id="ta129_1115_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Persona</h2>
+<div class="highlighted-code language-java">
 <div>
-<pre><code>&lt;dependencies&gt;
+<pre><code>package modelo.entidades;
 
-		&lt;!-- BASE DE DATOS --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;mysql&lt;/groupId&gt;
-			&lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
-			&lt;version&gt;8.0.21&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- JSTL --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.servlet/jstl --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
-			&lt;artifactId&gt;jstl&lt;/artifactId&gt;
-			&lt;version&gt;1.2&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.servlet.jsp&lt;/groupId&gt;
-			&lt;artifactId&gt;jsp-api&lt;/artifactId&gt;
-			&lt;version&gt;2.1&lt;/version&gt;
-			&lt;scope&gt;provided&lt;/scope&gt;
-		&lt;/dependency&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
-			&lt;artifactId&gt;javax.servlet-api&lt;/artifactId&gt;
-			&lt;version&gt;3.0.1&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- JAXB --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;
-			&lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;
-			&lt;version&gt;2.3.1&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- PERSISTENCIA --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.persistence&lt;/groupId&gt;
-			&lt;artifactId&gt;javax.persistence-api&lt;/artifactId&gt;
-			&lt;version&gt;2.2&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- EclipseLink --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.eclipse.persistence&lt;/groupId&gt;
-			&lt;artifactId&gt;eclipselink&lt;/artifactId&gt;
-			&lt;version&gt;2.5.2&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- SERVICIO WEB REST --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
-			&lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
-			&lt;version&gt;2.31&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.glassfish.jersey.inject&lt;/groupId&gt;
-			&lt;artifactId&gt;jersey-hk2&lt;/artifactId&gt;
-			&lt;version&gt;2.28&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- Javax JSON Bind API --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/javax.json.bind/javax.json.bind-api --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;javax.json.bind&lt;/groupId&gt;
-			&lt;artifactId&gt;javax.json.bind-api&lt;/artifactId&gt;
-			&lt;version&gt;1.0&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;!-- Jackson para MessageBodyWriter --&gt;
-		&lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson --&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
-			&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
-			&lt;version&gt;2.31&lt;/version&gt;
-		&lt;/dependency&gt;
-		&lt;dependency&gt;
-			&lt;groupId&gt;log4j&lt;/groupId&gt;
-			&lt;artifactId&gt;log4j&lt;/artifactId&gt;
-			&lt;version&gt;1.2.17&lt;/version&gt;
-		&lt;/dependency&gt;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Persona implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private int id;
+	private String nombre;
+	private String password;
+	
+	
+
+	public Persona () {
 		
-	&lt;/dependencies&gt;</code></pre>
+	}
+	public Persona(int id, String nombre, String password) {
+		this.id = id;
+		this.nombre = nombre;
+		this.password = password;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+}
+</code></pre>
 </div>
+</div>
+<p><br /><br /></p>
+<h2>PersonaDAO</h2>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>package modelo.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import modelo.entidades.Persona;
+
+public class PersonaDAO {
+
+	private static List&lt;Persona&gt; personas = null;
+	public PersonaDAO() {
+		if (personas == null) {
+			personas = new ArrayList&lt;Persona&gt;();
+			personas.add(new Persona(1, "Carlos", "carlos123"));
+			personas.add(new Persona(2, "Pedro", "pedro123"));
+			personas.add(new Persona(3, "Maria", "maria123"));
+		}
+	}
+	
+
+	public Persona autorizar(String nombre, String clave) {
+		Persona personaAutorizada = null;
+		List&lt;Persona&gt; personas = getPersonas();
+		for (Persona persona : personas) {
+			if (persona.getNombre().equals(nombre) &amp;&amp; persona.getPassword().equals(clave)) {
+
+				personaAutorizada = persona;
+				break;
+			}
+		}
+		return personaAutorizada;
+
+	}
+
+	public Persona getPersona(int IdPersona) {
+		Persona p = null;
+
+		List&lt;Persona&gt; listPeronas = this.getPersonas();
+		for (Persona persona : listPeronas) {
+			if (persona.getId() == IdPersona) {
+				p = persona;
+				break;
+			}
+		}
+		return p;
+	}
+
+	public boolean create(Persona p) {
+		//Generación del id (numero mas alto + 1 en el array)
+		int max = 0;
+		for (Persona persona : personas) {
+			if (max&lt; persona.getId()) {
+				max = persona.getId();
+			}
+		}
+		p.setId(max + 1);
+		
+		
+		return personas.add(p);
+	}
+
+	public void update(Persona p) {
+		
+		List&lt;Persona&gt; listPersonas = this.getPersonas();
+		
+		
+		for (int i = 0; i &lt; listPersonas.size(); i++) {
+			if (listPersonas.get(i).getId() == p.getId()) {
+				
+				listPersonas.get(i).setNombre(p.getNombre());
+				listPersonas.get(i).setPassword(p.getPassword());
+				break;
+			}
+		}
+	}
+
+	public Persona delete(int id) throws Exception {
+			
+			int indice = 0;
+			List&lt;Persona&gt; listPersonas = this.getPersonas();
+			for (int i = 0; i &lt; listPersonas.size(); i++) {
+				if (listPersonas.get(i).getId() == id) {
+					indice = i;
+					break;
+				}
+			}
+			return listPersonas.remove(indice);
+		
+	}
+
+
+	public Persona getPersonaById(int id) {
+		Persona personaEncontrada = null;
+		for (Persona persona : this.getPersonas()) {
+			if (persona.getId() == id) {
+				personaEncontrada = persona;
+				break;
+			}
+		}
+		return personaEncontrada;
+
+	}
+	public List&lt;Persona&gt; getPersonas(){
+		return personas;
+	}
+}
+</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
 </div>
 <p></p></div>
 </div>
