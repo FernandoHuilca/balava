@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
-<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
@@ -28,6 +28,7 @@
       <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia...</a></li>
       <li><a href="conceptos_clave.html" class="no-ch">Conceptos Clave</a></li>
       <li id="active"><a href="qu_es_una_aplicacin_web.html" class="active no-ch">¿Qué es una Aplicación Web?</a></li>
+      <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
       <li><a href="tipos_de_aplicaciones.html" class="no-ch">Tipos de Aplicaciones</a></li>
       <li><a href="aplicaciones_web_estticas.html" class="no-ch">Aplicaciones Web Estáticas</a></li>
       <li><a href="aplicaciones_web_dinmicas.html" class="no-ch">Aplicaciones Web Dinámicas</a></li>
@@ -38,7 +39,6 @@
    <li><a href="semana_2_el_protocolo_http.html" class="daddy">SEMANA 2: El protocolo HTTP</a>
    <ul class="other-section">
       <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-      <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
       <li><a href="la_uri.html" class="no-ch">La URI</a></li>
       <li><a href="el_protocolo_http.html" class="no-ch">El protocolo HTTP</a></li>
       <li><a href="mensajes_http.html" class="no-ch">Mensajes HTTP</a></li>
@@ -192,6 +192,7 @@
       </li>
       <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
+      <li><a href="videos_implementacin_mvc.html" class="no-ch">Videos: Implementación MVC</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -201,6 +202,7 @@
       <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
       <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
       <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
+      <li><a href="videos_implementando_jdbc.html" class="no-ch">Videos: Implementando JDBC</a></li>
    </ul>
    </li>
    <li><a href="semana_11_dao.html" class="daddy">SEMANA 11: DAO</a>
@@ -211,6 +213,7 @@
       <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
       <li><a href="de_activerecord_a_dao.html" class="no-ch">De ActiveRecord a DAO</a></li>
       <li><a href="ejercicio_implementando_patrn_dao.html" class="no-ch">Ejercicio: Implementando patrón DAO</a></li>
+      <li><a href="videos_aplicando_dao.html" class="no-ch">Videos: Aplicando DAO</a></li>
    </ul>
    </li>
    <li><a href="semana_12_jpa_i_fundamentos.html" class="daddy">SEMANA 12: JPA (I) Fundamentos</a>
@@ -224,6 +227,7 @@
       <li><a href="ejemplo0.html" class="no-ch">Ejemplo</a></li>
       <li><a href="herencia.html" class="no-ch">Herencia</a></li>
       <li><a href="ejercicio_propuesto_tutorias.html" class="no-ch">Ejercicio Propuesto: Tutorias</a></li>
+      <li><a href="video_instalacin_y_uso_del_orm.html" class="no-ch">Video: Instalación y Uso del ORM</a></li>
    </ul>
    </li>
    <li><a href="semana_13_jpa_ii_consultas_jpql.html" class="daddy">SEMANA 13: JPA (II) Consultas JPQL</a>
@@ -236,6 +240,7 @@
       <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
       <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
       <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+      <li><a href="videos_consultas_con_jpql.html" class="no-ch">Videos: Consultas con JPQL</a></li>
    </ul>
    </li>
    <li><a href="semana_14_servicios_web_soap.html" class="daddy">SEMANA 14: Servicios Web SOAP</a>
@@ -356,7 +361,7 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="conceptos_clave.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tipos_de_aplicaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="conceptos_clave.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="arquitectura_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -367,28 +372,7 @@
 <div id="ta80_1115_2" class="block iDevice_content">
 <div class="exe-text"><p style="text-align: justify;">Según Wikipedia, “una aplicación web o web app es un programa de computador cliente-servidor en el cual, el cliente (incluyendo la interface de usuario y la lógica del lado del cliente) se ejecuta en un navegador web”.</p>
 <p style="text-align: justify;"> De la definición anterior, resaltemos que el cliente de una aplicación web se ejecuta en el navegador web. En efecto, las aplicaciones web no dependen del Sistema Operativo (SO) del equipo, sino del navegador web en el que se ejecutan y visualizan. Es el navegador web el que está instalado directamente en el equipo, mas no la aplicación web como tal. El navegador web se convierte en un instrumento para visualizar la aplicación web, una acción que se denomina renderización. A diferencia de las aplicaciones de escritorio que usan directamente los recursos del SO en la que están instaladas, las aplicaciones web consumen los recursos directamente del navegador web donde se visualizan.</p>
-<p style="text-align: justify;"> Esto presenta una ventaja competitiva de las aplicaciones web frente a las aplicaciones de escritorio, y es, la instalación. Es más costoso instalar una aplicación de escritorio que una aplicación web. Por ejemplo, si tenemos 10 computadores en los cuales deseamos que los usuarios utilicen la aplicación Microsoft Word (versión de escritorio), debemos instalar dicho programa en los 10 computadores, ya que la aplicación depende directamente de los recursos del sistema operativo del equipo para funcionar. En cambio, con la versión web de la aplicación Microsoft Word, basta con que el equipo tenga instalado un navegador web (Chrome, Safari, etc) para que el usuario pueda acceder directamente al programa y así evitarnos las 10 instalaciones del programa. Es más, el uso de la aplicación no solo estará limitado a los 10 computadores, sino que cualquier usuario con un computador y navegador web, podrá acceder a la aplicación web MS Word.</p>
-<h2>Arquitectura Web</h2>
-<p style="text-align: justify;">Hasta aquí hemos dicho que, el navegador web es el responsable de desplegar (visualizar o renderizar) la aplicación web. Pero, entonces ¿Dónde está físicamente una aplicación web?</p>
-<p style="text-align: justify;">Para contestar esta pregunta consideremos, de la definición de web app, la siguiente frase “una aplicación web o web app es un programa de computador cliente-servidor”. Entonces, primero definamos a qué nos referimos con una arquitectura cliente-servidor. Una arquitectura cliente servidor en su forma más simple consta de (como se muestra en la Figura 1):</p>
-<p><img src="clienteservidor.1.png" alt="Arquitectura Cliente Servidor" title="Arquitectura Cliente Servidor" width="442" height="187" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p style="text-align: center;"><span style="font-size: 10pt;">Figura 1. Arquitectura Cliente Servidor</span></p>
-<ul>
-<li>Cliente (un computador cualquiera)</li>
-<li>Servidor (un computador cualquiera que hace su función de servir recursos)</li>
-<li>Enlace de comunicación entre el cliente y el servidor, donde el cliente solicita un recurso y el servidor “sirve” el recurso solicitado por el cliente. Esta comunicación solicitud-respuesta se realiza siguiendo un protocolo de comunicación, en este caso, el protocolo TCP/IP (el protocolo de Internet).</li>
-</ul>
-<p style="text-align: justify;">La arquitectura de la Figura 1, a pesar de brindar todo lo necesario para el funcionamiento de una aplicación en dos capas (como puede ser una aplicación de escritorio), no es suficiente para ejecutar una aplicación web. Es entonces necesario considerar ciertas modificaciones en esta arquitectura para que funcionen nuestras aplicaciones web. A esta nueva arquitectura, basada en la arquitectura de la Figura 1, la llamaremos “Arquitectura Web” y que se muestra en la Figura 2 y cuyos componentes están descritos a continuación:</p>
-<p><img src="arqweb.png" alt="Arquitectura Cliente Servidor" title="Arquitectura Cliente Servidor" width="442" height="195" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p style="text-align: center;"><span style="font-size: 10pt;">Figura 2. Arquitectura Web, basada en la arquitectura Cliente-Servidor</span></p>
-<p> </p>
-<ul>
-<li>Cliente. – En este caso, el cliente deja de ser el equipo en sí (computador) sino que pasa a ser el navegador web (browser) que se ejecuta en el equipo del usuario.</li>
-<li>Servidor. - En este caso, el servidor no puede ser cualquier servidor. Debe ser un servidor estrictamente para “servir” hipertexto, es decir, páginas web (también conocidos como “documentos”). Ya que es especial, lo llamaremos Servidor Web</li>
-<li>Enlace de comunicación entre el cliente y el servidor. - En este caso, el protocolo usado para la web es el Protocolo de Transferencia de Hipertexto (HTTP). HTTP está basado en TCP/IP, es decir, si no existe internet, no existe la web.</li>
-</ul>
-<p style="text-align: justify;">Es importante indicar que, a pesar de que la interfaz de usuario (IU) y la lógica del cliente de una aplicación web se ejecutan y visualizan a través del navegador web, tanto la IU como la lógica del cliente residen físicamente en el servidor. Es el servidor el que contiene las IU y estas son únicamente enviadas al cliente para que se visualicen (renderización).</p>
-<p style="text-align: justify;"> Es muy importante que tengas presente la arquitectura web y sus componentes, indicados en la Figura 2, ya que en esta figura nos permitirá entender cada sección de la asignatura. Es tan importante esta arquitectura, que haremos referencia a ella a lo largo del curso.</p></div>
+<p style="text-align: justify;"> Esto presenta una ventaja competitiva de las aplicaciones web frente a las aplicaciones de escritorio, y es, la instalación. Es más costoso instalar una aplicación de escritorio que una aplicación web. Por ejemplo, si tenemos 10 computadores en los cuales deseamos que los usuarios utilicen la aplicación Microsoft Word (versión de escritorio), debemos instalar dicho programa en los 10 computadores, ya que la aplicación depende directamente de los recursos del sistema operativo del equipo para funcionar. En cambio, con la versión web de la aplicación Microsoft Word, basta con que el equipo tenga instalado un navegador web (Chrome, Safari, etc) para que el usuario pueda acceder directamente al programa y así evitarnos las 10 instalaciones del programa. Es más, el uso de la aplicación no solo estará limitado a los 10 computadores, sino que cualquier usuario con un computador y navegador web, podrá acceder a la aplicación web MS Word.</p></div>
 </div>
 </div>
 </article>
@@ -460,7 +444,7 @@
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_camera" id="id152">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id152">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header" style="background-image:url(icon_camera.png)"><h1 class="iDeviceTitle">Resumen</h1></header>
 <div class="iDevice_inner">
@@ -482,8 +466,8 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="conceptos_clave.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tipos_de_aplicaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="conceptos_clave.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="arquitectura_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
-<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

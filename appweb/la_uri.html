@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
-<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
@@ -28,6 +28,7 @@
       <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia...</a></li>
       <li><a href="conceptos_clave.html" class="no-ch">Conceptos Clave</a></li>
       <li><a href="qu_es_una_aplicacin_web.html" class="no-ch">¿Qué es una Aplicación Web?</a></li>
+      <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
       <li><a href="tipos_de_aplicaciones.html" class="no-ch">Tipos de Aplicaciones</a></li>
       <li><a href="aplicaciones_web_estticas.html" class="no-ch">Aplicaciones Web Estáticas</a></li>
       <li><a href="aplicaciones_web_dinmicas.html" class="no-ch">Aplicaciones Web Dinámicas</a></li>
@@ -38,7 +39,6 @@
    <li class="current-page-parent"><a href="semana_2_el_protocolo_http.html" class="current-page-parent daddy">SEMANA 2: El protocolo HTTP</a>
    <ul>
       <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
-      <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
       <li id="active"><a href="la_uri.html" class="active no-ch">La URI</a></li>
       <li><a href="el_protocolo_http.html" class="no-ch">El protocolo HTTP</a></li>
       <li><a href="mensajes_http.html" class="no-ch">Mensajes HTTP</a></li>
@@ -192,6 +192,7 @@
       </li>
       <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
+      <li><a href="videos_implementacin_mvc.html" class="no-ch">Videos: Implementación MVC</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -201,6 +202,7 @@
       <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
       <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
       <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
+      <li><a href="videos_implementando_jdbc.html" class="no-ch">Videos: Implementando JDBC</a></li>
    </ul>
    </li>
    <li><a href="semana_11_dao.html" class="daddy">SEMANA 11: DAO</a>
@@ -211,6 +213,7 @@
       <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
       <li><a href="de_activerecord_a_dao.html" class="no-ch">De ActiveRecord a DAO</a></li>
       <li><a href="ejercicio_implementando_patrn_dao.html" class="no-ch">Ejercicio: Implementando patrón DAO</a></li>
+      <li><a href="videos_aplicando_dao.html" class="no-ch">Videos: Aplicando DAO</a></li>
    </ul>
    </li>
    <li><a href="semana_12_jpa_i_fundamentos.html" class="daddy">SEMANA 12: JPA (I) Fundamentos</a>
@@ -224,6 +227,7 @@
       <li><a href="ejemplo0.html" class="no-ch">Ejemplo</a></li>
       <li><a href="herencia.html" class="no-ch">Herencia</a></li>
       <li><a href="ejercicio_propuesto_tutorias.html" class="no-ch">Ejercicio Propuesto: Tutorias</a></li>
+      <li><a href="video_instalacin_y_uso_del_orm.html" class="no-ch">Video: Instalación y Uso del ORM</a></li>
    </ul>
    </li>
    <li><a href="semana_13_jpa_ii_consultas_jpql.html" class="daddy">SEMANA 13: JPA (II) Consultas JPQL</a>
@@ -236,6 +240,7 @@
       <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
       <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
       <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+      <li><a href="videos_consultas_con_jpql.html" class="no-ch">Videos: Consultas con JPQL</a></li>
    </ul>
    </li>
    <li><a href="semana_14_servicios_web_soap.html" class="daddy">SEMANA 14: Servicios Web SOAP</a>
@@ -356,7 +361,7 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="arquitectura_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_protocolo_http.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_protocolo_http.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -388,7 +393,7 @@
 <li>La URI puede ser una URL, URN o ambos</li>
 <li>La sintaxis de la URI está descrita en RFC 3986</li>
 </ul>
-<p>En las siguientes secciones veremos la estructura de una URI e identificaremos algunos ejemplos.</p></div>
+<p>En las siguiente sección veremos la estructura de una URI e identificaremos algunos ejemplos.</p></div>
 </div>
 </div>
 </div>
@@ -421,9 +426,7 @@
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta162_110_2" class="block iDevice_content">
-<div class="exe-text"><figure class="exe-figure exe-image position-center" style="width: 1948px;">Considerando la sintaxis:</figure>
-<figure class="exe-figure exe-image position-center" style="width: 1948px; text-align: center;"><span style="font-size: 18pt;">eschema   :   hierarchical_part    [  ? query  ] [   # fragment  ]</span></figure>
-<figure class="exe-figure exe-image position-center" style="width: 1948px;">En el siguiente ejemplo podrás identificar cada una de las partes de la sintaxis, incluso con más detalle dentro de cada parte (Ej., hierarchical_part se compone de varias partes)</figure>
+<div class="exe-text"><figure class="exe-figure exe-image position-center" style="width: 1948px;">Considerando la sintaxis mencionada, en el siguiente ejemplo podrás identificar cada una de las partes de la sintaxis, incluso con más detalle dentro de cada parte (Ej., hierarchical_part se compone de varias partes)</figure>
 <p style="text-align: center;"></p>
 <figure class="exe-figure exe-image position-center" style="width: 800px;"><img src="url_sintaxis.png" alt="Ejemplo de las partes de una URI" title="Ejemplo Sintaxis URI" width="800" height="246" />
 <figcaption class="figcaption"><span class="author">Carlos Iñiguez</span>. <span class="title"><em>Ejemplo de Sintaxis de URI</em></span></figcaption>
@@ -471,7 +474,7 @@
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_share" id="id164">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id164">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header" style="background-image:url(icon_share.png)"><h1 class="iDeviceTitle">Consejos para crear buenas URIs</h1></header>
 <div class="iDevice_inner">
@@ -492,7 +495,7 @@
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_knowledge" id="id165">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id165">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header" style="background-image:url(icon_knowledge.png)"><h1 class="iDeviceTitle">Material de consulta</h1></header>
 <div class="iDevice_inner">
@@ -515,8 +518,8 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="arquitectura_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_protocolo_http.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_protocolo_http.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
-<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
