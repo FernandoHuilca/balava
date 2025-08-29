@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
-<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
@@ -18,7 +18,7 @@
 </head>
 <body class="exe-web-site" id="exe-node-233"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
-<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<p id="skipNav"><a href="#main" class="sr-av">Skip navigation</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
 <nav id="siteNav">
 <ul>
@@ -168,10 +168,9 @@
    </li>
    <li><a href="semana_9_fundamentos_back_end_java.html" class="daddy">SEMANA 9: Fundamentos Back End (Java)</a>
    <ul class="other-section">
-      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="ambiente_de_desarrollo.html" class="no-ch">Ambiente de Desarrollo</a></li>
       <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
-      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
       <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
       <li><a href="principios_tecnolgicos.html" class="no-ch">Principios Tecnológicos</a></li>
       <li><a href="servlets.html" class="daddy">SERVLETS</a>
@@ -192,7 +191,32 @@
       </li>
       <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
-      <li><a href="videos_implementacin_mvc.html" class="no-ch">Videos: Implementación MVC</a></li>
+      <li><a href="tarea_implementando_mvc.html" class="daddy">Tarea: Implementando MVC</a>
+      <ul class="other-section">
+         <li><a href="introduccin_al_diseo_933.html" class="no-ch">Introducción al Diseño [9:33]</a></li>
+         <li><a href="preparando_el_ambiente_608.html" class="no-ch">Preparando el Ambiente [6:08]</a></li>
+         <li><a href="pasar_diseo_a_cdigo.html" class="daddy">Pasar Diseño a Código</a>
+         <ul class="other-section">
+            <li><a href="crear_estructura_de_paquetes_100.html" class="no-ch">Crear estructura de paquetes [1:00]</a></li>
+            <li><a href="las_clases_del_controlador_700.html" class="no-ch">Las clases del Controlador [7:00]</a></li>
+            <li><a href="crear_las_vistas_115.html" class="no-ch">Crear las Vistas [1:15]</a></li>
+            <li><a href="codificar_pgina_login_357.html" class="no-ch">Codificar Página Login [3:57]</a></li>
+            <li><a href="codificar_pgina_listar_314.html" class="no-ch">Codificar Página Listar [3:14]</a></li>
+            <li><a href="codificar_pgina_crear_340.html" class="no-ch">Codificar Página Crear [3:40]</a></li>
+            <li><a href="codificar_pgina_actualizar_133.html" class="no-ch">Codificar Página Actualizar [1:33]</a></li>
+            <li><a href="codificar_pgina_error_121.html" class="no-ch">Codificar Página Error [1:21]</a></li>
+            <li><a href="las_clases_del_modelo_533.html" class="no-ch">Las clases del Modelo [5:33]</a></li>
+            <li><a href="simular_la_bdd_1145.html" class="no-ch">Simular la BDD [11:45]</a></li>
+         </ul>
+         </li>
+         <li><a href="ruteador_1200.html" class="no-ch">Ruteador [12:00]</a></li>
+         <li><a href="caso_de_uso_login_1255.html" class="no-ch">Caso de Uso: Login [12:55]</a></li>
+         <li><a href="caso_de_uso_listar_717.html" class="no-ch">Caso de Uso: Listar [7:17]</a></li>
+         <li><a href="caso_de_uso_crear_usuario_1512.html" class="no-ch">Caso de Uso: Crear Usuario [15:12]</a></li>
+         <li><a href="caso_de_uso_actualizar_1434.html" class="no-ch">Caso de Uso: Actualizar [14:34]</a></li>
+         <li><a href="caso_de_uso_eliminar_813.html" class="no-ch">Caso de Uso: Eliminar [8:13]</a></li>
+      </ul>
+      </li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -361,55 +385,31 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="actividad_catlogo_de_controles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_formulario.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_catlogo_de_controles.html" class="prev"><span><span>&laquo; </span>Previous</span></a> <span class="sep">| </span><a href="actividad_formulario.html" class="next"><span>Next<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Autoevaluación HTML</h1></header>
-<article class="iDevice_wrapper ClozeIdevice em_iDevice" id="id477">
+<article class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id477">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header"><h1 class="iDeviceTitle">Rellenar huecos</h1></header>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Cloze Activity</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <section id="ta477_104" class="block instructions iDevice_content">
 Lea el párrafo que aparece abajo y complete las palabras que faltan.
 </section>
 
-    <section class="activity" id="activity-477_105">
-<form name="cloze-form-477_105" action="#" class="activity-form cloze-activity-form">
-<div id="cloze477_105">
-<input type="hidden" name="clozeFlag477_105.strictMarking" id="clozeFlag477_105.strictMarking" value="false"/>
-
+    <section class="activity" id="activity-477_105"><form name="cloze-form-477_105" action="#" class="activity-form cloze-activity-form"><div id="cloze477_105"><input type="hidden" name="clozeFlag477_105.strictMarking" id="clozeFlag477_105.strictMarking" value="false"/>
 <input type="hidden" name="clozeFlag477_105.checkCaps" id="clozeFlag477_105.checkCaps" value="false"/>
-
 <input type="hidden" name="clozeFlag477_105.instantMarking" id="clozeFlag477_105.instantMarking" value="false"/>
-
 <input type="hidden" name="clozeVar477_105.feedbackId" id="clozeVar477_105.feedbackId" value="ta477_106"/>
-
-<p>El lenguaje HTML define la  
-<label for="clozeBlank477_105.0" class="sr-av">Rellenar huecos (1):</label>
-<input class="autocomplete-off" type="text" value="" id="clozeBlank477_105.0" style="width:10em" />
-<span style="display:none" id="clozeAnswer477_105.0">JXUwMDNkJXUwMDE2JXUwMDA3JXUwMDA2JXUwMDA3JXUwMDE2JXUwMDE3JXUwMDAxJXUwMDA3JXUw
+<p>El lenguaje HTML define la  <label for="clozeBlank477_105.0" class="sr-av">Cloze (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank477_105.0" style="width:10ch" /><span style="display:none" id="clozeAnswer477_105.0">JXUwMDNkJXUwMDE2JXUwMDA3JXUwMDA2JXUwMDA3JXUwMDE2JXUwMDE3JXUwMDAxJXUwMDA3JXUw
 MDEz
-</span>
-  de un documento (página Web).</p>
-<div class="block iDevice_buttons">
-<p>
-<input class="button" type="submit" name="submit477_105" value="Enviar"  id="submit477_105" />
-
-<input type="button" name="restart477_105" value="Reiniciar" style="display:none" id="restart477_105" onclick="$exe.cloze.restart('477_105')" />
-
- 
-<input type="button" name="477_105showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton477_105" onclick="$exe.cloze.fillInputs('477_105')" />
-
-<span class="js-hidden js-warning">Habilitar JavaScript</span>
-</p>
-</div>
-<div id="clozeScore477_105"></div>
-</div>
-</form>
-</section>
+</span>  de un documento (página Web).</p><div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit477_105" value="Submit"  id="submit477_105" />
+<input type="button" name="restart477_105" value="Restart" style="display:none" id="restart477_105" onclick="$exe.cloze.restart('477_105')" />
+ <input type="button" name="477_105showAnswersButton" value="Show Answers" style="display:none" id="showAnswersButton477_105" onclick="$exe.cloze.fillInputs('477_105')" />
+<span class="js-hidden js-warning">Enable JavaScript</span></p></div><div id="clozeScore477_105"></div></div></form></section>
     <section id="ta477_106" class="feedback js-feedback iDevice_content" style="display:none">
 <p>Revisa la página "Contenido".</p>
 </section>
@@ -417,7 +417,7 @@ MDEz
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper MultiSelectIdevice em_iDevice" id="id478">
+<article class="iDevice_wrapper MultiSelectIdevice em_iDevice em_iDevice_question" id="id478">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header"><h1 class="iDeviceTitle">Origen de HTML</h1></header>
 <div class="iDevice_inner">
@@ -425,15 +425,15 @@ MDEz
 <section class="question">
 <div id="actitity-478_108">
 <form name="multi-select-form-478_108" action="#" class="activity-form multi-select-form">
-<h1 class="js-sr-av">Pregunta</h1>
+<h1 class="js-sr-av">Question</h1>
 <div id="taquestion478_108" class="block question iDevice_content">
 <p>HTML es una versión simplificada de...</p>
 </div>
 <section class="iDevice_answers">
-<h1 class="js-sr-av">Respuestas</h1>
+<h1 class="js-sr-av">Answers</h1>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="op478_1080" class="sr-av"><a href="#answer-478_111">Opción 1</a></label><input type="checkbox" id="op478_1080" value="False" />
+<label for="op478_1080" class="sr-av"><a href="#answer-478_111">Option 1</a></label><input type="checkbox" id="op478_1080" value="False" />
 </p>
 <div class="iDevice_answer-content" id="answer-478_111"><div id="taans478_111" class="block iDevice_content">
 <p>XHMTL</p>
@@ -443,7 +443,7 @@ MDEz
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="op478_1081" class="sr-av"><a href="#answer-478_224">Opción 2</a></label><input type="checkbox" id="op478_1081" value="False" />
+<label for="op478_1081" class="sr-av"><a href="#answer-478_224">Option 2</a></label><input type="checkbox" id="op478_1081" value="False" />
 </p>
 <div class="iDevice_answer-content" id="answer-478_224"><div id="taans478_224" class="block iDevice_content">
 <p>XML</p>
@@ -453,7 +453,7 @@ MDEz
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="op478_1082" class="sr-av"><a href="#answer-478_226">Opción 3</a></label><input type="checkbox" id="op478_1082" value="True" />
+<label for="op478_1082" class="sr-av"><a href="#answer-478_226">Option 3</a></label><input type="checkbox" id="op478_1082" value="True" />
 </p>
 <div class="iDevice_answer-content" id="answer-478_226"><div id="taans478_226" class="block iDevice_content">
 <p>SGML</p>
@@ -464,11 +464,11 @@ MDEz
 </section>
 <div class="block iDevice_buttons feedback-button js-required">
 <p>
-<input type="button" name="submitSelect" class="feedbackbutton multi-select-feedback-toggler" value="Mostrar retroalimentación" id="multi-select-feedback-toggler-3-478_108" /> 
+<input type="button" name="submitSelect" class="feedbackbutton multi-select-feedback-toggler" value="Show Feedback" id="multi-select-feedback-toggler-3-478_108" /> 
 </p>
 </div>
 <section id="f478_108" class="js-hidden js-feedback">
-<h1 class="js-sr-av">Retroalimentación</h1>
+<h1 class="js-sr-av">Feedback</h1>
 
 <div id="tafeedback478_108" class="feedback iDevice_content">
 <p>Revisa la sección "Un poco de historia..."</p>
@@ -476,11 +476,11 @@ MDEz
 </section>
 </form>
 <section class="iDevice_solution feedback js-hidden">
-<h1>Solución</h1>
+<h1>Solution</h1>
 <ol>
-<li><a href="#answer-478_111" class="wrong">Incorrecto</a></li>
-<li><a href="#answer-478_224" class="wrong">Incorrecto</a></li>
-<li><a href="#answer-478_226" class="right">Correcto</a></li>
+<li><a href="#answer-478_111" class="wrong">Incorrect</a></li>
+<li><a href="#answer-478_224" class="wrong">Incorrect</a></li>
+<li><a href="#answer-478_226" class="right">Correct</a></li>
 </ol>
 </section>
 </div>
@@ -489,22 +489,22 @@ MDEz
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper MultichoiceIdevice em_iDevice" id="id479">
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id479">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header"><h1 class="iDeviceTitle">Origen de HTML</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <section class="question">
 <form name="multi-choice-form-479_86" action="#" onsubmit="return false" class="activity-form">
-<h1 class="js-sr-av">Pregunta</h1>
+<h1 class="js-sr-av">Question</h1>
 <div id="taquestion479_86" class="block question iDevice_content">
 <p>Respecto al envío de datos al servidor. ¿Qué pasaría si no indicas el atributo "name" en un control de formulario?</p>
 </div>
 <section class="iDevice_answers">
-<h1 class="js-sr-av">Respuestas</h1>
+<h1 class="js-sr-av">Answers</h1>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="i479_89" class="sr-av"><a href="#answer-479_89">Opción 1</a></label><input type="radio" name="option479_86" id="i479_89" class="exe-radio-option exe-radio-option-0-3-479_86-multi"/>
+<label for="i479_89" class="sr-av"><a href="#answer-479_89">Option 1</a></label><input type="radio" name="option479_86" id="i479_89" class="exe-radio-option exe-radio-option-0-3-479_86-multi"/>
 </p>
 <div class="iDevice_answer-content" id="answer-479_89"><div id="taans479_89" class="block iDevice_content">
 <p>Todos los valores de los controles se envían al servidor</p>
@@ -513,7 +513,7 @@ MDEz
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="i479_228" class="sr-av"><a href="#answer-479_228">Opción 2</a></label><input type="radio" name="option479_86" id="i479_228" class="exe-radio-option exe-radio-option-1-3-479_86-multi"/>
+<label for="i479_228" class="sr-av"><a href="#answer-479_228">Option 2</a></label><input type="radio" name="option479_86" id="i479_228" class="exe-radio-option exe-radio-option-1-3-479_86-multi"/>
 </p>
 <div class="iDevice_answer-content" id="answer-479_228"><div id="taans479_228" class="block iDevice_content">
 <p>Solo se envían los controles que tienen el atributo configurado</p>
@@ -522,7 +522,7 @@ MDEz
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="i479_231" class="sr-av"><a href="#answer-479_231">Opción 3</a></label><input type="radio" name="option479_86" id="i479_231" class="exe-radio-option exe-radio-option-2-3-479_86-multi"/>
+<label for="i479_231" class="sr-av"><a href="#answer-479_231">Option 3</a></label><input type="radio" name="option479_86" id="i479_231" class="exe-radio-option exe-radio-option-2-3-479_86-multi"/>
 </p>
 <div class="iDevice_answer-content" id="answer-479_231"><div id="taans479_231" class="block iDevice_content">
 <p>No se necesita indicar el valor del atributo "name" si ya se asigna un valor al atributo "id" </p>
@@ -531,24 +531,24 @@ MDEz
 </section>
 </section>
 <section class="iDevice_feedbacks js-feedback">
-<h1 class="js-sr-av">Retroalimentación</h1>
+<h1 class="js-sr-av">Feedback</h1>
 <section id="sa0b479_86" class="feedback js-hidden">
-<p>Incorrecto</p>
+<p>Wrong</p>
 </section>
 <section id="sa1b479_86" class="feedback js-hidden">
-<p>Opción correcta</p>
+<p>Correct Option</p>
 </section>
 <section id="sa2b479_86" class="feedback js-hidden">
-<p>Incorrecto</p>
+<p>Wrong</p>
 </section>
 </section>
 </form>
 <section class="iDevice_solution feedback js-hidden">
-<h1>Solución</h1>
+<h1>Solution</h1>
 <ol>
-<li><a href="#answer-479_89">Incorrecto</a><span> (<a href="#sa0b479_86">Retroalimentación</a>)</span></li>
-<li><a href="#answer-479_228">Opción correcta</a><span> (<a href="#sa1b479_86">Retroalimentación</a>)</span></li>
-<li><a href="#answer-479_231">Incorrecto</a><span> (<a href="#sa2b479_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-479_89">Wrong</a><span> (<a href="#sa0b479_86">Feedback</a>)</span></li>
+<li><a href="#answer-479_228">Correct Option</a><span> (<a href="#sa1b479_86">Feedback</a>)</span></li>
+<li><a href="#answer-479_231">Wrong</a><span> (<a href="#sa2b479_86">Feedback</a>)</span></li>
 </ol>
 </section>
 </section>
@@ -557,14 +557,14 @@ MDEz
 </div>
 </article>
 <div id="packageLicense" class="cc cc-by-sa">
-<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+<p><span>Licensed under the</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
 </div>
 </section>
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="actividad_catlogo_de_controles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_formulario.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_catlogo_de_controles.html" class="prev"><span><span>&laquo; </span>Previous</span></a> <span class="sep">| </span><a href="actividad_formulario.html" class="next"><span>Next<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
-<script type="text/javascript" src="_intef_js.js"></script></body></html>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (New Window)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
